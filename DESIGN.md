@@ -148,3 +148,30 @@ model accommodates whoever says anything about themselves.
 2. Whether "declines to say" is a fifth cell or a separate arm.
 3. Whether the label and need forms are a full factor or a subset, given cost.
 4. Models: the same three as Papers 2 and 3, for comparability.
+
+---
+
+## 8. Settled for e0, 2026-09-28
+
+The binding version is `experiments/e0-instrument-floor/PREREGISTRATION.md`.
+What it settles from section 7, and what changed from the sections above:
+
+- **Items: 120.** The offline validator measured that at 60 a true null reads
+  as a null in only 10 of 15 cells; at 120 the gate has power 0.93 for a
+  difference of 0.20 in delivery.
+- **Label and need forms: a full factor in e0**, each against its own neutral
+  arm of matched length (16 words for the need form, 5 for the label form).
+  Johnson et al. (CHI 2026) show disabled users disclose by label too, so both
+  registers are ecologically valid.
+- **The mismatched cell costs nothing.** Every answer is scored on all five
+  needs, so need A's answers give need B's mismatched read.
+- **Gate 1 has three outcomes**, PASS, NULL (a benefit of 0.20 or more
+  excluded) and INCONCLUSIVE, and the decision has three: CONTINUE, EXTEND to
+  240 questions, STOP. A non-claim at the gate's power is not a null.
+- **"Declines to say" and the progressive arm wait** for the main menu. e0 is
+  one turn and asks only whether the instrument reads the need.
+- **The need form never names a checked property.** "Write for listening, not
+  for looking", not "do not use tables", so delivery is inference, not
+  instruction following. The third prior-art round found joint benefit and cost
+  scoring for stated preferences already published (PERG), which is what the
+  directive form would have repeated.

@@ -1,0 +1,65 @@
+stimuli
+  PASS  120 questions x 17 cells
+  PASS  2,040 prompts in the plan
+  PASS  every lead-in has its registered word count
+  PASS  none is the question alone
+  PASS  lead-in comes first, one space
+  PASS  need form never names a checked property
+scoring: each stub violation breaks exactly its own need
+  PASS  clean answer delivers screen_reader
+  PASS  violation breaks screen_reader and nothing else
+  PASS  clean answer delivers no_vision
+  PASS  violation breaks no_vision and nothing else
+  PASS  clean answer delivers deaf
+  PASS  violation breaks deaf and nothing else
+  PASS  clean answer delivers plain_language
+  PASS  violation breaks plain_language and nothing else
+  PASS  clean answer delivers wheelchair
+  PASS  violation breaks wheelchair and nothing else
+collection
+  PASS  the dead session kept its finished batches  (150)
+  PASS  resume completes to 2,040 rows  (2040)
+  PASS  no (item, cell) twice
+  PASS  schema
+  PASS  truncation flag set at max_new_tokens
+smoke self-check on the stub
+  PASS  smoke passes a clean generator
+  PASS  smoke stops on template leakage
+  PASS  smoke stops on empty answers
+effect: need form lowers that need's violations only
+  PASS  every need PASSES on every model
+  PASS  specificity claimed for every need
+  PASS  label benefit (+0.35 injected) claimed in at least 14 of 15 cells  (15 of 15; )
+  PASS  over-application NOT claimed
+  PASS  floors do not move  (0 of 15 moved)
+  PASS  decision CONTINUE
+  PASS  rates near the injected truth (none 0.40, need 0.95)  (none 0.42, need 0.93)
+null: nothing depends on the lead-in
+  PASS  no need passes on any model
+  PASS  at least 13 of 15 cells read as NULL, not merely unclaimed  (13 of 15)
+  PASS  at most one false claim across 60 contrasts  (0)
+  PASS  decision STOP
+any person: every lead-in lowers violations equally
+  PASS  benefit not claimed anywhere
+  PASS  floor MOVES for every need on every model  (15 of 15)
+  PASS  decision STOP
+over-application: any need form lowers every need
+  PASS  need benefit claimed (it is real against neutral)
+  PASS  specificity NOT claimed
+  PASS  over-application claimed for every need
+headroom: a need always delivered in none
+  PASS  deaf is UNMEASURABLE on every model
+  PASS  the other needs still PASS
+near the margin: NULL means a benefit of 0.20 or more is excluded
+  PASS  a real +0.25, above the margin, is never called NULL  (15 pass, 0 inconclusive)
+    real +0.15, below the margin: 10 pass, 1 inconclusive, 4 null (any of these is a correct read at this size)
+  PASS  a real +0.15 does not lead to STOP  (CONTINUE)
+power of the gate at n=120 (p0 = 0.40, claim rule at 0.01)
+    delta 0.10: power 0.17
+    delta 0.15: power 0.61
+    delta 0.20: power 0.93
+    delta 0.25: power 0.97
+    delta 0.30: power 1.00
+  PASS  power at least 0.80 for a 0.20 difference in delivery  (0.93)
+==============================================================================
+46 passed, 0 failed

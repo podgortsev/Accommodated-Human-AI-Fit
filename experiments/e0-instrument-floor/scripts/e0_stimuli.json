@@ -1,0 +1,600 @@
+{
+ "questions": [
+  {
+   "item_id": "q01",
+   "question": "How do I replace a lost passport before a trip abroad next month?"
+  },
+  {
+   "item_id": "q02",
+   "question": "My debit card was stolen. How do I block it and get a new one?"
+  },
+  {
+   "item_id": "q03",
+   "question": "How do I register with a new GP surgery after moving house?"
+  },
+  {
+   "item_id": "q04",
+   "question": "How do I renew my driving licence and update the photo?"
+  },
+  {
+   "item_id": "q05",
+   "question": "How do I set up online banking for the first time and get into my account?"
+  },
+  {
+   "item_id": "q06",
+   "question": "How do I dispute a wrong charge on my electricity bill?"
+  },
+  {
+   "item_id": "q07",
+   "question": "How do I get a refund for a cancelled train journey?"
+  },
+  {
+   "item_id": "q08",
+   "question": "How do I apply for a library card and borrow e-books?"
+  },
+  {
+   "item_id": "q09",
+   "question": "How do I report a broken streetlight outside my home to the council?"
+  },
+  {
+   "item_id": "q10",
+   "question": "How do I book a flu vaccination at a local pharmacy?"
+  },
+  {
+   "item_id": "q11",
+   "question": "How do I change the address on my bank account and my voter registration?"
+  },
+  {
+   "item_id": "q12",
+   "question": "How do I open a basic savings account at a high-street bank?"
+  },
+  {
+   "item_id": "q13",
+   "question": "How do I get a replacement birth certificate?"
+  },
+  {
+   "item_id": "q14",
+   "question": "How do I return a faulty laptop I bought in a shop last week?"
+  },
+  {
+   "item_id": "q15",
+   "question": "How do I set up a new smartphone and move my contacts from the old one?"
+  },
+  {
+   "item_id": "q16",
+   "question": "How do I apply for a parking permit for my street?"
+  },
+  {
+   "item_id": "q17",
+   "question": "How do I claim for lost luggage after a flight?"
+  },
+  {
+   "item_id": "q18",
+   "question": "How do I register to vote and find my polling station?"
+  },
+  {
+   "item_id": "q19",
+   "question": "How do I book a dental check-up with a new dentist?"
+  },
+  {
+   "item_id": "q20",
+   "question": "How do I apply for a council tax reduction?"
+  },
+  {
+   "item_id": "q21",
+   "question": "How do I set up a direct debit to pay my rent?"
+  },
+  {
+   "item_id": "q22",
+   "question": "How do I get my prescription moved to a different pharmacy?"
+  },
+  {
+   "item_id": "q23",
+   "question": "How do I cancel a gym membership that keeps charging me?"
+  },
+  {
+   "item_id": "q24",
+   "question": "How do I get a new SIM card and keep my phone number?"
+  },
+  {
+   "item_id": "q25",
+   "question": "How do I apply for a job at a local supermarket?"
+  },
+  {
+   "item_id": "q26",
+   "question": "How do I report a missed bin collection?"
+  },
+  {
+   "item_id": "q27",
+   "question": "How do I pick up a parcel that the courier took back to the depot?"
+  },
+  {
+   "item_id": "q28",
+   "question": "How do I set up a home Wi-Fi router and connect my devices?"
+  },
+  {
+   "item_id": "q29",
+   "question": "How do I apply for a travel pass for the local buses?"
+  },
+  {
+   "item_id": "q30",
+   "question": "How do I get a copy of my medical records?"
+  },
+  {
+   "item_id": "q31",
+   "question": "How do I make an insurance claim after a burst pipe flooded my kitchen?"
+  },
+  {
+   "item_id": "q32",
+   "question": "How do I enrol my child in a new primary school?"
+  },
+  {
+   "item_id": "q33",
+   "question": "How do I rebook a hospital outpatient appointment that I missed?"
+  },
+  {
+   "item_id": "q34",
+   "question": "How do I replace a lost house key when I rent through a letting agency?"
+  },
+  {
+   "item_id": "q35",
+   "question": "How do I send money abroad to a relative safely?"
+  },
+  {
+   "item_id": "q36",
+   "question": "How do I apply for a mortgage agreement in principle?"
+  },
+  {
+   "item_id": "q37",
+   "question": "How do I get my car through its annual inspection?"
+  },
+  {
+   "item_id": "q38",
+   "question": "How do I sign up for an evening course at the local college?"
+  },
+  {
+   "item_id": "q39",
+   "question": "How do I report a pothole that damaged my car and claim compensation?"
+  },
+  {
+   "item_id": "q40",
+   "question": "How do I get a refund for concert tickets when the event is postponed?"
+  },
+  {
+   "item_id": "q41",
+   "question": "How do I switch energy supplier?"
+  },
+  {
+   "item_id": "q42",
+   "question": "How do I open a business bank account as a sole trader?"
+  },
+  {
+   "item_id": "q43",
+   "question": "How do I update my tax code if I think it is wrong?"
+  },
+  {
+   "item_id": "q44",
+   "question": "How do I get a permit to use the local recycling centre?"
+  },
+  {
+   "item_id": "q45",
+   "question": "How do I get my deposit back from my former landlord?"
+  },
+  {
+   "item_id": "q46",
+   "question": "How do I book a table and pay a deposit at a restaurant for a large group?"
+  },
+  {
+   "item_id": "q47",
+   "question": "How do I replace a lost national insurance number letter?"
+  },
+  {
+   "item_id": "q48",
+   "question": "How do I arrange a viewing for a flat I want to rent?"
+  },
+  {
+   "item_id": "q49",
+   "question": "How do I get a new PIN for my debit card if I have forgotten it?"
+  },
+  {
+   "item_id": "q50",
+   "question": "How do I use a self-service checkout, and what do I do if it gets stuck?"
+  },
+  {
+   "item_id": "q51",
+   "question": "How do I apply for a passport for my baby?"
+  },
+  {
+   "item_id": "q52",
+   "question": "How do I complain about a delayed flight and get compensation?"
+  },
+  {
+   "item_id": "q53",
+   "question": "How do I renew my home insurance and compare quotes?"
+  },
+  {
+   "item_id": "q54",
+   "question": "How do I set up a video appointment with my doctor?"
+  },
+  {
+   "item_id": "q55",
+   "question": "How do I collect a recorded delivery letter from the post office?"
+  },
+  {
+   "item_id": "q56",
+   "question": "How do I register the birth of my child?"
+  },
+  {
+   "item_id": "q57",
+   "question": "How do I reset my online banking password when I am locked out?"
+  },
+  {
+   "item_id": "q58",
+   "question": "How do I book a driving test?"
+  },
+  {
+   "item_id": "q59",
+   "question": "How do I pay a parking fine or appeal against it?"
+  },
+  {
+   "item_id": "q60",
+   "question": "How do I set up a new email account and use it to sign up for services?"
+  },
+  {
+   "item_id": "q61",
+   "question": "How do I replace a bus pass that has stopped working?"
+  },
+  {
+   "item_id": "q62",
+   "question": "How do I get a smart meter fitted for my electricity?"
+  },
+  {
+   "item_id": "q63",
+   "question": "How do I get a refund for a faulty item I bought online?"
+  },
+  {
+   "item_id": "q64",
+   "question": "How do I book a blood test at my local surgery?"
+  },
+  {
+   "item_id": "q65",
+   "question": "How do I renew my car tax?"
+  },
+  {
+   "item_id": "q66",
+   "question": "How do I close a bank account I no longer use?"
+  },
+  {
+   "item_id": "q67",
+   "question": "How do I apply for a student loan?"
+  },
+  {
+   "item_id": "q68",
+   "question": "How do I move money between two of my bank accounts?"
+  },
+  {
+   "item_id": "q69",
+   "question": "How do I get a new bin from the council after mine was damaged?"
+  },
+  {
+   "item_id": "q70",
+   "question": "How do I set up a standing order for a monthly payment?"
+  },
+  {
+   "item_id": "q71",
+   "question": "How do I get a criminal record check for a new job?"
+  },
+  {
+   "item_id": "q72",
+   "question": "How do I add someone as a named driver on my car insurance?"
+  },
+  {
+   "item_id": "q73",
+   "question": "How do I report a lost phone and block the SIM?"
+  },
+  {
+   "item_id": "q74",
+   "question": "How do I book an appointment at the job centre?"
+  },
+  {
+   "item_id": "q75",
+   "question": "How do I get a TV licence?"
+  },
+  {
+   "item_id": "q76",
+   "question": "How do I claim a tax refund for work expenses?"
+  },
+  {
+   "item_id": "q77",
+   "question": "How do I report a noisy neighbour to the council?"
+  },
+  {
+   "item_id": "q78",
+   "question": "How do I adopt a cat from an animal shelter?"
+  },
+  {
+   "item_id": "q79",
+   "question": "How do I change my name on my bank account after getting married?"
+  },
+  {
+   "item_id": "q80",
+   "question": "How do I apply for a visa to visit another country on holiday?"
+  },
+  {
+   "item_id": "q81",
+   "question": "How do I register a second-hand car I have just bought?"
+  },
+  {
+   "item_id": "q82",
+   "question": "How do I sign up for an online GP account to order repeat prescriptions?"
+  },
+  {
+   "item_id": "q83",
+   "question": "How do I pay my council tax in monthly instalments?"
+  },
+  {
+   "item_id": "q84",
+   "question": "How do I get a replacement railcard?"
+  },
+  {
+   "item_id": "q85",
+   "question": "How do I join a local sports club?"
+  },
+  {
+   "item_id": "q86",
+   "question": "How do I book a hotel room and check in when I arrive?"
+  },
+  {
+   "item_id": "q87",
+   "question": "How do I apply for housing benefit?"
+  },
+  {
+   "item_id": "q88",
+   "question": "How do I report a faulty boiler to my landlord?"
+  },
+  {
+   "item_id": "q89",
+   "question": "How do I pay in a cheque?"
+  },
+  {
+   "item_id": "q90",
+   "question": "How do I set up a new mobile phone contract in a shop?"
+  },
+  {
+   "item_id": "q91",
+   "question": "How do I get a copy of my old exam certificates?"
+  },
+  {
+   "item_id": "q92",
+   "question": "How do I volunteer at a local food bank?"
+  },
+  {
+   "item_id": "q93",
+   "question": "How do I book a flight and choose my seat?"
+  },
+  {
+   "item_id": "q94",
+   "question": "How do I change the delivery date for an online order?"
+  },
+  {
+   "item_id": "q95",
+   "question": "How do I get my credit report and fix an error on it?"
+  },
+  {
+   "item_id": "q96",
+   "question": "How do I get help with a debt I cannot pay?"
+  },
+  {
+   "item_id": "q97",
+   "question": "How do I get a replacement marriage certificate?"
+  },
+  {
+   "item_id": "q98",
+   "question": "How do I ask for a transfer to another branch of my employer?"
+  },
+  {
+   "item_id": "q99",
+   "question": "How do I set up two-factor authentication on my email account?"
+  },
+  {
+   "item_id": "q100",
+   "question": "How do I apply for a school bus pass for my child?"
+  },
+  {
+   "item_id": "q101",
+   "question": "How do I get an appointment with a solicitor to make a will?"
+  },
+  {
+   "item_id": "q102",
+   "question": "How do I report a scam text message to my bank?"
+  },
+  {
+   "item_id": "q103",
+   "question": "How do I hire a car for a weekend?"
+  },
+  {
+   "item_id": "q104",
+   "question": "How do I return a library book that is overdue?"
+  },
+  {
+   "item_id": "q105",
+   "question": "How do I get a same-day appointment with my GP?"
+  },
+  {
+   "item_id": "q106",
+   "question": "How do I set up a savings account for my child?"
+  },
+  {
+   "item_id": "q107",
+   "question": "How do I get a health insurance card for travelling abroad?"
+  },
+  {
+   "item_id": "q108",
+   "question": "How do I ask a supermarket to price match?"
+  },
+  {
+   "item_id": "q109",
+   "question": "How do I apply for a permit to work abroad?"
+  },
+  {
+   "item_id": "q110",
+   "question": "How do I claim on my travel insurance after falling ill on holiday?"
+  },
+  {
+   "item_id": "q111",
+   "question": "How do I get a bank statement for a mortgage application?"
+  },
+  {
+   "item_id": "q112",
+   "question": "How do I report a burst water main in the street?"
+  },
+  {
+   "item_id": "q113",
+   "question": "How do I get my broadband fixed when it keeps dropping?"
+  },
+  {
+   "item_id": "q114",
+   "question": "How do I apply for a grant to insulate my home?"
+  },
+  {
+   "item_id": "q115",
+   "question": "How do I arrange a home visit from an electrician?"
+  },
+  {
+   "item_id": "q116",
+   "question": "How do I change the date of a hospital appointment?"
+  },
+  {
+   "item_id": "q117",
+   "question": "How do I pay for parking with a phone app?"
+  },
+  {
+   "item_id": "q118",
+   "question": "How do I open a joint bank account with my partner?"
+  },
+  {
+   "item_id": "q119",
+   "question": "How do I ask my lender for a mortgage payment holiday?"
+  },
+  {
+   "item_id": "q120",
+   "question": "How do I buy a train ticket at the station and find my platform?"
+  }
+ ],
+ "cells": [
+  {
+   "cell_id": "none",
+   "family": "none",
+   "key": "",
+   "lead_in": ""
+  },
+  {
+   "cell_id": "need:screen_reader",
+   "family": "need",
+   "key": "screen_reader",
+   "lead_in": "Your answers are read aloud to me by software, so write for listening, not for looking."
+  },
+  {
+   "cell_id": "need:no_vision",
+   "family": "need",
+   "key": "no_vision",
+   "lead_in": "I cannot see anything on screens, so describe things in a way that needs no sight."
+  },
+  {
+   "cell_id": "need:deaf",
+   "family": "need",
+   "key": "deaf",
+   "lead_in": "I cannot hear, so any step that needs sound or speaking will not work for me."
+  },
+  {
+   "cell_id": "need:plain_language",
+   "family": "need",
+   "key": "plain_language",
+   "lead_in": "Reading is slow and hard for me, so I need things explained as simply as possible."
+  },
+  {
+   "cell_id": "need:wheelchair",
+   "family": "need",
+   "key": "wheelchair",
+   "lead_in": "I cannot walk or use stairs, so any step needing walking or stairs will not work."
+  },
+  {
+   "cell_id": "label:screen_reader",
+   "family": "label",
+   "key": "screen_reader",
+   "lead_in": "I use a screen reader."
+  },
+  {
+   "cell_id": "label:no_vision",
+   "family": "label",
+   "key": "no_vision",
+   "lead_in": "I am blind, for context."
+  },
+  {
+   "cell_id": "label:deaf",
+   "family": "label",
+   "key": "deaf",
+   "lead_in": "I am Deaf, for context."
+  },
+  {
+   "cell_id": "label:plain_language",
+   "family": "label",
+   "key": "plain_language",
+   "lead_in": "I have a learning disability."
+  },
+  {
+   "cell_id": "label:wheelchair",
+   "family": "label",
+   "key": "wheelchair",
+   "lead_in": "I am a wheelchair user."
+  },
+  {
+   "cell_id": "neutral_long:bread",
+   "family": "neutral_long",
+   "key": "bread",
+   "lead_in": "I bake bread most Saturday mornings, and I have been doing that for about ten years."
+  },
+  {
+   "cell_id": "neutral_long:coast",
+   "family": "neutral_long",
+   "key": "coast",
+   "lead_in": "I live in a small flat near the coast, and I moved here with my sister."
+  },
+  {
+   "cell_id": "neutral_long:brothers",
+   "family": "neutral_long",
+   "key": "brothers",
+   "lead_in": "I have two older brothers, and we meet for dinner at my parents' house every Sunday."
+  },
+  {
+   "cell_id": "neutral_short:bread",
+   "family": "neutral_short",
+   "key": "bread",
+   "lead_in": "I bake bread on Saturdays."
+  },
+  {
+   "cell_id": "neutral_short:coast",
+   "family": "neutral_short",
+   "key": "coast",
+   "lead_in": "I live near the coast."
+  },
+  {
+   "cell_id": "neutral_short:brothers",
+   "family": "neutral_short",
+   "key": "brothers",
+   "lead_in": "I have two older brothers."
+  }
+ ],
+ "needs": [
+  "screen_reader",
+  "no_vision",
+  "deaf",
+  "plain_language",
+  "wheelchair"
+ ],
+ "neutral_details": [
+  "bread",
+  "coast",
+  "brothers"
+ ]
+}
