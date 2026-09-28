@@ -33,11 +33,17 @@ Nothing collected yet.
 
 ## Blocked
 
-- nothing
+- e0 needs a GPU. The local card is committed to Paper 8's Beck grids until the
+  October freeze (Diaz formats 1 and 2, then Diverse Perspectives), so e0 runs in
+  Colab: three notebooks, one per model, in parallel. Bundle and notebooks are
+  built and current, `colab/p4_e0.zip` in the research repository, validator
+  46 passed 0 failed at build time.
 
 ## Next
 
-1. Run e0 on all three models: `colab/run_p4_e0_<model>.ipynb`, bundle `colab/p4_e0.zip`.
+1. Run e0 on all three models in parallel: upload `colab/p4_e0.zip` to
+   `MyDrive/afl/`, then `colab/run_p4_e0_qwen.ipynb` and the other two. Each
+   notebook runs its own smoke check first and writes a resumable CSV.
 2. `analyse_e0.py` on the three CSVs together gives CONTINUE, EXTEND or STOP.
 3. On CONTINUE: rank Paper 4, then the full menu (penalty on the same response, turns with the CONCAT control, "declines to say").
 
