@@ -1,0 +1,1025 @@
+{
+ "questions": [
+  {
+   "item_id": "sc01",
+   "pool": "screen_reader",
+   "question": "Compare the three main types of mortgage for me."
+  },
+  {
+   "item_id": "sc02",
+   "pool": "screen_reader",
+   "question": "Make me a weekly cleaning schedule for a two-bedroom flat."
+  },
+  {
+   "item_id": "sc03",
+   "pool": "screen_reader",
+   "question": "What are the pros and cons of electric, hybrid and petrol cars?"
+  },
+  {
+   "item_id": "sc04",
+   "pool": "screen_reader",
+   "question": "Give me a monthly budget template for a family of four."
+  },
+  {
+   "item_id": "sc05",
+   "pool": "screen_reader",
+   "question": "Compare the main mobile phone networks on price and coverage."
+  },
+  {
+   "item_id": "sc06",
+   "pool": "screen_reader",
+   "question": "Plan a seven-day meal plan for a vegetarian."
+  },
+  {
+   "item_id": "sc07",
+   "pool": "screen_reader",
+   "question": "What is the difference between an ISA, a pension and a savings account?"
+  },
+  {
+   "item_id": "sc08",
+   "pool": "screen_reader",
+   "question": "Create a packing list for a week-long beach holiday."
+  },
+  {
+   "item_id": "sc09",
+   "pool": "screen_reader",
+   "question": "Compare renting and buying a home."
+  },
+  {
+   "item_id": "sc10",
+   "pool": "screen_reader",
+   "question": "Make a timetable for revising for five exams over two weeks."
+  },
+  {
+   "item_id": "sc11",
+   "pool": "screen_reader",
+   "question": "Compare the main streaming services and what they cost."
+  },
+  {
+   "item_id": "sc12",
+   "pool": "screen_reader",
+   "question": "Give me a checklist for moving house."
+  },
+  {
+   "item_id": "sc13",
+   "pool": "screen_reader",
+   "question": "What are the differences between the main types of pension?"
+  },
+  {
+   "item_id": "sc14",
+   "pool": "screen_reader",
+   "question": "Compare gas, electric and induction hobs."
+  },
+  {
+   "item_id": "sc15",
+   "pool": "screen_reader",
+   "question": "Plan a four-week beginner running programme."
+  },
+  {
+   "item_id": "sc16",
+   "pool": "screen_reader",
+   "question": "Compare travelling from London to Edinburgh by train, plane and car."
+  },
+  {
+   "item_id": "sc17",
+   "pool": "screen_reader",
+   "question": "Make a weekly schedule for a family with two school-age children."
+  },
+  {
+   "item_id": "sc18",
+   "pool": "screen_reader",
+   "question": "Compare the main types of home insurance cover."
+  },
+  {
+   "item_id": "sc19",
+   "pool": "screen_reader",
+   "question": "What are the pros and cons of the main broadband types?"
+  },
+  {
+   "item_id": "sc20",
+   "pool": "screen_reader",
+   "question": "Give me a shopping list for a week of healthy lunches."
+  },
+  {
+   "item_id": "sc21",
+   "pool": "screen_reader",
+   "question": "Compare a credit card, a debit card and a prepaid card."
+  },
+  {
+   "item_id": "sc22",
+   "pool": "screen_reader",
+   "question": "Plan a three-day itinerary for a first visit to Paris."
+  },
+  {
+   "item_id": "sc23",
+   "pool": "screen_reader",
+   "question": "Compare the costs of owning a cat and owning a dog."
+  },
+  {
+   "item_id": "sc24",
+   "pool": "screen_reader",
+   "question": "Make a chore chart for three children of different ages."
+  },
+  {
+   "item_id": "sc25",
+   "pool": "screen_reader",
+   "question": "Compare the main types of heating for a home."
+  },
+  {
+   "item_id": "sc26",
+   "pool": "screen_reader",
+   "question": "What are the differences between the common types of loan?"
+  },
+  {
+   "item_id": "sc27",
+   "pool": "screen_reader",
+   "question": "Give me a wedding planning timeline for the twelve months before the day."
+  },
+  {
+   "item_id": "sc28",
+   "pool": "screen_reader",
+   "question": "Compare laptops, tablets and desktop computers for a student."
+  },
+  {
+   "item_id": "sc29",
+   "pool": "screen_reader",
+   "question": "Plan a weekly gym routine for someone who can train three days a week."
+  },
+  {
+   "item_id": "sc30",
+   "pool": "screen_reader",
+   "question": "Compare fixed-rate and variable-rate energy tariffs."
+  },
+  {
+   "item_id": "sc31",
+   "pool": "screen_reader",
+   "question": "Make me a daily routine for working from home."
+  },
+  {
+   "item_id": "sc32",
+   "pool": "screen_reader",
+   "question": "What are the pros and cons of the main ways to learn a language?"
+  },
+  {
+   "item_id": "sc33",
+   "pool": "screen_reader",
+   "question": "Compare the main types of car insurance."
+  },
+  {
+   "item_id": "sc34",
+   "pool": "screen_reader",
+   "question": "Give me a checklist for preparing a house for sale."
+  },
+  {
+   "item_id": "sc35",
+   "pool": "screen_reader",
+   "question": "Compare buying a new car, a used car and leasing one."
+  },
+  {
+   "item_id": "sc36",
+   "pool": "screen_reader",
+   "question": "Plan a garden planting calendar for a year."
+  },
+  {
+   "item_id": "sc37",
+   "pool": "screen_reader",
+   "question": "Compare the main types of savings account."
+  },
+  {
+   "item_id": "sc38",
+   "pool": "screen_reader",
+   "question": "Make a baby feeding and sleep schedule for a three-month-old."
+  },
+  {
+   "item_id": "sc39",
+   "pool": "screen_reader",
+   "question": "What are the differences between the main types of coffee machine?"
+  },
+  {
+   "item_id": "sc40",
+   "pool": "screen_reader",
+   "question": "Give me a Christmas planning checklist with dates."
+  },
+  {
+   "item_id": "sc41",
+   "pool": "screen_reader",
+   "question": "Compare the main ways to send money abroad."
+  },
+  {
+   "item_id": "sc42",
+   "pool": "screen_reader",
+   "question": "Plan a budget for a two-week holiday in Spain."
+  },
+  {
+   "item_id": "sc43",
+   "pool": "screen_reader",
+   "question": "Compare the main online grocery delivery services."
+  },
+  {
+   "item_id": "sc44",
+   "pool": "screen_reader",
+   "question": "Make a weekly study plan for learning to code."
+  },
+  {
+   "item_id": "sc45",
+   "pool": "screen_reader",
+   "question": "Compare contact lenses, glasses and laser eye surgery."
+  },
+  {
+   "item_id": "sc46",
+   "pool": "screen_reader",
+   "question": "What are the pros and cons of the main smartphone brands?"
+  },
+  {
+   "item_id": "sc47",
+   "pool": "screen_reader",
+   "question": "Give me a checklist for a new puppy's first month."
+  },
+  {
+   "item_id": "sc48",
+   "pool": "screen_reader",
+   "question": "Compare the main types of mattress."
+  },
+  {
+   "item_id": "sc49",
+   "pool": "screen_reader",
+   "question": "Plan a children's birthday party for ten guests."
+  },
+  {
+   "item_id": "sc50",
+   "pool": "screen_reader",
+   "question": "Compare working as an employee, a contractor and a freelancer."
+  },
+  {
+   "item_id": "sc51",
+   "pool": "screen_reader",
+   "question": "Make a meal prep plan for a busy week."
+  },
+  {
+   "item_id": "sc52",
+   "pool": "screen_reader",
+   "question": "What are the differences between the main types of bicycle?"
+  },
+  {
+   "item_id": "sc53",
+   "pool": "screen_reader",
+   "question": "Give me a daily hydration and snack plan for a hiking trip."
+  },
+  {
+   "item_id": "sc54",
+   "pool": "screen_reader",
+   "question": "Compare the main ways to pay off debt."
+  },
+  {
+   "item_id": "sc55",
+   "pool": "screen_reader",
+   "question": "Plan a week of activities for children during the school holidays."
+  },
+  {
+   "item_id": "sc56",
+   "pool": "screen_reader",
+   "question": "Compare the main types of washing machine."
+  },
+  {
+   "item_id": "sc57",
+   "pool": "screen_reader",
+   "question": "Make a reading plan to get through twelve books in a year."
+  },
+  {
+   "item_id": "sc58",
+   "pool": "screen_reader",
+   "question": "Compare public, private and online schools."
+  },
+  {
+   "item_id": "sc59",
+   "pool": "screen_reader",
+   "question": "Give me a checklist for starting a small business."
+  },
+  {
+   "item_id": "sc60",
+   "pool": "screen_reader",
+   "question": "Compare the main video calling apps."
+  },
+  {
+   "item_id": "no01",
+   "pool": "no_vision",
+   "question": "How do I turn on dark mode on my phone?"
+  },
+  {
+   "item_id": "no02",
+   "pool": "no_vision",
+   "question": "How do I find the Wi-Fi password on my router?"
+  },
+  {
+   "item_id": "no03",
+   "pool": "no_vision",
+   "question": "How do I change the time on my oven clock?"
+  },
+  {
+   "item_id": "no04",
+   "pool": "no_vision",
+   "question": "How do I read the display on my electricity meter?"
+  },
+  {
+   "item_id": "no05",
+   "pool": "no_vision",
+   "question": "How do I tell if my smoke alarm battery is low?"
+  },
+  {
+   "item_id": "no06",
+   "pool": "no_vision",
+   "question": "How do I use a parking ticket machine?"
+  },
+  {
+   "item_id": "no07",
+   "pool": "no_vision",
+   "question": "How do I set the temperature on my thermostat?"
+  },
+  {
+   "item_id": "no08",
+   "pool": "no_vision",
+   "question": "How do I pick a ripe avocado in the shop?"
+  },
+  {
+   "item_id": "no09",
+   "pool": "no_vision",
+   "question": "How do I check my car's tyre pressure at a petrol station?"
+  },
+  {
+   "item_id": "no10",
+   "pool": "no_vision",
+   "question": "How do I use the ticket gates at a train station?"
+  },
+  {
+   "item_id": "no11",
+   "pool": "no_vision",
+   "question": "How do I find the settings menu in Microsoft Word?"
+  },
+  {
+   "item_id": "no12",
+   "pool": "no_vision",
+   "question": "How do I tell if the dishwasher has finished?"
+  },
+  {
+   "item_id": "no13",
+   "pool": "no_vision",
+   "question": "How do I change the input on my TV to the games console?"
+  },
+  {
+   "item_id": "no14",
+   "pool": "no_vision",
+   "question": "How do I know when my phone is fully charged?"
+  },
+  {
+   "item_id": "no15",
+   "pool": "no_vision",
+   "question": "How do I use a cash machine to check my balance?"
+  },
+  {
+   "item_id": "no16",
+   "pool": "no_vision",
+   "question": "How do I set an alarm on my microwave?"
+  },
+  {
+   "item_id": "no17",
+   "pool": "no_vision",
+   "question": "How do I find where to plug headphones into my laptop?"
+  },
+  {
+   "item_id": "no18",
+   "pool": "no_vision",
+   "question": "How do I tell if my printer is out of ink?"
+  },
+  {
+   "item_id": "no19",
+   "pool": "no_vision",
+   "question": "How do I use the self-service kiosk to order at a fast food restaurant?"
+  },
+  {
+   "item_id": "no20",
+   "pool": "no_vision",
+   "question": "How do I mute myself on a Zoom call?"
+  },
+  {
+   "item_id": "no21",
+   "pool": "no_vision",
+   "question": "How do I turn on subtitles on Netflix?"
+  },
+  {
+   "item_id": "no22",
+   "pool": "no_vision",
+   "question": "How do I read a bus timetable at the bus stop?"
+  },
+  {
+   "item_id": "no23",
+   "pool": "no_vision",
+   "question": "How do I take a screenshot on my computer?"
+  },
+  {
+   "item_id": "no24",
+   "pool": "no_vision",
+   "question": "How do I tell if my steak is cooked through?"
+  },
+  {
+   "item_id": "no25",
+   "pool": "no_vision",
+   "question": "How do I find a file I downloaded on my computer?"
+  },
+  {
+   "item_id": "no26",
+   "pool": "no_vision",
+   "question": "How do I use a card reader to pay in a shop?"
+  },
+  {
+   "item_id": "no27",
+   "pool": "no_vision",
+   "question": "How do I reset my router?"
+  },
+  {
+   "item_id": "no28",
+   "pool": "no_vision",
+   "question": "How do I set up the timer on my washing machine?"
+  },
+  {
+   "item_id": "no29",
+   "pool": "no_vision",
+   "question": "How do I tell if the milk in my fridge has gone off?"
+  },
+  {
+   "item_id": "no30",
+   "pool": "no_vision",
+   "question": "How do I change my WhatsApp profile picture?"
+  },
+  {
+   "item_id": "no31",
+   "pool": "no_vision",
+   "question": "How do I use the lift buttons in a large office building?"
+  },
+  {
+   "item_id": "no32",
+   "pool": "no_vision",
+   "question": "How do I check the oil level in my car?"
+  },
+  {
+   "item_id": "no33",
+   "pool": "no_vision",
+   "question": "How do I switch my car's headlights on?"
+  },
+  {
+   "item_id": "no34",
+   "pool": "no_vision",
+   "question": "How do I pause a video on YouTube?"
+  },
+  {
+   "item_id": "no35",
+   "pool": "no_vision",
+   "question": "How do I tell if the traffic light at a crossing lets me cross?"
+  },
+  {
+   "item_id": "no36",
+   "pool": "no_vision",
+   "question": "How do I pair my Bluetooth headphones with my phone?"
+  },
+  {
+   "item_id": "no37",
+   "pool": "no_vision",
+   "question": "How do I find the recycling bins at a large supermarket?"
+  },
+  {
+   "item_id": "no38",
+   "pool": "no_vision",
+   "question": "How do I tell which setting my hair dryer is on?"
+  },
+  {
+   "item_id": "no39",
+   "pool": "no_vision",
+   "question": "How do I sign a PDF document on my computer?"
+  },
+  {
+   "item_id": "no40",
+   "pool": "no_vision",
+   "question": "How do I use the self-checkout at a library to return books?"
+  },
+  {
+   "item_id": "no41",
+   "pool": "no_vision",
+   "question": "How do I check the battery level on my laptop?"
+  },
+  {
+   "item_id": "no42",
+   "pool": "no_vision",
+   "question": "How do I tell if a banana is ripe enough to eat?"
+  },
+  {
+   "item_id": "no43",
+   "pool": "no_vision",
+   "question": "How do I turn on the flashlight on my phone?"
+  },
+  {
+   "item_id": "no44",
+   "pool": "no_vision",
+   "question": "How do I use the touch screen at a GP surgery to check in?"
+  },
+  {
+   "item_id": "no45",
+   "pool": "no_vision",
+   "question": "How do I find the emergency exit in a cinema?"
+  },
+  {
+   "item_id": "no46",
+   "pool": "no_vision",
+   "question": "How do I tell if my plants need watering?"
+  },
+  {
+   "item_id": "no47",
+   "pool": "no_vision",
+   "question": "How do I use the air conditioning controls in a hire car?"
+  },
+  {
+   "item_id": "no48",
+   "pool": "no_vision",
+   "question": "How do I tell if my toast is done without burning it?"
+  },
+  {
+   "item_id": "no49",
+   "pool": "no_vision",
+   "question": "How do I find the unsubscribe link in a marketing email?"
+  },
+  {
+   "item_id": "no50",
+   "pool": "no_vision",
+   "question": "How do I use an online map to find a restaurant near me?"
+  },
+  {
+   "item_id": "no51",
+   "pool": "no_vision",
+   "question": "How do I turn on the hazard lights in my car?"
+  },
+  {
+   "item_id": "no52",
+   "pool": "no_vision",
+   "question": "How do I tell if a website is secure before paying?"
+  },
+  {
+   "item_id": "no53",
+   "pool": "no_vision",
+   "question": "How do I use the ticket machine at a railway station?"
+  },
+  {
+   "item_id": "no54",
+   "pool": "no_vision",
+   "question": "How do I change the language on my smart TV?"
+  },
+  {
+   "item_id": "no55",
+   "pool": "no_vision",
+   "question": "How do I tell when my kettle has boiled?"
+  },
+  {
+   "item_id": "no56",
+   "pool": "no_vision",
+   "question": "How do I use the buttons on a hotel room key card door?"
+  },
+  {
+   "item_id": "no57",
+   "pool": "no_vision",
+   "question": "How do I find my boarding gate on the airport departure screens?"
+  },
+  {
+   "item_id": "no58",
+   "pool": "no_vision",
+   "question": "How do I tell if my car needs new windscreen wipers?"
+  },
+  {
+   "item_id": "no59",
+   "pool": "no_vision",
+   "question": "How do I rotate a photo on my phone?"
+  },
+  {
+   "item_id": "no60",
+   "pool": "no_vision",
+   "question": "How do I check my internet speed?"
+  },
+  {
+   "item_id": "wh01",
+   "pool": "wheelchair",
+   "question": "How do I get from King's Cross station to the British Museum?"
+  },
+  {
+   "item_id": "wh02",
+   "pool": "wheelchair",
+   "question": "What is the best way to explore Edinburgh's old town in a day?"
+  },
+  {
+   "item_id": "wh03",
+   "pool": "wheelchair",
+   "question": "How do I get to my gate at a large airport?"
+  },
+  {
+   "item_id": "wh04",
+   "pool": "wheelchair",
+   "question": "Plan a day out at the seaside for me."
+  },
+  {
+   "item_id": "wh05",
+   "pool": "wheelchair",
+   "question": "How do I get to the top of the Eiffel Tower?"
+  },
+  {
+   "item_id": "wh06",
+   "pool": "wheelchair",
+   "question": "How do I visit Stonehenge?"
+  },
+  {
+   "item_id": "wh07",
+   "pool": "wheelchair",
+   "question": "What should I see on a weekend in Rome?"
+  },
+  {
+   "item_id": "wh08",
+   "pool": "wheelchair",
+   "question": "How do I use the London Underground for the first time?"
+  },
+  {
+   "item_id": "wh09",
+   "pool": "wheelchair",
+   "question": "How do I get to my seat at a football stadium?"
+  },
+  {
+   "item_id": "wh10",
+   "pool": "wheelchair",
+   "question": "How do I find my way around a big hospital?"
+  },
+  {
+   "item_id": "wh11",
+   "pool": "wheelchair",
+   "question": "Plan a day trip to Bath for me."
+  },
+  {
+   "item_id": "wh12",
+   "pool": "wheelchair",
+   "question": "How do I get from the train station to my hotel in a new city?"
+  },
+  {
+   "item_id": "wh13",
+   "pool": "wheelchair",
+   "question": "What is the best way to see the sights in Amsterdam?"
+  },
+  {
+   "item_id": "wh14",
+   "pool": "wheelchair",
+   "question": "How do I visit the Tower of London?"
+  },
+  {
+   "item_id": "wh15",
+   "pool": "wheelchair",
+   "question": "Plan an afternoon at the zoo with my family."
+  },
+  {
+   "item_id": "wh16",
+   "pool": "wheelchair",
+   "question": "How do I get to a concert at a big arena?"
+  },
+  {
+   "item_id": "wh17",
+   "pool": "wheelchair",
+   "question": "How do I find a good spot to watch fireworks on New Year's Eve?"
+  },
+  {
+   "item_id": "wh18",
+   "pool": "wheelchair",
+   "question": "How do I get around a large shopping centre efficiently?"
+  },
+  {
+   "item_id": "wh19",
+   "pool": "wheelchair",
+   "question": "What is the best way to visit a Christmas market?"
+  },
+  {
+   "item_id": "wh20",
+   "pool": "wheelchair",
+   "question": "How do I get to the beach from the town centre in Brighton?"
+  },
+  {
+   "item_id": "wh21",
+   "pool": "wheelchair",
+   "question": "Plan a day at a theme park for me."
+  },
+  {
+   "item_id": "wh22",
+   "pool": "wheelchair",
+   "question": "How do I visit a castle in the countryside?"
+  },
+  {
+   "item_id": "wh23",
+   "pool": "wheelchair",
+   "question": "How do I get to the platform for my train at a big station?"
+  },
+  {
+   "item_id": "wh24",
+   "pool": "wheelchair",
+   "question": "What should I do on a day out in York?"
+  },
+  {
+   "item_id": "wh25",
+   "pool": "wheelchair",
+   "question": "How do I visit a national park for the first time?"
+  },
+  {
+   "item_id": "wh26",
+   "pool": "wheelchair",
+   "question": "How do I get to the viewing platform of a tall building?"
+  },
+  {
+   "item_id": "wh27",
+   "pool": "wheelchair",
+   "question": "Plan a romantic evening out in the city for me."
+  },
+  {
+   "item_id": "wh28",
+   "pool": "wheelchair",
+   "question": "How do I visit an art gallery and see the highlights?"
+  },
+  {
+   "item_id": "wh29",
+   "pool": "wheelchair",
+   "question": "How do I get to a wedding venue in the countryside?"
+  },
+  {
+   "item_id": "wh30",
+   "pool": "wheelchair",
+   "question": "What is the best way to explore Barcelona in two days?"
+  },
+  {
+   "item_id": "wh31",
+   "pool": "wheelchair",
+   "question": "How do I find my way from the car park to the terminal at an airport?"
+  },
+  {
+   "item_id": "wh32",
+   "pool": "wheelchair",
+   "question": "Plan a Sunday afternoon at a local park for me."
+  },
+  {
+   "item_id": "wh33",
+   "pool": "wheelchair",
+   "question": "How do I visit the Houses of Parliament?"
+  },
+  {
+   "item_id": "wh34",
+   "pool": "wheelchair",
+   "question": "How do I get to a festival site from the nearest station?"
+  },
+  {
+   "item_id": "wh35",
+   "pool": "wheelchair",
+   "question": "What should I see on a first visit to New York?"
+  },
+  {
+   "item_id": "wh36",
+   "pool": "wheelchair",
+   "question": "How do I visit a cathedral and climb to the top?"
+  },
+  {
+   "item_id": "wh37",
+   "pool": "wheelchair",
+   "question": "How do I get from the ferry port into the town?"
+  },
+  {
+   "item_id": "wh38",
+   "pool": "wheelchair",
+   "question": "Plan a trip to a botanical garden for me."
+  },
+  {
+   "item_id": "wh39",
+   "pool": "wheelchair",
+   "question": "How do I get to a university campus for an open day?"
+  },
+  {
+   "item_id": "wh40",
+   "pool": "wheelchair",
+   "question": "What is the best way to see Venice?"
+  },
+  {
+   "item_id": "wh41",
+   "pool": "wheelchair",
+   "question": "How do I get to the start of a river cruise?"
+  },
+  {
+   "item_id": "wh42",
+   "pool": "wheelchair",
+   "question": "Plan a day in the Lake District for me."
+  },
+  {
+   "item_id": "wh43",
+   "pool": "wheelchair",
+   "question": "How do I get around a museum with lots of floors?"
+  },
+  {
+   "item_id": "wh44",
+   "pool": "wheelchair",
+   "question": "How do I get to a theatre in the West End from Waterloo station?"
+  },
+  {
+   "item_id": "wh45",
+   "pool": "wheelchair",
+   "question": "What should I do on a weekend in Dublin?"
+  },
+  {
+   "item_id": "wh46",
+   "pool": "wheelchair",
+   "question": "How do I get to my cabin on a cruise ship?"
+  },
+  {
+   "item_id": "wh47",
+   "pool": "wheelchair",
+   "question": "Plan a visit to a historic house and its gardens for me."
+  },
+  {
+   "item_id": "wh48",
+   "pool": "wheelchair",
+   "question": "How do I visit a lighthouse on the coast?"
+  },
+  {
+   "item_id": "wh49",
+   "pool": "wheelchair",
+   "question": "How do I get to a job interview in an office building I have not been to?"
+  },
+  {
+   "item_id": "wh50",
+   "pool": "wheelchair",
+   "question": "What is the best way to explore Prague?"
+  },
+  {
+   "item_id": "wh51",
+   "pool": "wheelchair",
+   "question": "How do I get to a polling station on election day?"
+  },
+  {
+   "item_id": "wh52",
+   "pool": "wheelchair",
+   "question": "Plan a day out at a farm with animals for me."
+  },
+  {
+   "item_id": "wh53",
+   "pool": "wheelchair",
+   "question": "How do I get to a sports centre for a swimming lesson?"
+  },
+  {
+   "item_id": "wh54",
+   "pool": "wheelchair",
+   "question": "How do I visit a market in a busy city centre?"
+  },
+  {
+   "item_id": "wh55",
+   "pool": "wheelchair",
+   "question": "What should I see on a day in Oxford?"
+  },
+  {
+   "item_id": "wh56",
+   "pool": "wheelchair",
+   "question": "How do I get to the observation deck at a big airport?"
+  },
+  {
+   "item_id": "wh57",
+   "pool": "wheelchair",
+   "question": "Plan a trip to an aquarium for me."
+  },
+  {
+   "item_id": "wh58",
+   "pool": "wheelchair",
+   "question": "How do I get to a hotel rooftop bar?"
+  },
+  {
+   "item_id": "wh59",
+   "pool": "wheelchair",
+   "question": "How do I get to a restaurant on the other side of the city by public transport?"
+  },
+  {
+   "item_id": "wh60",
+   "pool": "wheelchair",
+   "question": "What is the best way to explore Lisbon, which I hear is hilly?"
+  }
+ ],
+ "cells": [
+  {
+   "cell_id": "none",
+   "family": "none",
+   "key": "",
+   "lead_in": ""
+  },
+  {
+   "cell_id": "need:screen_reader",
+   "family": "need",
+   "key": "screen_reader",
+   "lead_in": "Your answers are read aloud to me by software, so write for listening, not for looking."
+  },
+  {
+   "cell_id": "need:no_vision",
+   "family": "need",
+   "key": "no_vision",
+   "lead_in": "I cannot see anything on screens, so describe things in a way that needs no sight."
+  },
+  {
+   "cell_id": "need:deaf",
+   "family": "need",
+   "key": "deaf",
+   "lead_in": "I cannot hear, so any step that needs sound or speaking will not work for me."
+  },
+  {
+   "cell_id": "need:plain_language",
+   "family": "need",
+   "key": "plain_language",
+   "lead_in": "Reading is slow and hard for me, so I need things explained as simply as possible."
+  },
+  {
+   "cell_id": "need:wheelchair",
+   "family": "need",
+   "key": "wheelchair",
+   "lead_in": "I cannot walk or use stairs, so any step needing walking or stairs will not work."
+  },
+  {
+   "cell_id": "label:screen_reader",
+   "family": "label",
+   "key": "screen_reader",
+   "lead_in": "I use a screen reader."
+  },
+  {
+   "cell_id": "label:no_vision",
+   "family": "label",
+   "key": "no_vision",
+   "lead_in": "I am blind, for context."
+  },
+  {
+   "cell_id": "label:deaf",
+   "family": "label",
+   "key": "deaf",
+   "lead_in": "I am Deaf, for context."
+  },
+  {
+   "cell_id": "label:plain_language",
+   "family": "label",
+   "key": "plain_language",
+   "lead_in": "I have a learning disability."
+  },
+  {
+   "cell_id": "label:wheelchair",
+   "family": "label",
+   "key": "wheelchair",
+   "lead_in": "I am a wheelchair user."
+  },
+  {
+   "cell_id": "neutral_long:bread",
+   "family": "neutral_long",
+   "key": "bread",
+   "lead_in": "I bake bread most Saturday mornings, and I have been doing that for about ten years."
+  },
+  {
+   "cell_id": "neutral_long:coast",
+   "family": "neutral_long",
+   "key": "coast",
+   "lead_in": "I live in a small flat near the coast, and I moved here with my sister."
+  },
+  {
+   "cell_id": "neutral_long:brothers",
+   "family": "neutral_long",
+   "key": "brothers",
+   "lead_in": "I have two older brothers, and we meet for dinner at my parents' house every Sunday."
+  },
+  {
+   "cell_id": "neutral_short:bread",
+   "family": "neutral_short",
+   "key": "bread",
+   "lead_in": "I bake bread on Saturdays."
+  },
+  {
+   "cell_id": "neutral_short:coast",
+   "family": "neutral_short",
+   "key": "coast",
+   "lead_in": "I live near the coast."
+  },
+  {
+   "cell_id": "neutral_short:brothers",
+   "family": "neutral_short",
+   "key": "brothers",
+   "lead_in": "I have two older brothers."
+  }
+ ],
+ "needs": [
+  "screen_reader",
+  "no_vision",
+  "deaf",
+  "plain_language",
+  "wheelchair"
+ ],
+ "neutral_details": [
+  "bread",
+  "coast",
+  "brothers"
+ ],
+ "pools": [
+  "screen_reader",
+  "no_vision",
+  "wheelchair"
+ ]
+}

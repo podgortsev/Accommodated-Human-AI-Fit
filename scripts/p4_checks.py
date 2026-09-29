@@ -226,6 +226,93 @@ def check_all(text):
     return {need: check(need, text) for need in NEEDS}
 
 
+# ---------------------------------------------------------------- version 2
+# Added 2026-09-29 for e1, after e0. Version 1 above is unchanged, so e0 stays
+# reproducible from its own registered instrument.
+#
+# e0 showed that the version 1 sentence splitter ends a sentence only at . ! or
+# ?, so markdown list items without a full stop merge into one long "sentence".
+# The plain_language check then partly measured list punctuation: Mistral's
+# registered plain-language result was -0.23 and +0.21 with lines as sentence
+# boundaries. Version 2 makes every non-empty line a boundary and drops
+# markdown markers before counting. Thresholds are unchanged.
+#
+# first_words() gives every answer the same observation window. In e0 the share
+# of answers cut by the token cap differed by cell (Llama: 0.40 need form,
+# 0.81 label form), and a presence check is likelier to be seen in an answer
+# that ends inside the window.
+
+MD_MARKER = re.compile(r"^\s*(#{1,6}\s*|[-*•]\s+|\d+[.)]\s+)")
+WINDOW_WORDS = 250
+NL = chr(10)
+
+
+def first_words(text, n=WINDOW_WORDS):
+    """The first n words, keeping line breaks so list structure survives."""
+    out, count = [], 0
+    for line in text.splitlines():
+        w = line.split()
+        if count + len(w) >= n:
+            out.append(" ".join(w[:n - count]))
+            break
+        out.append(line)
+        count += len(w)
+    return NL.join(out)
+
+
+def line_sentences(text):
+    parts = []
+    for line in text.splitlines():
+        line = line.replace("**", "")
+        # markers stack ("### 1. Report it"), so strip until none is left
+        while MD_MARKER.match(line):
+            line = MD_MARKER.sub("", line, count=1)
+        line = line.strip()
+        if not line:
+            continue
+        parts += [p.strip() for p in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9])", line)
+                  if p.strip()]
+    return parts
+
+
+def flesch_kincaid_grade_v2(text):
+    ss, ws = line_sentences(text), words(text)
+    if not ss or not ws:
+        return 0.0
+    syl = sum(syllables(w) for w in ws)
+    return 0.39 * (len(ws) / len(ss)) + 11.8 * (syl / len(ws)) - 15.59
+
+
+def mean_sentence_words_v2(text):
+    ss = line_sentences(text)
+    return (sum(len(words(s)) for s in ss) / len(ss)) if ss else 0.0
+
+
+def _plain_language_v2(text):
+    return {
+        "short_sentences": mean_sentence_words_v2(text) <= MAX_SENTENCE_WORDS,
+        "low_grade": flesch_kincaid_grade_v2(text) <= MAX_GRADE,
+        "no_idiom": not _has(text, IDIOMS),
+    }
+
+
+NEEDS_V2 = dict(NEEDS, plain_language=_plain_language_v2)
+
+
+def check_v2(need, text, window=WINDOW_WORDS):
+    """Version 2: line-aware plain_language, and the answer read through the
+    same window of `window` words (None reads the whole answer)."""
+    if need not in NEEDS_V2:
+        raise KeyError(f"unknown need: {need}")
+    t = first_words(text, window) if window else text
+    parts = NEEDS_V2[need](t)
+    return {"delivered": all(parts.values()), **parts}
+
+
+def check_all_v2(text, window=WINDOW_WORDS):
+    return {need: check_v2(need, text, window) for need in NEEDS_V2}
+
+
 if __name__ == "__main__":
     import json
     import sys

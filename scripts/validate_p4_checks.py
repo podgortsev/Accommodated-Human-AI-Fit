@@ -262,6 +262,72 @@ for fn in [clean_delivers_everything, neutral_prose_triggers_no_avoidance_check,
     case(fn.__name__, fn)
 
 
+# ---------------------------------------------------------------- version 2
+
+NL = chr(10)
+
+
+def v2_unpunctuated_list_is_short_sentences():
+    text = NL.join(["Here is what to do",
+                    "- Open the app and choose the option",
+                    "- Enter your card number and the date",
+                    "- Wait for the text message",
+                    "- Keep a copy of the letter for later",
+                    "- Call if nothing arrives soon"])
+    assert not P.check("plain_language", text)["short_sentences"], \
+        "v1 should merge the list (that is the defect being fixed)"
+    assert P.check_v2("plain_language", text)["short_sentences"], \
+        "v2 must treat each line as a sentence"
+
+
+def v2_long_prose_still_fails():
+    text = ("Notwithstanding the considerable administrative complexity associated "
+            "with international documentation, applicants should anticipate substantial "
+            "processing variability, particularly during periods of elevated seasonal "
+            "demand, and should therefore initiate their applications considerably "
+            "earlier than their anticipated departure.")
+    assert not P.check_v2("plain_language", text)["delivered"]
+
+
+def v2_markdown_markers_do_not_count_as_words():
+    got = P.line_sentences("### 1. **Report it**" + NL + "- Go online.")
+    assert got == ["Report it", "Go online."], got
+
+
+def v2_window_keeps_lines_and_cuts_at_n():
+    text = NL.join(["one two three", "four five six", "seven eight"])
+    assert P.first_words(text, 5) == "one two three" + NL + "four five"
+    assert P.first_words(text, 100) == text
+
+
+def v2_window_hides_late_violations():
+    text = " ".join(["word"] * 300) + " Call the helpline."
+    assert P.check_v2("deaf", text)["no_phone_instruction"]
+    assert not P.check_v2("deaf", text, window=None)["no_phone_instruction"]
+
+
+def v2_other_needs_identical_to_v1():
+    samples = ["| a | b |" + NL + "| c | d |", "Press the green button.",
+               "Call the bank.", "Walk to the branch.",
+               "Use the step-free entrance.", "Plain words."]
+    for t in samples:
+        for n in P.NEEDS:
+            if n != "plain_language":
+                assert P.check(n, t) == P.check_v2(n, t, window=None), (n, t)
+
+
+def v1_is_unchanged():
+    assert P.NEEDS["plain_language"] is P._plain_language
+    assert P.sentences("a b" + NL + "c d.") == ["a b c d."]
+
+
+for fn in [v2_unpunctuated_list_is_short_sentences, v2_long_prose_still_fails,
+           v2_markdown_markers_do_not_count_as_words, v2_window_keeps_lines_and_cuts_at_n,
+           v2_window_hides_late_violations, v2_other_needs_identical_to_v1,
+           v1_is_unchanged]:
+    case(fn.__name__, fn)
+
+
 def main():
     print("=" * 78)
     print(f"P4 DELIVERY INSTRUMENT: {len(CASES)} offline checks")

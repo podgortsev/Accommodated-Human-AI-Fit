@@ -1,0 +1,38 @@
+stimuli
+  PASS  180 questions in three pools of 60
+  PASS  e0's 17 cells, unchanged
+  PASS  3,060 prompts
+  PASS  item ids carry their pool
+two phases and the pool gate
+  PASS  screen_reader pool dropped at the ceiling  (none rate 0.98)
+  PASS  other pools kept
+  PASS  rows = 180 none + 120 x 16  (2100)
+  PASS  screen_reader reported as not collected
+  PASS  resume in phase 2 completes to 3,060  (3060)
+  PASS  no (item, cell) twice
+  PASS  gate decision not revisited on restart
+effect: each need form serves its need
+  PASS  all five needs PASS on all three models  (15 of 15)
+  PASS  every need a FINDING
+  PASS  floors quiet  (0 moved)
+null: nothing depends on the cell
+  PASS  no need passes
+  PASS  most read as NULL, not merely unclaimed  (15 null, 0 inconclusive, 0 unmeasurable)
+  PASS  no hypothesis confirmed
+H2: added but not removed, against added and removed
+  PASS  add-only: H2 confirmed for deaf
+  PASS  add-only: H2 confirmed for wheelchair
+  PASS  added and removed equally: H2 not confirmed for deaf
+  PASS  added and removed equally: H2 not confirmed for wheelchair
+H3: need form over label form, plain language
+  PASS  H3 confirmed
+  PASS  label as good as need: H3 not confirmed
+window
+  PASS  a phone instruction after word 250 is not seen
+power of the gate (claim rule at 0.01, base 0.40)
+    n=60: 0.15->0.24  0.20->0.51  0.25->0.79  0.30->0.94
+    n=180: 0.15->0.76  0.20->0.99  0.25->1.00  0.30->1.00
+  PASS  n=60 pools: power about 0.8 at 0.25 (>= 0.75 over 200 simulations)  (0.79)
+  PASS  n=180 replication: power >= 0.95 at 0.20  (0.99)
+==============================================================================
+26 passed, 0 failed
