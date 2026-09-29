@@ -1,0 +1,67 @@
+==============================================================================
+e0 | qwen | 120 complete questions, 2040 answers
+==============================================================================
+
+Length and truncation by cell family (words, share truncated, n)
+  label            301.7   0.60  600
+  need             271.9   0.35  600
+  neutral_long     290.3   0.49  360
+  neutral_short    281.4   0.36  360
+  none             279.4   0.40  120
+
+Delivery rate by need and cell
+  need              none  neutL  neutS   need  label   mism
+  screen_reader     1.00   1.00   1.00   1.00   1.00   1.00
+  no_vision         0.98   0.97   0.97   0.96   0.96   0.98
+  deaf              0.08   0.07   0.05   0.28   0.27   0.05
+  plain_language    0.13   0.15   0.16   0.72   0.07   0.27
+  wheelchair        0.00   0.00   0.00   0.11   0.05   0.00
+
+Parts in the none cell (share holding), to see which part binds
+  screen_reader  no_table=1.00  no_ascii_art=1.00  no_emoji=1.00  no_layout_deixis=1.00
+  no_vision      no_colour_reference=1.00  no_position_reference=0.98  no_layout_deixis=1.00
+  deaf           no_phone_instruction=0.80  offers_text_route=0.09
+  plain_language short_sentences=0.59  low_grade=0.13  no_idiom=1.00
+  wheelchair     no_walking_assumption=1.00  offers_step_free=0.00
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  screen_reader  need_benefit     +0.000 [+0.000,+0.000] mde 0.000  1.0000/1.0000  adj 1.0000  -
+  screen_reader  label_benefit    +0.000 [+0.000,+0.000] mde 0.000  1.0000/1.0000  adj 1.0000  -
+  screen_reader  specificity      +0.000 [+0.000,+0.000] mde 0.000  1.0000/1.0000  adj 1.0000  -
+  screen_reader  over_application +0.000 [+0.000,+0.000] mde 0.000  1.0000/1.0000  adj 1.0000  -
+  no_vision      need_benefit     -0.011 [-0.053,+0.028] mde 0.039  0.5312/0.6881  adj 0.8602  -
+  no_vision      label_benefit    -0.017 [-0.056,+0.019] mde 0.036  0.5312/0.4625  adj 0.6641  -
+  no_vision      specificity      -0.023 [-0.060,+0.010] mde 0.036  0.2148/0.2664  adj 0.3330  -
+  no_vision      over_application +0.012 [-0.008,+0.035] mde 0.022  0.3477/0.3316  adj 0.5794  -
+  deaf           need_benefit     +0.217 [+0.131,+0.306] mde 0.086  0.0000/0.0001  adj 0.0002  CLAIMED
+  deaf           label_benefit    +0.217 [+0.142,+0.297] mde 0.080  0.0000/0.0001  adj 0.0005  CLAIMED
+  deaf           specificity      +0.237 [+0.158,+0.321] mde 0.081  0.0000/0.0001  adj 0.0002  CLAIMED
+  deaf           over_application -0.021 [-0.050,+0.008] mde 0.029  0.1091/0.1640  adj 0.4100  -
+  plain_language need_benefit     +0.575 [+0.489,+0.658] mde 0.084  0.0000/0.0001  adj 0.0002  CLAIMED
+  plain_language label_benefit    -0.089 [-0.150,-0.031] mde 0.060  0.0277/0.0058  adj 0.0521  -
+  plain_language specificity      +0.454 [+0.371,+0.535] mde 0.084  0.0000/0.0001  adj 0.0002  CLAIMED
+  plain_language over_application +0.121 [+0.076,+0.166] mde 0.046  0.0000/0.0001  adj 0.0005  CLAIMED
+  wheelchair     need_benefit     +0.108 [+0.058,+0.167] mde 0.056  0.0002/0.0003  adj 0.0005  CLAIMED
+  wheelchair     label_benefit    +0.050 [+0.017,+0.092] mde 0.039  0.0312/0.0295  adj 0.0521  -
+  wheelchair     specificity      +0.108 [+0.058,+0.167] mde 0.056  0.0002/0.0003  adj 0.0005  CLAIMED
+  wheelchair     over_application +0.000 [+0.000,+0.000] mde 0.000  1.0000/1.0000  adj 1.0000  -
+
+Floor: neutral detail against none (Holm, either test)
+  screen_reader   mean shift +0.000  no detail moves
+  no_vision       mean shift -0.011  no detail moves
+  deaf            mean shift -0.025  no detail moves
+  plain_language  mean shift +0.019  no detail moves
+  wheelchair      mean shift +0.000  no detail moves
+
+Verdict per need (gate 2 headroom, then gate 1 need benefit)
+  screen_reader  UNMEASURABLE
+  no_vision      UNMEASURABLE
+  deaf           PASS
+  plain_language PASS
+  wheelchair     UNMEASURABLE
+
+==============================================================================
+REGISTERED DECISION
+==============================================================================
+  qwen       passes: deaf, plain_language
+  only 1 of 3 models present: no decision yet

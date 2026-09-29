@@ -1,0 +1,13 @@
+==========================================================================
+SMOKE: four prompts, single and batched, 120 new tokens
+==========================================================================
+[none] 120 tokens, batch identical: False
+   Replacing a lost passport before your trip is important to ensure you can travel safely and legally. Here’s a step-by-step guide on how to replace a lost passport: /  / ### 1. **Report the Loss** / - **Locate the Nearest Passport Agency:** Visit 
+[need:screen_reader] 120 tokens, batch identical: True
+   Sure, to replace a lost passport before your trip abroad next month, you'll need to follow these steps: /  / 1. **Report the Loss**: First, report the loss of your passport to the local police department as soon as possible. This is important f
+[label:deaf] 120 tokens, batch identical: True
+   Replacing a lost passport can be a bit of a process, but it's important to ensure you have all the necessary documentation before traveling abroad. Here’s a step-by-step guide on how to replace your lost passport: /  / ### Step 1: Report the Lo
+[neutral_long:bread] 120 tokens, batch identical: False
+   Replacing a lost passport can be a bit of a process, but it's important to ensure you're prepared for your upcoming trip. Here’s a step-by-step guide to help you get a new passport in time for your trip: /  / ### Step 1: Determine Your Passport
+batch equals single on 2 of 4 (drift from left padding is shared by both sides of each contrast; recorded, not fatal)
+SMOKE OK

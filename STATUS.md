@@ -9,8 +9,7 @@ States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
 
 ## Where this is
 
-e0, the instrument floor, is ready to run. It decides whether Paper 4 exists.
-Nothing collected yet.
+e0 is collected and analysed: registered decision CONTINUE. `experiments/e0-instrument-floor/results/RESULT_e0.md`.
 
 | step | state | note |
 |---|---|---|
@@ -27,25 +26,19 @@ Nothing collected yet.
 
 | id | what | model | collected | analysed | result |
 |----|------|-------|-----------|----------|--------|
-| e0 | instrument floor | qwen | SCRIPT READY | - | - |
-| e0 | instrument floor | llama | SCRIPT READY | - | - |
-| e0 | instrument floor | mistral | SCRIPT READY | - | - |
+| e0 | instrument floor | qwen | done | done | PASS deaf +0.22, plain +0.58 |
+| e0 | instrument floor | llama | done | done | PASS deaf +0.24, plain +0.37 |
+| e0 | instrument floor | mistral | done | done | PASS deaf +0.15; plain -0.23 (splitter artefact, +0.21 line-aware) |
 
 ## Blocked
 
-- e0 needs a GPU. The local card is committed to Paper 8's Beck grids until the
-  October freeze (Diaz formats 1 and 2, then Diverse Perspectives), so e0 runs in
-  Colab: three notebooks, one per model, in parallel. Bundle and notebooks are
-  built and current, `colab/p4_e0.zip` in the research repository, validator
-  46 passed 0 failed at build time.
+- nothing
 
 ## Next
 
-1. Run e0 on all three models in parallel: upload `colab/p4_e0.zip` to
-   `MyDrive/afl/`, then `colab/run_p4_e0_qwen.ipynb` and the other two. Each
-   notebook runs its own smoke check first and writes a resumable CSV.
-2. `analyse_e0.py` on the three CSVs together gives CONTINUE, EXTEND or STOP.
-3. On CONTINUE: rank Paper 4, then the full menu (penalty on the same response, turns with the CONCAT control, "declines to say").
+1. Author decision: publish e0 as Paper 4 now, or extend first (task set for the three unmeasurable needs, line-aware splitter registered).
+2. Draft the paper around RESULT_e0.md.
+3. Zenodo, ORCID, SSRN in that order.
 
 ## The decision that can end this paper
 
