@@ -1,0 +1,13 @@
+{
+ "model": "qwen",
+ "ceiling": 0.9,
+ "kept": [
+  "no_vision",
+  "wheelchair"
+ ],
+ "none_rate": {
+  "screen_reader": 1.0,
+  "no_vision": 0.7,
+  "wheelchair": 0.05
+ }
+}

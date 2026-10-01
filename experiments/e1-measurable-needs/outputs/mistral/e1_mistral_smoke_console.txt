@@ -1,0 +1,13 @@
+==========================================================================
+SMOKE: four prompts, single and batched, 120 new tokens
+==========================================================================
+[none] 120 tokens, batch identical: False
+   To replace a lost passport, you'll typically need to follow these steps: /  / 1. Report the loss: Contact your country's passport office or embassy and report your passport as lost. This is important for security reasons, as it helps prevent so
+[need:screen_reader] 120 tokens, batch identical: False
+   To replace a lost passport before your upcoming trip, follow these steps: /  / 1. Contact the issuing authority: In the United States, this is the U.S. Department of State. In other countries, it may be a different government agency. /  / 2. File a
+[label:deaf] 120 tokens, batch identical: False
+   To replace a lost passport, regardless of hearing status, you can follow these general steps. However, since you are Deaf, I recommend reaching out to the passport agency or embassy using communication methods that suit you best, such as TT
+[neutral_long:bread] 120 tokens, batch identical: False
+   To replace a lost passport before a trip abroad, follow these steps: /  / 1. Report your lost passport to the issuing authority: /    - If you have a U.S. passport, contact the National Passport Information Center (NPIC) at 1-877-487-2778 or visi
+batch equals single on 0 of 4 (drift from left padding is shared by both sides of each contrast; recorded, not fatal)
+SMOKE OK

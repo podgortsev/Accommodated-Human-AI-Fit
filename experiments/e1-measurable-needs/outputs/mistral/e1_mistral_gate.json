@@ -1,0 +1,13 @@
+{
+ "model": "mistral",
+ "ceiling": 0.9,
+ "kept": [
+  "no_vision",
+  "wheelchair"
+ ],
+ "none_rate": {
+  "screen_reader": 0.9833333333333333,
+  "no_vision": 0.7666666666666667,
+  "wheelchair": 0.06666666666666667
+ }
+}

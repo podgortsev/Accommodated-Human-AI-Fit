@@ -9,7 +9,7 @@ States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
 
 ## Where this is
 
-e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1, the three needs e0 could not measure plus a replication of the two it could, is preregistered and ready to run (`experiments/e1-measurable-needs/`).
+e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone.
 
 | step | state | note |
 |---|---|---|
@@ -29,9 +29,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 | e0 | instrument floor | qwen | done | done | PASS deaf +0.22, plain +0.58 |
 | e0 | instrument floor | llama | done | done | PASS deaf +0.24, plain +0.37 |
 | e0 | instrument floor | mistral | done | done | PASS deaf +0.15; plain -0.23 (splitter artefact, +0.21 line-aware) |
-| e1 | measurable needs | qwen | SCRIPT READY | - | - |
-| e1 | measurable needs | llama | SCRIPT READY | - | - |
-| e1 | measurable needs | mistral | SCRIPT READY | - | - |
+| e1 | measurable needs | qwen | done | done | PASS wheelchair +0.66, plain +0.10; H2 wheelchair, H3 yes; screen reader unmeasurable |
+| e1 | measurable needs | llama | done | done | PASS wheelchair +0.61, plain +0.09; H2 wheelchair, H3 yes; screen reader unmeasurable |
+| e1 | measurable needs | mistral | done | done | PASS wheelchair +0.43, plain +0.09, no_vision +0.17; H2 wheelchair, H3 yes |
 
 ## Blocked
 
@@ -39,9 +39,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Next
 
-1. Run e1 on all three models: upload `colab/p4_e1.zip` to the Drive root, then `colab/run_p4_e1_<model>.ipynb`.
-2. `analyse_e1.py` on the three CSVs: which needs are findings, whether H2 and H3 are confirmed.
-3. Draft the paper around RESULT_e0.md and RESULT_e1.md.
+1. Draft the paper around RESULT_e0.md and RESULT_e1.md.
+2. Author decision: whether a deaf replication on contact-type questions is worth one more run before release.
+3. Zenodo, ORCID, SSRN in that order.
 
 ## The decision that can end this paper
 
