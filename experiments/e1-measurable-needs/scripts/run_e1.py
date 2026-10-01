@@ -83,9 +83,10 @@ def gate(model_key, out_path, gate_path, stimuli):
     return g
 
 
-def collect_all(model_key, generate, out_dir, stimuli, batch=R0.BATCH):
-    out = os.path.join(out_dir, f"e1_{model_key}.csv")
-    gate_path = os.path.join(out_dir, f"e1_{model_key}_gate.json")
+def collect_all(model_key, generate, out_dir, stimuli, batch=R0.BATCH, prefix="e1"):
+    """prefix names the files; e2 reuses this function with prefix "e2"."""
+    out = os.path.join(out_dir, f"{prefix}_{model_key}.csv")
+    gate_path = os.path.join(out_dir, f"{prefix}_{model_key}_gate.json")
     print("phase 1: the none cell for every question")
     R0.collect(model_key, generate, out, subset(stimuli, cells={"none"}), batch)
     g = gate(model_key, out, gate_path, stimuli)

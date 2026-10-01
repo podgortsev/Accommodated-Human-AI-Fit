@@ -32,6 +32,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 | e1 | measurable needs | qwen | done | done | PASS wheelchair +0.66, plain +0.10; H2 wheelchair, H3 yes; screen reader unmeasurable |
 | e1 | measurable needs | llama | done | done | PASS wheelchair +0.61, plain +0.09; H2 wheelchair, H3 yes; screen reader unmeasurable |
 | e1 | measurable needs | mistral | done | done | PASS wheelchair +0.43, plain +0.09, no_vision +0.17; H2 wheelchair, H3 yes |
+| e2 | deaf where it arises | qwen | SCRIPT READY | - | - |
+| e2 | deaf where it arises | llama | SCRIPT READY | - | - |
+| e2 | deaf where it arises | mistral | SCRIPT READY | - | - |
 
 ## Blocked
 
@@ -39,9 +42,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Next
 
-1. Draft the paper around RESULT_e0.md and RESULT_e1.md.
-2. Author decision: whether a deaf replication on contact-type questions is worth one more run before release.
-3. Zenodo, ORCID, SSRN in that order.
+1. Run e2 on all three models: `colab/p4_e2.zip` to the Drive root, then `colab/run_p4_e2_<model>.ipynb`.
+2. `analyse_e2.py` on the three CSVs: deaf need benefit and H2 for deaf, on models that pass the relevance check.
+3. Draft the paper around RESULT_e0, RESULT_e1 and RESULT_e2.
 
 ## The decision that can end this paper
 

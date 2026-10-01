@@ -1,0 +1,26 @@
+stimuli
+  PASS  90 questions, all in the deaf pool
+  PASS  e0's 17 cells
+  PASS  1,530 prompts
+collection
+  PASS  1,530 rows with e2 names  (1530)
+  PASS  gate file written
+add only: text route added, phone instruction unchanged
+  PASS  deaf a FINDING
+  PASS  H2 CONFIRMED
+  PASS  all three models are tests
+added and removed equally
+  PASS  deaf a FINDING
+  PASS  H2 NOT confirmed
+null
+  PASS  deaf not a finding
+  PASS  H2 not confirmed
+relevance: the barrier absent at baseline
+  PASS  every model NOT A TEST
+  PASS  no finding read from non-tests
+power at n=90 (claim rule at 0.01)
+    need benefit 0.20, base 0.10: 0.88
+  PASS  power >= 0.80 for a 0.20 benefit from a 0.10 base  (0.88)
+    need benefit 0.15, base 0.10: 0.64
+==============================================================================
+15 passed, 0 failed
