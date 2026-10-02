@@ -1,0 +1,10 @@
+{
+ "model": "qwen",
+ "ceiling": 0.9,
+ "kept": [
+  "deaf"
+ ],
+ "none_rate": {
+  "deaf": 0.1
+ }
+}

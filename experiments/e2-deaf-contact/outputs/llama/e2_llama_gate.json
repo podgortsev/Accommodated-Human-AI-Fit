@@ -1,0 +1,10 @@
+{
+ "model": "llama",
+ "ceiling": 0.9,
+ "kept": [
+  "deaf"
+ ],
+ "none_rate": {
+  "deaf": 0.07777777777777778
+ }
+}

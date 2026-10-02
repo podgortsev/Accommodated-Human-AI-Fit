@@ -9,7 +9,7 @@ States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
 
 ## Where this is
 
-e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone.
+e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone. e2 tested deaf where it arises (`experiments/e2-deaf-contact/results/RESULT_e2.md`): FINDING on 3 of 3, H2 CONFIRMED on 3 of 3. Added-not-removed is now registered and confirmed for two needs.
 
 | step | state | note |
 |---|---|---|
@@ -32,9 +32,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 | e1 | measurable needs | qwen | done | done | PASS wheelchair +0.66, plain +0.10; H2 wheelchair, H3 yes; screen reader unmeasurable |
 | e1 | measurable needs | llama | done | done | PASS wheelchair +0.61, plain +0.09; H2 wheelchair, H3 yes; screen reader unmeasurable |
 | e1 | measurable needs | mistral | done | done | PASS wheelchair +0.43, plain +0.09, no_vision +0.17; H2 wheelchair, H3 yes |
-| e2 | deaf where it arises | qwen | SCRIPT READY | - | - |
-| e2 | deaf where it arises | llama | SCRIPT READY | - | - |
-| e2 | deaf where it arises | mistral | SCRIPT READY | - | - |
+| e2 | deaf where it arises | qwen | done | done | PASS deaf +0.39, H2 deaf +0.46; plain +0.32 |
+| e2 | deaf where it arises | llama | done | done | PASS deaf +0.43, H2 deaf +0.36; plain +0.37 |
+| e2 | deaf where it arises | mistral | done | done | PASS deaf +0.26, H2 deaf +0.23; plain +0.26 |
 
 ## Blocked
 
@@ -42,9 +42,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Next
 
-1. Run e2 on all three models: `colab/p4_e2.zip` to the Drive root, then `colab/run_p4_e2_<model>.ipynb`.
-2. `analyse_e2.py` on the three CSVs: deaf need benefit and H2 for deaf, on models that pass the relevance check.
-3. Draft the paper around RESULT_e0, RESULT_e1 and RESULT_e2.
+1. Draft the paper around RESULT_e0, RESULT_e1 and RESULT_e2.
+2. Methodology checklist from the paper 2 CLAUDE.md, then release.
+3. Zenodo, ORCID, SSRN in that order.
 
 ## The decision that can end this paper
 

@@ -1,0 +1,139 @@
+==============================================================================
+e1 | llama | 1530 answers | instrument v2, first 250 words
+==============================================================================
+
+Delivery rate by need and cell (on that need's item set)
+  need              n   none  neutL  neutS   need  label   mism
+  screen_reader     0  not collected (pool dropped at gate 2)
+  no_vision         0  not collected (pool dropped at gate 2)
+  deaf             90   0.08   0.08   0.07   0.51   0.26   0.12
+  plain_language   90   0.60   0.62   0.66   0.99   0.59   0.73
+  wheelchair        0  not collected (pool dropped at gate 2)
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           need_benefit                    +0.430 [+0.322,+0.533] mde 0.105  0.0000/0.0001  adj 0.0001  CLAIMED
+  deaf           label_benefit                   +0.189 [+0.107,+0.281] mde 0.089  0.0000/0.0001  adj 0.0002  CLAIMED
+  deaf           specificity                     +0.392 [+0.283,+0.494] mde 0.105  0.0000/0.0001  adj 0.0001  CLAIMED
+  deaf           over_application                +0.038 [-0.012,+0.089] mde 0.051  0.1348/0.1595  adj 0.1595  -
+  deaf           part offers_text_route          +0.496 [+0.389,+0.600] mde 0.106  0.0000/0.0001              (part, descriptive)
+  deaf           part no_phone_instruction       +0.141 [+0.037,+0.244] mde 0.104  0.0044/0.0120              (part, descriptive)
+  deaf           H2_add_not_remove               +0.356 [+0.204,+0.489] mde 0.142  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language need_benefit                    +0.370 [+0.300,+0.441] mde 0.071  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language label_benefit                   -0.067 [-0.174,+0.037] mde 0.107  0.5644/0.2523  adj 0.5644  -
+  plain_language specificity                     +0.256 [+0.211,+0.303] mde 0.046  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language over_application                +0.115 [+0.051,+0.181] mde 0.066  0.0024/0.0008  adj 0.0047  CLAIMED
+  plain_language H3_need_over_label              +0.400 [+0.300,+0.500] mde 0.102  0.0000/0.0001  adj 0.0001  CLAIMED
+
+Floor: neutral detail against none (Holm, either test)
+  deaf            mean shift -0.004  no detail moves
+  plain_language  mean shift +0.037  no detail moves
+
+Verdict per need
+  screen_reader  NOT COLLECTED
+  no_vision      NOT COLLECTED
+  deaf           PASS
+  plain_language PASS
+  wheelchair     NOT COLLECTED
+
+Hypotheses
+  H2_add_not_remove deaf              CLAIMED
+  H2_add_not_remove wheelchair        -
+  H3_need_over_label plain_language   CLAIMED
+
+Relevance: phone instruction in 0.43 of none answers (threshold 0.10): TEST
+==============================================================================
+e1 | mistral | 1530 answers | instrument v2, first 250 words
+==============================================================================
+
+Delivery rate by need and cell (on that need's item set)
+  need              n   none  neutL  neutS   need  label   mism
+  screen_reader     0  not collected (pool dropped at gate 2)
+  no_vision         0  not collected (pool dropped at gate 2)
+  deaf             90   0.20   0.11   0.11   0.37   0.33   0.11
+  plain_language   90   0.36   0.36   0.40   0.62   0.40   0.54
+  wheelchair        0  not collected (pool dropped at gate 2)
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           need_benefit                    +0.259 [+0.156,+0.370] mde 0.107  0.0000/0.0001  adj 0.0001  CLAIMED
+  deaf           label_benefit                   +0.226 [+0.130,+0.330] mde 0.101  0.0000/0.0001  adj 0.0002  CLAIMED
+  deaf           specificity                     +0.253 [+0.156,+0.356] mde 0.101  0.0000/0.0001  adj 0.0002  CLAIMED
+  deaf           over_application                +0.006 [-0.042,+0.056] mde 0.049  0.7487/0.8208  adj 0.8208  -
+  deaf           part offers_text_route          +0.300 [+0.196,+0.408] mde 0.106  0.0000/0.0001              (part, descriptive)
+  deaf           part no_phone_instruction       +0.067 [-0.044,+0.174] mde 0.112  0.0729/0.2699              (part, descriptive)
+  deaf           H2_add_not_remove               +0.233 [+0.096,+0.378] mde 0.145  0.0074/0.0027  adj 0.0074  CLAIMED
+  plain_language need_benefit                    +0.263 [+0.144,+0.374] mde 0.113  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language label_benefit                   +0.004 [-0.107,+0.111] mde 0.111  0.2608/1.0000  adj 1.0000  -
+  plain_language specificity                     +0.083 [-0.028,+0.189] mde 0.110  0.1346/0.1562  adj 0.1562  -
+  plain_language over_application                +0.180 [+0.102,+0.254] mde 0.076  0.0000/0.0001  adj 0.0002  CLAIMED
+  plain_language H3_need_over_label              +0.222 [+0.089,+0.356] mde 0.134  0.0020/0.0028  adj 0.0028  CLAIMED
+
+Floor: neutral detail against none (Holm, either test)
+  deaf            mean shift -0.093  MOVES: neutral_long:bread
+  plain_language  mean shift +0.022  no detail moves
+
+Verdict per need
+  screen_reader  NOT COLLECTED
+  no_vision      NOT COLLECTED
+  deaf           PASS
+  plain_language PASS
+  wheelchair     NOT COLLECTED
+
+Hypotheses
+  H2_add_not_remove deaf              CLAIMED
+  H2_add_not_remove wheelchair        -
+  H3_need_over_label plain_language   CLAIMED
+
+Relevance: phone instruction in 0.26 of none answers (threshold 0.10): TEST
+==============================================================================
+e1 | qwen | 1530 answers | instrument v2, first 250 words
+==============================================================================
+
+Delivery rate by need and cell (on that need's item set)
+  need              n   none  neutL  neutS   need  label   mism
+  screen_reader     0  not collected (pool dropped at gate 2)
+  no_vision         0  not collected (pool dropped at gate 2)
+  deaf             90   0.10   0.08   0.08   0.47   0.38   0.09
+  plain_language   90   0.38   0.66   0.50   0.98   0.57   0.72
+  wheelchair        0  not collected (pool dropped at gate 2)
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           need_benefit                    +0.389 [+0.285,+0.496] mde 0.106  0.0000/0.0001  adj 0.0001  CLAIMED
+  deaf           label_benefit                   +0.300 [+0.196,+0.404] mde 0.104  0.0000/0.0001  adj 0.0002  CLAIMED
+  deaf           specificity                     +0.375 [+0.267,+0.486] mde 0.111  0.0000/0.0001  adj 0.0001  CLAIMED
+  deaf           over_application                +0.014 [-0.031,+0.056] mde 0.044  0.6424/0.5640  adj 0.6424  -
+  deaf           part offers_text_route          +0.526 [+0.426,+0.622] mde 0.100  0.0000/0.0001              (part, descriptive)
+  deaf           part no_phone_instruction       +0.063 [-0.044,+0.167] mde 0.104  0.0294/0.2671              (part, descriptive)
+  deaf           H2_add_not_remove               +0.463 [+0.330,+0.593] mde 0.132  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language need_benefit                    +0.315 [+0.233,+0.396] mde 0.081  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language label_benefit                   +0.067 [-0.033,+0.163] mde 0.100  0.0212/0.2202  adj 0.2202  -
+  plain_language specificity                     +0.253 [+0.186,+0.314] mde 0.064  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language over_application                +0.062 [-0.004,+0.131] mde 0.067  0.0729/0.0825  adj 0.1650  -
+  plain_language H3_need_over_label              +0.411 [+0.311,+0.511] mde 0.102  0.0000/0.0001  adj 0.0001  CLAIMED
+
+Floor: neutral detail against none (Holm, either test)
+  deaf            mean shift -0.022  no detail moves
+  plain_language  mean shift +0.204  MOVES: neutral_long:bread, neutral_short:bread, neutral_long:coast
+
+Verdict per need
+  screen_reader  NOT COLLECTED
+  no_vision      NOT COLLECTED
+  deaf           PASS
+  plain_language PASS
+  wheelchair     NOT COLLECTED
+
+Hypotheses
+  H2_add_not_remove deaf              CLAIMED
+  H2_add_not_remove wheelchair        -
+  H3_need_over_label plain_language   CLAIMED
+
+Relevance: phone instruction in 0.26 of none answers (threshold 0.10): TEST
+
+==============================================================================
+REGISTERED READ, e2
+==============================================================================
+  llama      relevance 0.43  TEST
+  mistral    relevance 0.26  TEST
+  qwen       relevance 0.26  TEST
+  deaf need benefit   passes on 3 of 3 tests: llama, mistral, qwen     FINDING
+  H2 deaf             claimed on 3 of 3 tests: llama, mistral, qwen     CONFIRMED
+  plain_language      passes on 3: llama, mistral, qwen (secondary)
