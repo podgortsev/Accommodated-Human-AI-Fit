@@ -9,7 +9,7 @@ States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
 
 ## Where this is
 
-e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone. e2 tested deaf where it arises (`experiments/e2-deaf-contact/results/RESULT_e2.md`): FINDING on 3 of 3, H2 CONFIRMED on 3 of 3. Added-not-removed is now registered and confirmed for two needs.
+e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone. e2 tested deaf where it arises (`experiments/e2-deaf-contact/results/RESULT_e2.md`): FINDING on 3 of 3, H2 CONFIRMED on 3 of 3. Added-not-removed is a deaf result (56-82 percent of phone instructions remain); for wheelchair H2 is claimed but the rare walking barrier is mostly removed (corrected 2026-10-02).
 
 | step | state | note |
 |---|---|---|
@@ -29,9 +29,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 | e0 | instrument floor | qwen | done | done | PASS deaf +0.22, plain +0.58 |
 | e0 | instrument floor | llama | done | done | PASS deaf +0.24, plain +0.37 |
 | e0 | instrument floor | mistral | done | done | PASS deaf +0.15; plain -0.23 (splitter artefact, +0.21 line-aware) |
-| e1 | measurable needs | qwen | done | done | PASS wheelchair +0.66, plain +0.10; H2 wheelchair, H3 yes; screen reader unmeasurable |
-| e1 | measurable needs | llama | done | done | PASS wheelchair +0.61, plain +0.09; H2 wheelchair, H3 yes; screen reader unmeasurable |
-| e1 | measurable needs | mistral | done | done | PASS wheelchair +0.43, plain +0.09, no_vision +0.17; H2 wheelchair, H3 yes |
+| e1 | measurable needs | qwen | done | done | PASS wheelchair +0.66, plain +0.10; H2 claimed (walking mostly removed), H3 yes; screen reader unmeasurable |
+| e1 | measurable needs | llama | done | done | PASS wheelchair +0.61, plain +0.09; H2 claimed (walking mostly removed), H3 yes; screen reader unmeasurable |
+| e1 | measurable needs | mistral | done | done | PASS wheelchair +0.43, plain +0.09, no_vision +0.17; H2 claimed (walking mostly removed), H3 yes |
 | e2 | deaf where it arises | qwen | done | done | PASS deaf +0.39, H2 deaf +0.46; plain +0.32 |
 | e2 | deaf where it arises | llama | done | done | PASS deaf +0.43, H2 deaf +0.36; plain +0.37 |
 | e2 | deaf where it arises | mistral | done | done | PASS deaf +0.26, H2 deaf +0.23; plain +0.26 |

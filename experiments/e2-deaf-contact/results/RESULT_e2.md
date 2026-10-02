@@ -49,9 +49,15 @@ floor tests.
 
 ## 4. What this settles for Paper 4
 
-- **Added, not removed** is now registered and confirmed for two needs, deaf
-  (e2) and wheelchair (e1), on all three models each, on question sets written
-  for each need, after first appearing as an exploratory result in e0.
+- **Added, not removed** is registered and confirmed for deaf on all three
+  models, on questions written for it, after first appearing as an exploratory
+  result in e0. 56 to 82 percent of the phone instructions remain once the
+  person has said they cannot hear.
+- It is not a two-need result. H2 is also claimed for wheelchair (e1), but there
+  the walking barrier is rare at baseline and mostly removed (13 to 27 percent
+  left); H2's absolute-points form let a large addition outweigh a near-total
+  removal. Corrected 2026-10-02, see RESULT_e1.md section 3.1. A first version
+  of this file said two needs.
 - The deaf benefit replicates on new questions at a larger size than e0 (+0.26
   to +0.43 against +0.15 to +0.24), on questions where contacting someone is the
   point.

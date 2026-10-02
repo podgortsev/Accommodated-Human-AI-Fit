@@ -62,22 +62,28 @@ pool was powered for 0.25 (power 0.79), not for 0.13.
 
 ## 3. The findings
 
-### 3.1 Wheelchair: the step-free route is added, the walking stays
+### 3.1 Wheelchair: the step-free route is added, and the walking mostly goes too
 
 Large and on all three models: stating "I cannot walk or use stairs" raises
-delivery from about 0.05 to 0.48 to 0.67. H2 confirmed on all three, by a wide
-margin. The parts:
+delivery from about 0.05 to 0.48 to 0.67. H2 is claimed on all three as
+registered. The parts:
 
-| model | offers step-free access, need vs neutral | no walking assumption, need vs neutral |
-|---|---|---|
-| qwen | +0.67 | +0.09 |
-| llama | +0.59 | +0.11 |
-| mistral | +0.41 | +0.09 |
+| model | offers step-free access, need vs neutral | walking assumption, neutral to need | share of the barrier left |
+|---|---|---|---|
+| qwen | +0.67 | 0.12 to 0.03 | 0.27 |
+| llama | +0.59 | 0.13 to 0.02 | 0.13 |
+| mistral | +0.41 | 0.11 to 0.02 | 0.16 |
 
-The model adds a lift, a ramp or an accessible entrance, and keeps telling the
-person to walk to it, at nearly the rate it does for a person who mentioned
-baking bread. This is the e0 deaf pattern, registered in advance this time, on a
-different need, on different questions, confirmed on every model.
+**Correction, 2026-10-02.** The first version of this section said the models
+keep telling the person to walk "at nearly the rate it does for a person who
+mentioned baking bread". That was wrong. The walking assumption is rare to begin
+with (11 to 13 percent of neutral answers) and falls to 1 or 2 answers in 60
+once the need is stated: most of the barrier is removed. H2 is claimed because
+it compares the two changes in absolute points, and a removal cannot exceed the
+barrier's base rate, so a large addition beats a near-total removal of a rare
+barrier. As registered, H2 holds; as a statement that the barrier stays, it does
+not, for wheelchair. Contrast deaf in e2, where 56 to 82 percent of the phone
+instructions remain.
 
 And the label beats the need: "I am a wheelchair user" (5 words) delivers more
 than the 16-word functional statement on Llama (0.82 against 0.67) and Mistral
@@ -104,9 +110,10 @@ of a person.
 1. Stating a need buys accommodation that a neutral personal detail of the same
    length does not, for deaf (e0, three models), plain language (e0 and e1,
    three models with the corrected splitter) and wheelchair (e1, three models).
-2. **The accommodation is added; the barrier is not removed.** Registered and
-   confirmed for wheelchair on all three models; exploratory for deaf in e0 on all
-   three.
+2. For wheelchair the addition is far larger than the removal (H2 claimed), but
+   the walking barrier, rare at baseline, is mostly removed too (see the
+   correction in 3.1). "Added, not removed" is a deaf result, not a wheelchair
+   one.
 3. Whether the label or the need works better depends on the need: the label
    works as well for deafness, better for wheelchair use, and actively worse for
    learning disability.
