@@ -175,3 +175,31 @@ What it settles from section 7, and what changed from the sections above:
   instruction following. The third prior-art round found joint benefit and cost
   scoring for stated preferences already published (PERG), which is what the
   directive form would have repeated.
+
+---
+
+## 9. Name and framing, agreed 2026-10-02
+
+**Name: Accommodated Human-AI Fit.** "Progressive" described turn-by-turn
+disclosure, which this paper does not measure; accommodation is what it
+measures. Subtitle after the results, as Paper 2's was.
+
+Framing to carry into the text, agreed with the author:
+
+1. **Requests, not people.** The stated need works on every model; the label
+   works unpredictably (as well for deafness, better for wheelchair use, worse
+   than nothing for a learning disability). This matches what disabled users
+   report doing (Taheri et al.: they disclose by need; Johnson et al.: they
+   disclose because they expect better answers) and NDBench (a persona without
+   directives does little), measured here behaviourally against a neutral arm.
+2. **Removing the barrier against adding a way round it.** "Added, not removed"
+   for deafness maps onto the social model of disability's distinction between
+   removing a barrier and offering an alternative. Possibly also onto the legal
+   notion of reasonable adjustments: **to be checked against primary sources
+   before any sentence is written.**
+3. **The index.** The instrument of e0 to e2 is a ready Accommodation column for
+   the AI Human Fit Index in the roadmap (step 2). One sentence in the
+   conclusion.
+4. **What stays out:** turn-by-turn disclosure (Laban et al., Star et al.; a
+   paper of its own), "declines to say" (no need, nothing to deliver), wrapper
+   robustness (Paper 7) and order inside the disclosure (Paper 9).

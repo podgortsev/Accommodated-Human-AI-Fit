@@ -1,0 +1,33 @@
+e3
+  PASS  follow-ups are 14 words
+  PASS  630 jobs per model
+  PASS  first turn replayed byte for byte
+  PASS  every model has at least 10 first turns that kept the barrier  ({'qwen': 59, 'llama': 37, 'mistral': 65})
+  PASS  resume completes to 630, no duplicates  (630)
+  PASS  both remove: H4 confirmed
+  PASS  both remove: H5 confirmed
+  PASS  nothing removes: H4 not confirmed
+  PASS  nothing removes: H5 not confirmed
+  PASS  only specific removes: H4 not confirmed
+  PASS  only specific removes: H5 confirmed
+e4 parser
+  PASS  parse 'Answer: 3480\nThen...'  (got 3480.0)
+  PASS  parse 'Answer: $3,480.00'  (got 3480.0)
+  PASS  parse '**Answer:** 312.5'  (got 312.5)
+  PASS  parse 'answer: 26.4\nx'  (got 26.4)
+  PASS  parse 'Answer: approximately 150'  (got 150.0)
+  PASS  parse 'Answer = 528'  (got 528.0)
+  PASS  parse 'The new price is 3480 dollar'  (got None)
+  PASS  parse 'Step 1: call 0800 123 456.\nA'  (got None)
+  PASS  correct within rounding
+  PASS  the Answer line is removed before delivery is scored
+e4
+  PASS  330 items x 7 cells
+  PASS  the same task in every cell of a question
+  PASS  penalty injected: H6 CONFIRMED
+  PASS  null: no penalty larger than 5 points on at least two models  (4 lines)
+  PASS  null: H6 not confirmed
+  PASS  format misses injected: format contrast claimed on all models
+  PASS  format misses injected: no accuracy penalty confirmed
+==============================================================================
+28 passed, 0 failed

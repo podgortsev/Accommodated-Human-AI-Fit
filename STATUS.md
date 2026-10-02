@@ -1,6 +1,6 @@
 # STATUS
 
-Paper 4, Progressive Human-AI Fit. Absorbs Paper 5 (2026-09-28).
+Paper 4, Accommodated Human-AI Fit (renamed from Progressive 2026-10-02). Absorbs Paper 5 (2026-09-28).
 Read before starting, write before stopping.
 
 States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
@@ -35,6 +35,12 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 | e2 | deaf where it arises | qwen | done | done | PASS deaf +0.39, H2 deaf +0.46; plain +0.32 |
 | e2 | deaf where it arises | llama | done | done | PASS deaf +0.43, H2 deaf +0.36; plain +0.37 |
 | e2 | deaf where it arises | mistral | done | done | PASS deaf +0.26, H2 deaf +0.23; plain +0.26 |
+| e3 | pushback | qwen | SCRIPT READY | - | - |
+| e3 | pushback | llama | SCRIPT READY | - | - |
+| e3 | pushback | mistral | SCRIPT READY | - | - |
+| e4 | cost | qwen | SCRIPT READY | - | - |
+| e4 | cost | llama | SCRIPT READY | - | - |
+| e4 | cost | mistral | SCRIPT READY | - | - |
 
 ## Blocked
 
@@ -42,9 +48,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Next
 
-1. Draft the paper around RESULT_e0, RESULT_e1 and RESULT_e2.
-2. Methodology checklist from the paper 2 CLAUDE.md, then release.
-3. Zenodo, ORCID, SSRN in that order.
+1. Run e3 and e4 together: `colab/p4_e34.zip` to the Drive root, then `colab/run_p4_e34_<model>.ipynb`.
+2. Analyse: e3 (does restating or naming the barrier remove the phone instruction), e4 (does the need cost accuracy).
+3. Draft the paper; verify the reasonable-adjustments framing against primary sources first (DESIGN.md section 9).
 
 ## The decision that can end this paper
 
