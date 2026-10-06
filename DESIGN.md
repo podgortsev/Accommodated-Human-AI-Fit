@@ -203,3 +203,39 @@ Framing to carry into the text, agreed with the author:
 4. **What stays out:** turn-by-turn disclosure (Laban et al., Star et al.; a
    paper of its own), "declines to say" (no need, nothing to deliver), wrapper
    robustness (Paper 7) and order inside the disclosure (Paper 9).
+
+### 9a. The framing checked against primary sources, 2026-10-06
+
+Six quotes verified verbatim (`docs/prior-art-checks/quotes_paper4_framing.json`
+in the research repository): the Equality Act 2010, section 20, from the
+legislation.gov.uk XML, and the UN CRPD, Article 2, from un.org.
+
+**What the check changed.**
+
+- **The legal frame does not support "added, not removed" as a failure.** For
+  physical features, section 20(9) counts as avoiding the disadvantage not only
+  "removing the physical feature in question" but also "providing a reasonable
+  means of avoiding it". For a provision, criterion or practice the duty is "to
+  take such steps as it is reasonable to have to take to avoid the disadvantage".
+  An alternative route is an adjustment in law. So the paper must not say or imply
+  that adding a text route while keeping the phone instruction is non-compliant,
+  and a chatbot's answer is in any case not a duty-holder's service. The finding
+  stays empirical: the answer still sends a person who cannot hear to the phone,
+  and e3 shows that getting it removed takes the person's own instruction.
+- **The CRPD definition fits the paper's name.** "Reasonable accommodation" means
+  "necessary and appropriate modification and adjustments not imposing a
+  disproportionate or undue burden, where needed in a particular case". That is
+  the thing measured: an adjustment made in the particular case because the
+  person stated a need. It can anchor the title and the introduction.
+- **Universal design gives the screen-reader null a reading.** The CRPD's
+  universal design is "to be usable by all people, to the greatest extent
+  possible, without the need for adaptation or specialized design". On the
+  formatting the screen-reader check scores, the models' default answers already
+  contain no tables or emoji, so there was nothing to adapt (e1). That is a
+  property of the default, worth one sentence, not a finding about screen-reader
+  users.
+- **Not used.** The UPIAS 1976 wording of the social model could not be read in
+  the original (the Leeds archive is behind a challenge page; the mirror carries
+  no text), so it is not quoted. The CRPD preamble, paragraph (e), was refused by
+  un.org on the second request and will be retried at drafting; until then the
+  social model is not invoked by quotation.
