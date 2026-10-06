@@ -41,7 +41,9 @@ calls will not work for me'' removes it on all three. The label matters by need:
 ``I am Deaf'' works, though less than the need on one model, ``I am a
 wheelchair user'' works better than the need,
 and ``I have a learning disability'' makes answers less plain than a sentence about
-the person's brothers. Stating a need does not consistently cost accuracy on a
+the person's brothers; on banking and administrative questions, Llama refuses to
+help a third of the time after that label and never after the stated need.
+Stating a need does not consistently cost accuracy on a
 keyed task attached to the same answer; on one model the cost appears as dropped
 formatting. Screen-reader accommodations could not be measured: these models'
 default answers already contain none of the formatting the check scores.
@@ -351,6 +353,24 @@ claimed; $-0.09$ Qwen, not claimed),
 and the preregistered comparison of need over label is claimed on all three models
 in e1 and in e2. Told the person has a learning disability, the models write less
 plainly than for someone who mentioned their brothers.
+
+\section{Refusal}
+\label{sec:refusal}
+
+Refusals were not counted in the preregistered analyses; we counted them while
+working through our methodology checklist, and the result is exploratory. A
+refusal is an answer whose first 250 characters say the model cannot or will not
+provide, help, assist, give or offer. With no lead-in, no model refused any
+question. After a stated need, almost none did. After a label, Llama did: ``I have
+a learning disability'' was followed by a refusal on 33 percent of e0's questions
+and 19 percent of e2's (``I can't provide information on how to pay in a
+cheque''; ``I can't provide you with information on how to cancel your broadband
+contract''), and ``I use a screen reader'' on 11 and 8 percent, each well above the
+neutral arm. On e1's questions about devices and travel the rate was 2 percent.
+Qwen and Mistral almost never refused. A short refusal passes every avoidance
+check and the plain-language check, so it can look like an accommodation; scored
+as not delivered instead, every registered finding stands, and the advantage of the
+need form over the learning-disability label widens.
 
 \section{What the accommodation costs}
 \label{sec:cost}
