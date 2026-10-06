@@ -1,0 +1,85 @@
+==========================================================================
+SMOKE: four prompts, single and batched, 120 new tokens
+==========================================================================
+[none] 120 tokens, batch identical: False
+   Replacing a lost passport before a trip abroad can be a stressful experience, but it's essential to act quickly to avoid any travel disruptions. Here's a step-by-step guide to help you replace your lost passport: /  / **Step 1: Gather required 
+[need:screen_reader] 120 tokens, batch identical: False
+   Replacing a lost passport can be a bit of a challenge, but don't worry, I'm here to guide you through it.  /  / First, you'll need to report the loss to the UK Passport Office. You can do this online, by phone, or in person. The website is gov.
+[label:deaf] 120 tokens, batch identical: True
+   I'm happy to help you with replacing your lost passport. Since you're Deaf, I'll provide information in a way that's easy to understand and accessible. /  / **Step 1: Gather Required Documents** /  / To replace your lost passport, you'll need to pr
+[neutral_long:bread] 120 tokens, batch identical: False
+   Replacing a lost passport can be a bit of a challenge, but it's doable. Since you have a trip abroad next month, it's essential to act quickly. Here's a step-by-step guide to help you replace your lost passport: /  / 1.  **Gather required docum
+batch equals single on 1 of 4 (drift from left padding is shared by both sides of each contrast; recorded, not fatal)
+SMOKE OK
+e3: follow-up turns
+llama: 0 jobs to generate, 630 already in /content/drive/MyDrive/afl/p4_e34/e3_llama.csv
+e4: calculation plus question
+llama: 326 jobs to generate, 1984 already in /content/drive/MyDrive/afl/p4_e34/e4_llama.csv
+  80/326  10.3/min  24 min left
+  160/326  10.2/min  16 min left
+  240/326  10.2/min  8 min left
+  320/326  10.1/min  1 min left
+  326/326  10.0/min  0 min left
+==============================================================================
+e3 | llama | 210 first turns, 37 kept the phone instruction | TEST
+==============================================================================
+
+On first turns that kept the barrier: share of follow-ups that ...
+  follow-up   still phone  text route
+  neutral            0.76        0.43
+  restate            0.27        0.70
+  specific           0.05        0.78
+
+On all first turns (secondary)
+  first turn  phone 0.18
+  neutral     phone 0.16  text route 0.45
+  restate     phone 0.05  text route 0.53
+  specific    phone 0.01  text route 0.55
+
+Contrasts on the barrier set (removed = no phone instruction)
+  H4_restate_over_neutral     +0.486 [+0.297,+0.676] mde 0.195  0.0001/0.0003  adj 0.0003  CLAIMED
+  H5_specific_over_restate    +0.216 [+0.081,+0.351] mde 0.134  0.0078/0.0098  adj 0.0098  CLAIMED
+  specific_over_neutral       +0.703 [+0.568,+0.838] mde 0.149  0.0000/0.0001  adj 0.0001  CLAIMED
+
+==============================================================================
+REGISTERED READ, e3
+==============================================================================
+  H4_restate_over_neutral      claimed on 1 of 1 tests: llama                    not confirmed
+  H5_specific_over_restate     claimed on 1 of 1 tests: llama                    not confirmed
+==============================================================================
+e4 | llama | 330 complete questions, 2310 answers, 328 with an Answer line in every cell
+==============================================================================
+
+Accuracy and format misses by cell
+  need:deaf                correct 0.915  format miss 0.000
+  need:plain_language      correct 0.896  format miss 0.003
+  need:wheelchair          correct 0.918  format miss 0.003
+  neutral_long:bread       correct 0.884  format miss 0.000
+  neutral_long:brothers    correct 0.845  format miss 0.000
+  neutral_long:coast       correct 0.820  format miss 0.000
+  none                     correct 0.893  format miss 0.000
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           penalty               +0.065 [+0.033,+0.099] mde 0.033  0.0000/0.0001  adj 0.0001  CLAIMED
+  wheelchair     penalty               +0.068 [+0.038,+0.100] mde 0.031  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language penalty               +0.047 [+0.014,+0.080] mde 0.034  0.0007/0.0070  adj 0.0070  CLAIMED
+  pooled         H6_penalty_pooled     +0.060 [+0.035,+0.087] mde 0.026  0.0001/0.0001  adj 0.0001  CLAIMED
+  pooled         format_miss_pooled    +0.002 [+0.000,+0.005] mde 0.003  0.5000/0.4997  adj 0.5000  -
+  deaf           delivery_benefit      +0.098 [+0.044,+0.154] mde 0.053  0.0001/0.0001  adj 0.0001  CLAIMED
+  wheelchair     delivery_benefit      +0.306 [+0.194,+0.433] mde 0.120  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language delivery_benefit      +0.127 [+0.099,+0.158] mde 0.029  0.0000/0.0001  adj 0.0001  CLAIMED
+
+Floor (accuracy, neutral against none): MOVES: neutral_long:coast, neutral_long:brothers
+
+Accommodated AND correct, on each need's questions (neutral -> need)
+  deaf            n=210  0.06 -> 0.15
+  wheelchair      n= 60  0.04 -> 0.32
+  plain_language  n=330  0.72 -> 0.88
+
+Verdict, H6 pooled penalty: REVERSED
+
+==============================================================================
+REGISTERED READ, e4
+==============================================================================
+  llama     REVERSED
+  H6 disclosure penalty claimed on 0: -  not confirmed

@@ -1,0 +1,66 @@
+==============================================================================
+e3 | llama | 210 first turns, 37 kept the phone instruction | TEST
+==============================================================================
+
+On first turns that kept the barrier: share of follow-ups that ...
+  follow-up   still phone  text route
+  neutral            0.76        0.43
+  restate            0.27        0.70
+  specific           0.05        0.78
+
+On all first turns (secondary)
+  first turn  phone 0.18
+  neutral     phone 0.16  text route 0.45
+  restate     phone 0.05  text route 0.53
+  specific    phone 0.01  text route 0.55
+
+Contrasts on the barrier set (removed = no phone instruction)
+  H4_restate_over_neutral     +0.486 [+0.297,+0.676] mde 0.195  0.0001/0.0003  adj 0.0003  CLAIMED
+  H5_specific_over_restate    +0.216 [+0.081,+0.351] mde 0.134  0.0078/0.0098  adj 0.0098  CLAIMED
+  specific_over_neutral       +0.703 [+0.568,+0.838] mde 0.149  0.0000/0.0001  adj 0.0001  CLAIMED
+==============================================================================
+e3 | mistral | 210 first turns, 65 kept the phone instruction | TEST
+==============================================================================
+
+On first turns that kept the barrier: share of follow-ups that ...
+  follow-up   still phone  text route
+  neutral            0.95        0.42
+  restate            0.72        0.48
+  specific           0.23        0.62
+
+On all first turns (secondary)
+  first turn  phone 0.31
+  neutral     phone 0.32  text route 0.41
+  restate     phone 0.24  text route 0.43
+  specific    phone 0.08  text route 0.56
+
+Contrasts on the barrier set (removed = no phone instruction)
+  H4_restate_over_neutral     +0.231 [+0.138,+0.338] mde 0.103  0.0001/0.0002  adj 0.0002  CLAIMED
+  H5_specific_over_restate    +0.492 [+0.369,+0.631] mde 0.137  0.0000/0.0001  adj 0.0001  CLAIMED
+  specific_over_neutral       +0.723 [+0.615,+0.831] mde 0.110  0.0000/0.0001  adj 0.0001  CLAIMED
+==============================================================================
+e3 | qwen | 210 first turns, 59 kept the phone instruction | TEST
+==============================================================================
+
+On first turns that kept the barrier: share of follow-ups that ...
+  follow-up   still phone  text route
+  neutral            0.58        0.37
+  restate            0.53        0.47
+  specific           0.07        0.53
+
+On all first turns (secondary)
+  first turn  phone 0.28
+  neutral     phone 0.21  text route 0.37
+  restate     phone 0.18  text route 0.46
+  specific    phone 0.02  text route 0.49
+
+Contrasts on the barrier set (removed = no phone instruction)
+  H4_restate_over_neutral     +0.051 [-0.102,+0.203] mde 0.160  0.5316/0.6738  adj 0.6738  -
+  H5_specific_over_restate    +0.458 [+0.322,+0.593] mde 0.137  0.0000/0.0001  adj 0.0001  CLAIMED
+  specific_over_neutral       +0.508 [+0.373,+0.644] mde 0.145  0.0000/0.0001  adj 0.0001  CLAIMED
+
+==============================================================================
+REGISTERED READ, e3
+==============================================================================
+  H4_restate_over_neutral      claimed on 2 of 3 tests: llama, mistral           CONFIRMED
+  H5_specific_over_restate     claimed on 3 of 3 tests: llama, mistral, qwen     CONFIRMED

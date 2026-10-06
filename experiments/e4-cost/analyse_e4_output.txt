@@ -1,0 +1,101 @@
+==============================================================================
+e4 | llama | 330 complete questions, 2310 answers, 328 with an Answer line in every cell
+==============================================================================
+
+Accuracy and format misses by cell
+  need:deaf                correct 0.915  format miss 0.000
+  need:plain_language      correct 0.896  format miss 0.003
+  need:wheelchair          correct 0.918  format miss 0.003
+  neutral_long:bread       correct 0.884  format miss 0.000
+  neutral_long:brothers    correct 0.845  format miss 0.000
+  neutral_long:coast       correct 0.820  format miss 0.000
+  none                     correct 0.893  format miss 0.000
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           penalty               +0.065 [+0.033,+0.099] mde 0.033  0.0000/0.0001  adj 0.0001  CLAIMED
+  wheelchair     penalty               +0.068 [+0.038,+0.100] mde 0.031  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language penalty               +0.047 [+0.014,+0.080] mde 0.034  0.0007/0.0070  adj 0.0070  CLAIMED
+  pooled         H6_penalty_pooled     +0.060 [+0.035,+0.087] mde 0.026  0.0001/0.0001  adj 0.0001  CLAIMED
+  pooled         format_miss_pooled    +0.002 [+0.000,+0.005] mde 0.003  0.5000/0.4997  adj 0.5000  -
+  deaf           delivery_benefit      +0.098 [+0.044,+0.154] mde 0.053  0.0001/0.0001  adj 0.0001  CLAIMED
+  wheelchair     delivery_benefit      +0.306 [+0.194,+0.433] mde 0.120  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language delivery_benefit      +0.127 [+0.099,+0.158] mde 0.029  0.0000/0.0001  adj 0.0001  CLAIMED
+
+Floor (accuracy, neutral against none): MOVES: neutral_long:coast, neutral_long:brothers
+
+Accommodated AND correct, on each need's questions (neutral -> need)
+  deaf            n=210  0.06 -> 0.15
+  wheelchair      n= 60  0.04 -> 0.32
+  plain_language  n=330  0.72 -> 0.88
+
+Verdict, H6 pooled penalty: REVERSED
+==============================================================================
+e4 | mistral | 330 complete questions, 2310 answers, 117 with an Answer line in every cell
+==============================================================================
+
+Accuracy and format misses by cell
+  need:deaf                correct 0.350  format miss 0.200
+  need:plain_language      correct 0.342  format miss 0.494
+  need:wheelchair          correct 0.402  format miss 0.242
+  neutral_long:bread       correct 0.462  format miss 0.133
+  neutral_long:brothers    correct 0.402  format miss 0.279
+  neutral_long:coast       correct 0.402  format miss 0.252
+  none                     correct 0.402  format miss 0.218
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           penalty               -0.071 [-0.125,-0.020] mde 0.053  0.0466/0.0129  adj 0.1168  -
+  wheelchair     penalty               -0.020 [-0.063,+0.023] mde 0.043  0.8502/0.4419  adj 0.8502  -
+  plain_language penalty               -0.080 [-0.151,-0.009] mde 0.073  0.0778/0.0413  adj 0.1168  -
+  pooled         H6_penalty_pooled     -0.057 [-0.100,-0.014] mde 0.045  0.0102/0.0191  adj 0.0191  CLAIMED
+  pooled         format_miss_pooled    +0.091 [+0.056,+0.126] mde 0.034  0.0000/0.0001  adj 0.0001  CLAIMED
+  deaf           delivery_benefit      +0.022 [-0.011,+0.057] mde 0.034  0.1345/0.2340  adj 0.2340  -
+  wheelchair     delivery_benefit      +0.233 [+0.133,+0.339] mde 0.107  0.0002/0.0001  adj 0.0002  CLAIMED
+  plain_language delivery_benefit      +0.129 [+0.084,+0.174] mde 0.045  0.0000/0.0001  adj 0.0002  CLAIMED
+
+Floor (accuracy, neutral against none): no detail moves
+
+Accommodated AND correct, on each need's questions (neutral -> need)
+  deaf            n=210  0.01 -> 0.01
+  wheelchair      n= 60  0.01 -> 0.12
+  plain_language  n=330  0.18 -> 0.13
+
+Verdict, H6 pooled penalty: PENALTY
+==============================================================================
+e4 | qwen | 330 complete questions, 2310 answers, 330 with an Answer line in every cell
+==============================================================================
+
+Accuracy and format misses by cell
+  need:deaf                correct 0.667  format miss 0.000
+  need:plain_language      correct 0.618  format miss 0.000
+  need:wheelchair          correct 0.624  format miss 0.000
+  neutral_long:bread       correct 0.621  format miss 0.000
+  neutral_long:brothers    correct 0.618  format miss 0.000
+  neutral_long:coast       correct 0.630  format miss 0.000
+  none                     correct 0.688  format miss 0.000
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           penalty               +0.043 [+0.014,+0.076] mde 0.031  0.0002/0.0088  adj 0.0264  CLAIMED
+  wheelchair     penalty               +0.001 [-0.028,+0.029] mde 0.030  0.2456/1.0000  adj 1.0000  -
+  plain_language penalty               -0.005 [-0.037,+0.026] mde 0.032  0.5012/0.8037  adj 1.0000  -
+  pooled         H6_penalty_pooled     +0.013 [-0.009,+0.035] mde 0.022  0.6766/0.2857  adj 0.6766  -
+  pooled         format_miss_pooled    +0.000 [+0.000,+0.000] mde 0.000  1.0000/1.0000  adj 1.0000  -
+  deaf           delivery_benefit      -0.006 [-0.041,+0.029] mde 0.035  0.8142/0.7946  adj 0.8142  -
+  wheelchair     delivery_benefit      +0.406 [+0.278,+0.533] mde 0.127  0.0000/0.0001  adj 0.0001  CLAIMED
+  plain_language delivery_benefit      +0.229 [+0.184,+0.275] mde 0.045  0.0000/0.0001  adj 0.0001  CLAIMED
+
+Floor (accuracy, neutral against none): MOVES: neutral_long:bread, neutral_long:coast, neutral_long:brothers
+
+Accommodated AND correct, on each need's questions (neutral -> need)
+  deaf            n=210  0.04 -> 0.04
+  wheelchair      n= 60  0.02 -> 0.23
+  plain_language  n=330  0.29 -> 0.43
+
+Verdict, H6 pooled penalty: NO PENALTY LARGER THAN 5 POINTS
+
+==============================================================================
+REGISTERED READ, e4
+==============================================================================
+  llama     REVERSED
+  mistral   PENALTY
+  qwen      NO PENALTY LARGER THAN 5 POINTS
+  H6 disclosure penalty claimed on 1: mistral  not confirmed

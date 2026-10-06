@@ -1,0 +1,13 @@
+==========================================================================
+SMOKE: four prompts, single and batched, 120 new tokens
+==========================================================================
+[none] 120 tokens, batch identical: False
+   Replacing a lost passport before a trip abroad can be a stressful experience, but it's essential to act quickly to avoid any travel disruptions. Here's a step-by-step guide to help you replace your lost passport: /  / **Step 1: Gather required 
+[need:screen_reader] 120 tokens, batch identical: False
+   Replacing a lost passport can be a bit of a challenge, but don't worry, I'm here to guide you through it.  /  / First, you'll need to report the loss to the UK Passport Office. You can do this online, by phone, or in person. The website is gov.
+[label:deaf] 120 tokens, batch identical: True
+   I'm happy to help you with replacing your lost passport. Since you're Deaf, I'll provide information in a way that's easy to understand and accessible. /  / **Step 1: Gather Required Documents** /  / To replace your lost passport, you'll need to pr
+[neutral_long:bread] 120 tokens, batch identical: False
+   Replacing a lost passport can be a bit of a challenge, but it's doable. Since you have a trip abroad next month, it's essential to act quickly. Here's a step-by-step guide to help you replace your lost passport: /  / 1.  **Gather required docum
+batch equals single on 1 of 4 (drift from left padding is shared by both sides of each contrast; recorded, not fatal)
+SMOKE OK

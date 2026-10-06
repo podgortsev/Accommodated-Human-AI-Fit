@@ -1,0 +1,94 @@
+==========================================================================
+SMOKE: four prompts, single and batched, 120 new tokens
+==========================================================================
+[none] 120 tokens, batch identical: False
+   To replace a lost passport, you'll typically need to follow these steps: /  / 1. Report the loss: Contact your country's passport office or embassy and report your passport as lost. This is important for security reasons, as it helps prevent so
+[need:screen_reader] 120 tokens, batch identical: False
+   To replace a lost passport before your upcoming trip, follow these steps: /  / 1. Contact the issuing authority: In the United States, this is the U.S. Department of State. In other countries, it may be a different government agency. /  / 2. File a
+[label:deaf] 120 tokens, batch identical: False
+   To replace a lost passport, regardless of hearing status, you can follow these general steps. However, since you are Deaf, I recommend reaching out to the passport agency or embassy using communication methods that suit you best, such as TT
+[neutral_long:bread] 120 tokens, batch identical: False
+   To replace a lost passport before a trip abroad, follow these steps: /  / 1. Report your lost passport to the issuing authority: /    - If you have a U.S. passport, contact the National Passport Information Center (NPIC) at 1-877-487-2778 or visi
+batch equals single on 0 of 4 (drift from left padding is shared by both sides of each contrast; recorded, not fatal)
+SMOKE OK
+e3: follow-up turns
+mistral: 0 jobs to generate, 630 already in /content/drive/MyDrive/afl/p4_e34/e3_mistral.csv
+e4: calculation plus question
+mistral: 1046 jobs to generate, 1264 already in /content/drive/MyDrive/afl/p4_e34/e4_mistral.csv
+  80/1046  11.4/min  85 min left
+  160/1046  11.5/min  77 min left
+  240/1046  11.3/min  71 min left
+  320/1046  11.3/min  64 min left
+  400/1046  11.2/min  57 min left
+  480/1046  11.2/min  51 min left
+  560/1046  11.2/min  43 min left
+  640/1046  11.2/min  36 min left
+  720/1046  11.1/min  29 min left
+  800/1046  11.2/min  22 min left
+  880/1046  11.2/min  15 min left
+  960/1046  11.2/min  8 min left
+  1040/1046  11.2/min  1 min left
+  1046/1046  11.2/min  0 min left
+==============================================================================
+e3 | mistral | 210 first turns, 65 kept the phone instruction | TEST
+==============================================================================
+
+On first turns that kept the barrier: share of follow-ups that ...
+  follow-up   still phone  text route
+  neutral            0.95        0.42
+  restate            0.72        0.48
+  specific           0.23        0.62
+
+On all first turns (secondary)
+  first turn  phone 0.31
+  neutral     phone 0.32  text route 0.41
+  restate     phone 0.24  text route 0.43
+  specific    phone 0.08  text route 0.56
+
+Contrasts on the barrier set (removed = no phone instruction)
+  H4_restate_over_neutral     +0.231 [+0.138,+0.338] mde 0.103  0.0001/0.0002  adj 0.0002  CLAIMED
+  H5_specific_over_restate    +0.492 [+0.369,+0.631] mde 0.137  0.0000/0.0001  adj 0.0001  CLAIMED
+  specific_over_neutral       +0.723 [+0.615,+0.831] mde 0.110  0.0000/0.0001  adj 0.0001  CLAIMED
+
+==============================================================================
+REGISTERED READ, e3
+==============================================================================
+  H4_restate_over_neutral      claimed on 1 of 1 tests: mistral                  not confirmed
+  H5_specific_over_restate     claimed on 1 of 1 tests: mistral                  not confirmed
+==============================================================================
+e4 | mistral | 330 complete questions, 2310 answers, 117 with an Answer line in every cell
+==============================================================================
+
+Accuracy and format misses by cell
+  need:deaf                correct 0.350  format miss 0.200
+  need:plain_language      correct 0.342  format miss 0.494
+  need:wheelchair          correct 0.402  format miss 0.242
+  neutral_long:bread       correct 0.462  format miss 0.133
+  neutral_long:brothers    correct 0.402  format miss 0.279
+  neutral_long:coast       correct 0.402  format miss 0.252
+  none                     correct 0.402  format miss 0.218
+
+Contrasts (mean [95% CI], MDE, p rank / p mean, adjusted, claimed)
+  deaf           penalty               -0.071 [-0.125,-0.020] mde 0.053  0.0466/0.0129  adj 0.1168  -
+  wheelchair     penalty               -0.020 [-0.063,+0.023] mde 0.043  0.8502/0.4419  adj 0.8502  -
+  plain_language penalty               -0.080 [-0.151,-0.009] mde 0.073  0.0778/0.0413  adj 0.1168  -
+  pooled         H6_penalty_pooled     -0.057 [-0.100,-0.014] mde 0.045  0.0102/0.0191  adj 0.0191  CLAIMED
+  pooled         format_miss_pooled    +0.091 [+0.056,+0.126] mde 0.034  0.0000/0.0001  adj 0.0001  CLAIMED
+  deaf           delivery_benefit      +0.022 [-0.011,+0.057] mde 0.034  0.1345/0.2340  adj 0.2340  -
+  wheelchair     delivery_benefit      +0.233 [+0.133,+0.339] mde 0.107  0.0002/0.0001  adj 0.0002  CLAIMED
+  plain_language delivery_benefit      +0.129 [+0.084,+0.174] mde 0.045  0.0000/0.0001  adj 0.0002  CLAIMED
+
+Floor (accuracy, neutral against none): no detail moves
+
+Accommodated AND correct, on each need's questions (neutral -> need)
+  deaf            n=210  0.01 -> 0.01
+  wheelchair      n= 60  0.01 -> 0.12
+  plain_language  n=330  0.18 -> 0.13
+
+Verdict, H6 pooled penalty: PENALTY
+
+==============================================================================
+REGISTERED READ, e4
+==============================================================================
+  mistral   PENALTY
+  H6 disclosure penalty claimed on 1: mistral  not confirmed
