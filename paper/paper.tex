@@ -1,0 +1,494 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\usepackage{enumitem}
+
+\title{\textbf{Accommodated Human-AI Fit}\\[0.3em]
+\large What a Language Model Changes When a Person Says What They Need}
+\author{Michael Podgortsev\\ \small podgortsev@gmail.com}
+\date{December 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+People who use language models often tell them what they need: that they cannot
+hear, cannot walk, or find reading hard. Disabled users report doing this because
+they expect better answers. Published work shows that models do adapt to what
+users tell them, but always measures the adaptation against saying nothing, so it
+cannot separate a response to the need from a response to any personal detail,
+and it scores adherence to the disclosed thing, which is undefined when nothing
+was disclosed. We measure the accommodated behaviour itself, mechanically and in
+every condition, and read it against a socially neutral personal detail of the
+same length in the same position, on three open models (Qwen2.5-7B,
+Llama-3.1-8B, Mistral-7B) across five preregistered experiments and 25,830
+generated answers.
+
+Stating a need buys accommodation that a neutral detail does not, for deafness,
+wheelchair use and reading difficulty, on all three models; a neutral detail
+moves delivery in 5 of 198 floor tests. The accommodation for deafness is an
+addition: told ``I cannot hear, so any step that needs sound or speaking will not
+work for me'', all three models add a text route (from 10--18 to 48--62 percent
+of answers) while 56 to 82 percent of their instructions to phone remain. Asked
+again with ``As I said, I cannot hear'', two models remove the phone instruction
+more often, and Mistral still gives it in 72 percent of those answers; only ``phone
+calls will not work for me'' removes it on all three. The label matters by need:
+``I am Deaf'' works, though less than the need on one model, ``I am a
+wheelchair user'' works better than the need,
+and ``I have a learning disability'' makes answers less plain than a sentence about
+the person's brothers. Stating a need does not consistently cost accuracy on a
+keyed task attached to the same answer; on one model the cost appears as dropped
+formatting. Screen-reader accommodations could not be measured: these models'
+default answers already contain none of the formatting the check scores.
+\end{abstract}
+
+\section{Introduction}
+
+A person asks a language model how to cancel a broadband contract and says first
+that they cannot hear. A good answer gives them a way to do it that does not
+involve a phone call. Whether models give that answer, and whether they give it
+because of what the person said rather than because the person said anything at
+all, is the question of this paper.
+
+The question has a benefit side and a penalty side. The penalty side is well
+studied: stating a disability lowers how a model rates, chooses and serves the
+person, in candidate ranking~\cite{kamruzzaman2025}, in benchmarks of
+disability-aware queries~\cite{accesseval2025}, and in our own earlier
+work~\cite{p2}, where disclosing a screen reader, deafness, ADHD or age lowered
+accuracy on the person's own task. This paper is about the benefit side, which is
+what disabled users are counting on when they disclose. In focus groups, ``many
+participants were far more willing to disclose their disability to GenAI tools
+than other personal information because it was necessary for high-quality GenAI
+results''~\cite{johnson2026}.
+
+Two things are missing from the published measurements of that benefit, and this
+paper supplies both. First, every benefit result we found compares disclosure with
+its absence: no system prompt~\cite{gupta2026nd}, a context-free
+query~\cite{penguin2025}, the disability removed~\cite{accesseval2025}. Adding text
+about a person moves model outputs by itself, as our own work and others' has
+shown~\cite{p2,p3,akpinar2025}, so a benefit read against nothing contains a
+response to there being a person at all. Second, the benefit is scored as
+adherence to the disclosed thing: did the answer follow preference
+$P$~\cite{prefeval2025,perg2025}, did it account for the
+constraint~\cite{curate}. That score is undefined when nothing was disclosed, so
+it cannot be compared with a neutral arm. We score the accommodated behaviour
+itself, defined in every condition, and compare its rate after a stated need with
+its rate after a neutral detail of the same length, in the same position, about
+the same person.
+
+We use the definition of the UN Convention on the Rights of Persons with
+Disabilities: reasonable accommodation ``means necessary and appropriate
+modification and adjustments not imposing a disproportionate or undue burden,
+where needed in a particular case''~\cite{crpd}. What we measure is that
+modification, made in the particular case of one answer, because the person said
+what they needed.
+
+\paragraph{Findings.}
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+\item Stating a need buys accommodation that a neutral detail of the same length
+does not, for deafness, wheelchair use and reading difficulty, on all three
+models (Section~\ref{sec:benefit}).
+\item For deafness the accommodation is added, not substituted: a text route
+appears and the instruction to phone mostly stays (Section~\ref{sec:addition}).
+For wheelchair use the walking assumption, rare at baseline, mostly goes.
+\item Saying the need again helps on two models; naming the barrier removes it on
+all three (Section~\ref{sec:pushback}).
+\item Which works better, the need or the label, depends on the need; for a
+learning disability the label is worse than saying nothing
+(Section~\ref{sec:label}).
+\item The accommodation does not consistently cost accuracy on a task in the same
+answer (Section~\ref{sec:cost}).
+\end{enumerate}
+
+\section{Related work, and what this paper concedes}
+\label{sec:related}
+
+\paragraph{Models adapt to what users tell them.} This is established. NDBench
+finds that two frontier models restructure their answers when told the user is
+neurodivergent, though ``merely defining the user's neurodivergent
+characteristics will not produce an effective response'' to harmful
+framings~\cite{gupta2026nd}. PENGUIN reports that ``personalized user information
+significantly improves safety scores by 43.2\%'' across 14,000
+scenarios~\cite{penguin2025}. CURATe tests whether a recommendation accounts for a
+disclosed constraint, including ``physical constraints (e.g., blindness,
+wheelchair user)'', in multi-turn conversation~\cite{curate}. PrefEval builds
+queries ``such that a generic, non-personalized response would likely violate the
+previously stated preference''~\cite{prefeval2025}, a construction we borrow. We do
+not discover that models adapt. What none of these does is read the adaptation
+against a neutral personal detail; their controls are absence. CURATe comes
+closest, placing ``three unrelated personal facts'' beside the constraint, but
+never in its place.
+
+\paragraph{Unrelated personal context moves outputs.} PrefEval observes that
+``adherence accuracy for the initial preference increases as more preferences are
+introduced, even when these preferences are unrelated to the
+first''~\cite{prefeval2025}. Akpinar et al.\ find that personas unrelated to a
+factual question ``typically lead to accuracy decreases''~\cite{akpinar2025}. Yan
+et al.\ use ``a neutral baseline using identity-neutral fillers'' in auditing
+implicit personalisation~\cite{yan2026}. Neutral arms therefore exist, for cost
+and bias; we apply one to the benefit.
+
+\paragraph{Benefit and cost together.} PERG defines a model as robust ``if its
+responses are both factually accurate and align with the user
+preferences''~\cite{perg2025}, and PFQABench evaluates factual and personalised
+answering jointly~\cite{pfqabench2026}. Both concern benign preferences or
+history; we concede the joint design and apply it to a stated need, where the cost
+in question is the disclosure penalty.
+
+\paragraph{How disabled people disclose.} Taheri et al.\ report from interviews
+that ``participants disclosed by need rather than by name, translating disability
+into task-scoped instructions''~\cite{taheri2026}; Johnson et al.\ find people
+disclosing by label too~\cite{johnson2026}. Neither measures model behaviour. We
+test both registers.
+
+\paragraph{Repair and turns.} Lachenmaier et al.\ track how models revise when a
+user challenges an arithmetic answer~\cite{lachenmaier2026}; we ask the same of a
+disclosed need. Laban et al.\ show that spreading the same information over turns
+costs performance by itself~\cite{laban2025}; our only multi-turn experiment
+replays a fixed first turn and compares follow-ups of equal length, so it does not
+depend on that effect.
+
+\section{Design}
+\label{sec:design}
+
+\paragraph{The instrument.} For each of five needs, a set of properties an answer
+has or lacks, decided by a script with no model in the loop
+(\texttt{p4\_checks.py}, 36 offline checks). Deafness: no instruction to phone,
+and a text route offered. Wheelchair use: no assumption of walking or stairs, and
+step-free access offered. Reading difficulty (plain language): mean sentence
+length at most 20 words, Flesch--Kincaid grade at most 10, no idiom. Screen
+reader: no table, ASCII art, emoji or layout deixis. No vision: no colour or
+position reference, no layout deixis. A need is delivered only if all its parts
+hold. Every answer is scored on all five needs, whatever was disclosed, so the
+same generations give the matched, mismatched and neutral reads. We used no model
+judge: in our earlier work the effect size moved fivefold with the
+judge~\cite{p2}, and LLM judges rate personalised answers higher than humans
+do~\cite{zhang2026}.
+
+\paragraph{The cells.} Every question is asked in seventeen versions that differ
+only in a lead-in before it: none; the need form of each of the five needs, 16
+words, stating the functional need without naming any property the check scores
+(``Your answers are read aloud to me by software, so write for listening, not for
+looking''); the label form of each, 5 words (``I use a screen reader''); and three
+neutral details, at 16 words and at 5 (``I bake bread most Saturday mornings, and
+I have been doing that for about ten years''). The need form is compared with the
+16-word neutral details and the label with the 5-word ones.
+
+\paragraph{Models and generation.} Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct and
+Mistral-7B-Instruct-v0.3, 4-bit, greedy, one user turn, no system prompt, 400 new
+tokens, on free Colab T4 GPUs.
+
+\paragraph{Statistics.} Paired within question. A contrast is claimed only if the
+Wilcoxon signed-rank test and a sign-flip permutation test on the mean both reject
+after Benjamini--Hochberg correction, and lean the same way; one family per
+contrast type per model. Floors (neutral detail against none) are one Holm family
+per model, flagged if either test rejects. The rule is Paper 3's~\cite{p3}.
+
+\paragraph{Preregistration and sequence.} Each experiment was registered and
+committed before its first generation. e0 tested the instrument on 120 practical
+how-to questions. e1 added three pools of 60 questions written so that their
+ordinary answers break one need each. e2 tested deafness on 90 questions about
+contacting an organisation. e3 replayed answers to the deafness need with a
+follow-up. e4 attached a keyed calculation to 330 questions.
+
+\section{Can the need be measured at all?}
+\label{sec:measurable}
+
+e0's registered gate asked whether at least two needs show a benefit over the
+neutral arm on at least two models. Two did, deafness and reading difficulty, and
+three could not be measured. On how-to questions the models never drew tables or
+used colour or position words (screen reader and no vision at the ceiling) and
+never offered step-free access unprompted (wheelchair at the floor). e1's pools
+fixed two of the three. Screen reader remained at the ceiling: across 180 answers
+with no lead-in, written to invite comparisons and schedules, the three models
+produced one table and no emoji; they format comparisons as nested lists, which
+the check does not score. This is a property of these models' defaults, close to
+what the CRPD calls universal design, ``usable by all people, to the greatest
+extent possible, without the need for adaptation''~\cite{crpd}, on the dimensions
+scored. It is not evidence about how they serve screen-reader users. No vision
+sits on the margin: point estimates of $+0.13$ to $+0.17$, claimed on one model.
+
+Two corrections were made during the work and are reported as such. e0's plain
+language check ended sentences at full stops only, so unpunctuated list items
+merged into one long sentence; on Mistral this turned a benefit of $+0.21$ into a
+registered $-0.23$. A line-aware splitter was registered before e1. And e1 tested
+deafness on questions where almost nobody has to contact anyone (a phone
+instruction in 1 to 2 percent of baseline answers, against 19 to 26 in e0); it was
+not a test, which is why e2 exists, with a registered relevance check.
+
+\section{The benefit, against a neutral detail}
+\label{sec:benefit}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{llccc}
+\toprule
+need & experiment & Qwen & Llama & Mistral \\
+\midrule
+deafness & e0 & $+0.22$ & $+0.24$ & $+0.15$ \\
+deafness & e2 & $+0.39$ & $+0.43$ & $+0.26$ \\
+wheelchair use & e1 & $+0.66$ & $+0.61$ & $+0.43$ \\
+plain language & e1 & $+0.10$ & $+0.09$ & $+0.09$ \\
+plain language & e2 & $+0.32$ & $+0.37$ & $+0.26$ \\
+\bottomrule
+\end{tabular}
+\caption{Need benefit: delivery after the 16-word need form minus delivery after
+the 16-word neutral details, paired within question. Every entry is claimed under
+the two-test rule. Plain language in e1 and e2 uses the line-aware splitter.}
+\label{tab:benefit}
+\end{table}
+
+Table~\ref{tab:benefit} gives the registered need benefits. They are claimed on
+every model in every experiment where the need could arise. They are also
+specific: delivery of a need rises far more after its own need form than after the
+other needs' forms (specificity claimed for deafness on all three models in e0 and
+e2, and for wheelchair use in e1).
+
+The neutral arm earns its place. Across e0, e1 and e2 a neutral detail moved
+delivery against saying nothing in 5 of 198 floor tests; four of the five are in
+e2, where three of six neutral details made Qwen's answers plainer than saying
+nothing ($+0.20$ on average). Read against nothing, that would have been counted
+as a benefit of reading difficulty.
+
+\section{Added, not substituted}
+\label{sec:addition}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{text route offered} & \multicolumn{2}{c}{still told to phone} \\
+model & neutral & need & neutral & need \\
+\midrule
+Qwen & 0.10 & 0.62 & 0.35 & 0.29 \\
+Llama & 0.13 & 0.62 & 0.32 & 0.18 \\
+Mistral & 0.18 & 0.48 & 0.34 & 0.28 \\
+\bottomrule
+\end{tabular}
+\caption{e2, 90 questions about contacting an organisation. Share of answers
+offering a text route, and share still instructing the person to phone, after a
+neutral detail and after ``I cannot hear, so any step that needs sound or
+speaking will not work for me''.}
+\label{tab:parts}
+\end{table}
+
+What does the deafness benefit consist of? Table~\ref{tab:parts} decomposes it.
+The text route goes up by 30 to 52 points. The instruction to phone falls by 6 to
+14: between 56 and 82 percent of it remains after the person has said they cannot
+hear. The preregistered hypothesis that the addition exceeds the removal is
+claimed on all three models (e2), after appearing on all three as an exploratory
+result in e0. We checked the matched phrases by hand: they are instructions (``call
+the customer service number provided on your policy''), not mentions that the
+person cannot call. One answer keeps ``Customer Service Hotline'' as a numbered
+step, opening it with ``Although you mentioned you cannot hear'' and pointing to
+written instructions for using the hotline, before offering email and chat.
+
+This is not a general rule. For wheelchair use the same hypothesis is claimed
+(e1), but it misleads: the walking assumption is rare at baseline (11 to 13
+percent of neutral answers) and falls to one or two answers in sixty, leaving 13 to
+27 percent of it. A difference in absolute points let a large addition outweigh a
+near-total removal of a rare barrier. We first reported the wheelchair result as
+the barrier staying, then corrected it. Addition without removal is a deafness
+result.
+
+We do not frame it as a failure of a legal duty. The UK Equality Act counts as an
+adjustment to a physical feature not only ``removing the physical feature in
+question'' but also ``providing a reasonable means of avoiding it''~\cite{eqa}, and
+a chatbot's answer is not a duty-holder's service. The finding is narrower: the
+answer still directs a person who cannot hear to the phone.
+
+\section{Saying it again}
+\label{sec:pushback}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+follow-up (14 words each) & Qwen & Llama & Mistral \\
+\midrule
+``Thanks for that. Could you go over it once more, step by step, please?'' & 0.58 & 0.76 & 0.95 \\
+``As I said, I cannot hear. Could you go over it once more, please?'' & 0.53 & 0.27 & 0.72 \\
+``I cannot hear; phone calls will not work for me. Please repeat the steps.'' & 0.07 & 0.05 & 0.23 \\
+\bottomrule
+\end{tabular}
+\caption{e3. Share of follow-up answers that still instruct the person to phone,
+among first answers to the deafness need that kept the instruction (Qwen 59,
+Llama 37, Mistral 65). The first answer is the model's own, replayed verbatim.}
+\label{tab:pushback}
+\end{table}
+
+e3 replayed each model's own first answer to the deafness need and added one of
+three follow-ups of equal length (Table~\ref{tab:pushback}). Removal is measured
+where there was something to remove. Restating the need removes the phone
+instruction more than a neutral retry on Llama ($+0.49$) and Mistral ($+0.23$), not
+on Qwen ($+0.05$): preregistered, confirmed on two of three. Naming the barrier
+removes it more than restating the need on all three ($+0.22$ to $+0.49$):
+confirmed on three of three. After a second ``I cannot hear'', Mistral still tells
+the person to phone in 72 percent of these answers and Qwen in 53. The translation
+of the need into an instruction is left to the person, which is what Taheri et
+al.'s participants describe doing~\cite{taheri2026}.
+
+\section{The need or the label}
+\label{sec:label}
+
+The label form works differently by need. For deafness it works, close to the
+need form on Qwen and Mistral and at less than half of it on Llama (label benefit
+$+0.30$, $+0.23$, $+0.19$ against need benefits of $+0.39$, $+0.26$, $+0.43$, e2). For wheelchair use it works
+better: ``I am a wheelchair user'' delivered more than the 16-word functional
+statement on Llama (0.82 against 0.67) and Mistral (0.62 against 0.48), and the same
+on Qwen. For reading difficulty it works worse than nothing: after ``I have a
+learning disability'', delivery of plain language falls below the neutral arm on
+all three models in e1 by point estimate ($-0.23$ Llama and $-0.17$ Mistral,
+claimed; $-0.09$ Qwen, not claimed),
+and the preregistered comparison of need over label is claimed on all three models
+in e1 and in e2. Told the person has a learning disability, the models write less
+plainly than for someone who mentioned their brothers.
+
+\section{What the accommodation costs}
+\label{sec:cost}
+
+e4 attached one of Paper 3's verified calculations to 330 questions and asked for
+the result on a first line, ``Answer: <number>'', so that accuracy and
+accommodation are measured on the same answer. A missing Answer line is counted
+separately, not as a wrong answer.
+
+The preregistered disclosure penalty is not confirmed. Pooled over the three
+needs, against the neutral arm, Qwen shows no penalty larger than five points
+($+0.01$, interval $-0.01$ to $+0.04$), Llama a reversal ($+0.06$), and Mistral a
+penalty ($-0.06$) on the 117 questions where all seven cells gave an Answer line.
+Two things sit under these verdicts. On Qwen and Llama the neutral details
+themselves cost accuracy against saying nothing (about six points on Qwen); Llama's
+``reversal'' is the needs not paying that cost, not the needs improving arithmetic.
+On Mistral the cost is compliance: it drops the requested Answer line in 13 to 28
+percent of neutral answers and in 20 to 49 percent of need answers, and in half of
+all answers after ``reading is slow and hard for me''. Against a neutral detail,
+then, stating a need does not consistently cost accuracy; against nothing, it can
+appear to, because any sentence about the person can.
+
+One exploratory observation: with the calculation in front, the deafness benefit
+largely disappears ($-0.01$ to $+0.10$) while wheelchair use and plain language
+keep theirs. Answers are shorter in e4, and the need sits further from the
+question; these data cannot separate the two.
+
+\section{Discussion}
+\label{sec:discussion}
+
+Models serve stated needs. That is the good news, and it is measured here against
+the right control. The less good news is in the form of the service. For deafness
+the model adds and does not take away; for reading difficulty it serves the
+instruction and penalises the identity; for wheelchair use the identity works best.
+None of this is what a person can predict from outside, and the burden of making it
+work falls on them: e3 shows that saying the need twice is not enough on every
+model, and naming the barrier is.
+
+For auditors the methodological point carries furthest. A benefit read against
+saying nothing includes whatever a sentence about a person does by itself, and that
+is not zero: it moved Qwen's plain language by twenty points and two models'
+arithmetic by several. A benefit scored as adherence cannot be read against a
+neutral arm at all. Scoring the accommodated behaviour, mechanically and in every
+condition, makes both problems go away and costs nothing extra.
+
+The instrument is also a ready column for a benchmark of how well systems serve
+people who are not the average user, which this research programme intends to
+build.
+
+\section{Limitations}
+\label{sec:limits}
+
+Three open 7--8B models at 4-bit on one wrapper; frontier models format
+differently, and the screen-reader null would likely not hold for them. The checks
+are lexical and conservative: the text-route lexicon misses ``send them an email'',
+which undercounts additions in every cell. Pool questions were written to break
+their need, so base rates are not estimates of general use. Two errors of ours
+were found and corrected during the work, the plain-language splitter and the
+deafness item set in e1, and one of interpretation, the wheelchair barrier; each is
+reported where it occurs. The legal framing we first intended was dropped when the
+statute did not support it. We did not test turn-by-turn disclosure, the ``declines
+to say'' level, or how humans judge the answers.
+
+\section{Reproduction}
+\label{sec:repro}
+
+Every script, stimulus, preregistration, raw answer and analysis output is in the
+repository. Each experiment's analysis runs from its CSVs alone, without a GPU,
+and each has an offline validator that injects known effects into a stubbed model
+and checks that the analysis recovers them (46 checks for e0, 26 for e1, 15 for e2,
+28 for e3 and e4 together, 36 for the instrument).
+
+\begin{thebibliography}{99}
+
+\bibitem{p2} M. Podgortsev. \emph{Single Human-AI Fit: One Attribute, Seven
+Channels, Two Directions.} 2026. Concept DOI 10.5281/zenodo.22364497.
+
+\bibitem{p3} M. Podgortsev. \emph{Stacked Human-AI Fit.} 2026.
+
+\bibitem{kamruzzaman2025} M. Kamruzzaman, G. L. Kim. \emph{The Impact of Disability
+Disclosure on Fairness and Bias in LLM-Driven Candidate Selection.}
+arXiv:2506.00256; FLAIRS 2025.
+
+\bibitem{accesseval2025} S. Panda, A. Agarwal, H. L. Patel. \emph{AccessEval:
+Benchmarking Disability Bias in Large Language Models.} arXiv:2509.22703, 2025.
+
+\bibitem{johnson2026} J. Johnson, A. Lewis, J. Mankoff, O. Banner. \emph{``I Don't
+Trust it, but I Use it'': Navigating Trust, Privacy, and Identity in Disabled
+People's Use of Generative AI.} CHI 2026. doi:10.1145/3772318.3790652.
+
+\bibitem{gupta2026nd} I. Gupta, P. Buryi. \emph{How Frontier LLMs Adapt to
+Neurodivergence Context: A Measurement Framework for Surface vs. Structural Change
+in System-Prompted Responses.} arXiv:2605.00113, 2026.
+
+\bibitem{penguin2025} Y. Wu, E. Sun, K. Zhu, J. Lian, J. Hernandez-Orallo,
+A. Caliskan, J. Wang. \emph{Personalized Safety in LLMs: A Benchmark and A
+Planning-Based Agent Approach.} arXiv:2505.18882; NeurIPS 2025.
+
+\bibitem{curate} L. Alberts, A. Lupu, B. Ellis, J. Foerster. \emph{CURATe: Benchmarking
+Personalised Alignment of Conversational AI Assistants.} arXiv:2410.21159.
+
+\bibitem{prefeval2025} S. Zhao, M. Hong, Y. Liu, D. Hazarika, K. Lin. \emph{Do LLMs
+Recognize Your Preferences? Evaluating Personalized Preference Following in LLMs.}
+arXiv:2502.09597; ICLR 2025.
+
+\bibitem{perg2025} C. Okite, N. Deng, K. Bodipati, H. Hou, J. Chai, R. Mihalcea.
+\emph{Benchmarking and Improving LLM Robustness for Personalized Generation.}
+arXiv:2509.19358, 2025.
+
+\bibitem{pfqabench2026} Z. Sun, Y. Zhan, C. Shen, W. Yu, X. Zhang, M. He, J. Xu.
+\emph{When Personalization Misleads: Understanding and Mitigating Hallucinations in
+Personalized LLMs.} arXiv:2601.11000, 2026.
+
+\bibitem{akpinar2025} N.-J. Akpinar, C.-J. Lee, V. Murdock, P. Perona. \emph{Who's
+Asking? Evaluating LLM Robustness to Inquiry Personas in Factual Question
+Answering.} arXiv:2510.12925, 2025.
+
+\bibitem{yan2026} Y. Yan, S. Wu, T. Le. \emph{Locating and Controlling Implicit
+Personalization in Large Language Models.} arXiv:2608.11735, 2026.
+
+\bibitem{taheri2026} Taheri, Tazike, Carrington, Bigham. \emph{When Disability
+Disclosure Travels: Memory, Privacy, and Contextual Integrity in Conversational AI.}
+arXiv:2609.22720, 2026.
+
+\bibitem{lachenmaier2026} Lachenmaier, Bultmann, Zarriess. \emph{Talking to a
+Know-It-All GPT or a Second-Guesser Claude? How Repair reveals unreliable Multi-Turn
+Behavior in LLMs.} arXiv:2604.19245, 2026.
+
+\bibitem{laban2025} P. Laban, H. Hayashi, Y. Zhou, J. Neville. \emph{LLMs Get Lost
+In Multi-Turn Conversation.} arXiv:2505.06120; ICLR 2026.
+
+\bibitem{zhang2026} L. Zhang, J. Liu, T. August. \emph{Re-Centering Humans in LLM
+Personalization.} arXiv:2606.06614, 2026.
+
+\bibitem{crpd} United Nations. \emph{Convention on the Rights of Persons with
+Disabilities}, Article 2, Definitions. 2006.
+
+\bibitem{eqa} \emph{Equality Act 2010} (UK), section 20, Duty to make adjustments.
+
+\end{thebibliography}
+\end{document}

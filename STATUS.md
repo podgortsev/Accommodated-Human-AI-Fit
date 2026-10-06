@@ -44,13 +44,13 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Blocked
 
-- nothing
+- nothing. Release window 1 to 7 December 2026 (freeze 30 November), recorded in PLAN.csv row 4.
 
 ## Next
 
-1. Verify the reasonable-adjustments framing against primary sources (DESIGN.md section 9).
-2. Draft the paper from RESULT_e0 to RESULT_e4.
-3. Methodology checklist, then Zenodo, ORCID, SSRN.
+1. Author reads the draft `paper/paper.tex` (8 pages): subtitle, emphasis, anything missing.
+2. Methodology checklist from the paper 2 CLAUDE.md, item by item, against the draft.
+3. Freeze 30 November; Zenodo, ORCID, SSRN in the 1 to 7 December window.
 
 ## The decision that can end this paper
 

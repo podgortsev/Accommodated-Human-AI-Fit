@@ -67,8 +67,11 @@ me", 18 to 35 percent of answers still tell the person to call, no fewer than
 after a sentence about baking bread. Checked by hand against the matched
 contexts: these are real instructions ("call the customer service number
 provided on your policy"), and at most two answers per model per cell carry the
-phrase only next to a negation. One begins "although you mentioned you cannot
-hear" and goes on to recommend the hotline. **The accommodation is added; the
+phrase only next to a negation. One keeps "Customer Service Hotline" as a
+numbered step, opening it with "Although you mentioned you cannot hear" and
+pointing to written instructions for using the hotline before offering email and
+chat (wording corrected 2026-10-06; the first version said it "goes on to
+recommend the hotline", which overstated it). **The accommodation is added; the
 barrier is not removed.** Delivery of the whole need, text route and no phone,
 peaks at 0.23 to 0.33.
 

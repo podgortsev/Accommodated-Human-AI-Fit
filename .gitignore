@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 data-restricted/
+*.aux
+*.log
+*.out
