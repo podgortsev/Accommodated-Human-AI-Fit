@@ -1,0 +1,12 @@
+e5
+  PASS  720 jobs per model
+  PASS  opener first
+  PASS  after: question first, lead-in after
+  PASS  resume completes to 720, no duplicates
+  PASS  holds: opener HOLDS
+  PASS  holds: after HOLDS
+  PASS  original read from e2 and HOLDS
+  PASS  breaks: after does not hold
+  PASS  breaks: opener still HOLDS
+==============================================================================
+9 passed, 0 failed

@@ -1,0 +1,380 @@
+{
+ "items": [
+  {
+   "item_id": "de01",
+   "question": "How do I cancel my broadband contract?"
+  },
+  {
+   "item_id": "de02",
+   "question": "How do I report a power cut in my area?"
+  },
+  {
+   "item_id": "de03",
+   "question": "How do I change my energy tariff?"
+  },
+  {
+   "item_id": "de04",
+   "question": "How do I complain to my mobile network about a wrong bill?"
+  },
+  {
+   "item_id": "de05",
+   "question": "What should I do if I smell gas in my home?"
+  },
+  {
+   "item_id": "de06",
+   "question": "How do I book a repair for my washing machine under warranty?"
+  },
+  {
+   "item_id": "de07",
+   "question": "How do I get a refund from an airline for a cancelled flight?"
+  },
+  {
+   "item_id": "de08",
+   "question": "How do I tell my bank I am going abroad?"
+  },
+  {
+   "item_id": "de09",
+   "question": "How do I report a fraudulent transaction on my credit card?"
+  },
+  {
+   "item_id": "de10",
+   "question": "How do I change my appointment with the council housing office?"
+  },
+  {
+   "item_id": "de11",
+   "question": "How do I chase a late tax rebate?"
+  },
+  {
+   "item_id": "de12",
+   "question": "How do I tell my landlord about a leak in the bathroom?"
+  },
+  {
+   "item_id": "de13",
+   "question": "How do I get a quote for car insurance?"
+  },
+  {
+   "item_id": "de14",
+   "question": "How do I book a taxi to the airport for an early flight?"
+  },
+  {
+   "item_id": "de15",
+   "question": "How do I cancel a hotel booking?"
+  },
+  {
+   "item_id": "de16",
+   "question": "How do I arrange a boiler service?"
+  },
+  {
+   "item_id": "de17",
+   "question": "How do I report a stolen bicycle to the police?"
+  },
+  {
+   "item_id": "de18",
+   "question": "How do I get an emergency dentist appointment?"
+  },
+  {
+   "item_id": "de19",
+   "question": "How do I ask my GP surgery for a repeat prescription?"
+  },
+  {
+   "item_id": "de20",
+   "question": "How do I reschedule a parcel delivery with a courier?"
+  },
+  {
+   "item_id": "de21",
+   "question": "How do I cancel a magazine subscription?"
+  },
+  {
+   "item_id": "de22",
+   "question": "How do I dispute a parking charge from a private company?"
+  },
+  {
+   "item_id": "de23",
+   "question": "How do I get a replacement bank card sent to a new address?"
+  },
+  {
+   "item_id": "de24",
+   "question": "How do I report a noisy party next door late at night?"
+  },
+  {
+   "item_id": "de25",
+   "question": "How do I arrange a home visit from a district nurse?"
+  },
+  {
+   "item_id": "de26",
+   "question": "How do I tell my child's school they are off sick?"
+  },
+  {
+   "item_id": "de27",
+   "question": "How do I book a vet appointment for my dog?"
+  },
+  {
+   "item_id": "de28",
+   "question": "How do I ask for a higher limit on my credit card?"
+  },
+  {
+   "item_id": "de29",
+   "question": "How do I get breakdown recovery when my car will not start?"
+  },
+  {
+   "item_id": "de30",
+   "question": "How do I report a missing pet?"
+  },
+  {
+   "item_id": "de31",
+   "question": "How do I make a claim on my phone insurance?"
+  },
+  {
+   "item_id": "de32",
+   "question": "How do I set up a payment plan for an overdue bill?"
+  },
+  {
+   "item_id": "de33",
+   "question": "How do I tell the council I have moved out of my flat?"
+  },
+  {
+   "item_id": "de34",
+   "question": "How do I book a plumber for a blocked drain?"
+  },
+  {
+   "item_id": "de35",
+   "question": "How do I change my train ticket to a different time?"
+  },
+  {
+   "item_id": "de36",
+   "question": "How do I get my water supply reconnected?"
+  },
+  {
+   "item_id": "de37",
+   "question": "How do I report a fault with my landline?"
+  },
+  {
+   "item_id": "de38",
+   "question": "How do I contact my energy company about a faulty smart meter?"
+  },
+  {
+   "item_id": "de39",
+   "question": "How do I book a removal company for a house move?"
+  },
+  {
+   "item_id": "de40",
+   "question": "How do I ask my employer for a copy of my payslip?"
+  },
+  {
+   "item_id": "de41",
+   "question": "How do I report a car accident to my insurer?"
+  },
+  {
+   "item_id": "de42",
+   "question": "How do I cancel a doctor's appointment?"
+  },
+  {
+   "item_id": "de43",
+   "question": "How do I book non-emergency patient transport to hospital?"
+  },
+  {
+   "item_id": "de44",
+   "question": "How do I report a change of circumstances for my benefits?"
+  },
+  {
+   "item_id": "de45",
+   "question": "How do I book a babysitter through an agency?"
+  },
+  {
+   "item_id": "de46",
+   "question": "How do I find out how much is in my workplace pension?"
+  },
+  {
+   "item_id": "de47",
+   "question": "How do I complain about a rude member of staff at a shop?"
+  },
+  {
+   "item_id": "de48",
+   "question": "How do I order a replacement part for my fridge?"
+  },
+  {
+   "item_id": "de49",
+   "question": "How do I report a broken lift in my block of flats?"
+  },
+  {
+   "item_id": "de50",
+   "question": "How do I get help from my bank when I am locked out of the app?"
+  },
+  {
+   "item_id": "de51",
+   "question": "How do I change the name on a utility bill?"
+  },
+  {
+   "item_id": "de52",
+   "question": "How do I make a reservation at a busy restaurant?"
+  },
+  {
+   "item_id": "de53",
+   "question": "How do I cancel a car rental booking?"
+  },
+  {
+   "item_id": "de54",
+   "question": "How do I report a scam call I received?"
+  },
+  {
+   "item_id": "de55",
+   "question": "How do I get a refund from a delivery company for a broken item?"
+  },
+  {
+   "item_id": "de56",
+   "question": "How do I report damp and mould to my housing association?"
+  },
+  {
+   "item_id": "de57",
+   "question": "How do I get a sick note from my doctor?"
+  },
+  {
+   "item_id": "de58",
+   "question": "How do I report a lost credit card while I am abroad?"
+  },
+  {
+   "item_id": "de59",
+   "question": "How do I arrange a gas safety check as a landlord?"
+  },
+  {
+   "item_id": "de60",
+   "question": "How do I contact the licensing agency about a problem with my driving licence?"
+  },
+  {
+   "item_id": "de61",
+   "question": "How do I ask my lender for a mortgage statement?"
+  },
+  {
+   "item_id": "de62",
+   "question": "How do I follow up on a job application I have not heard back about?"
+  },
+  {
+   "item_id": "de63",
+   "question": "How do I contact my local MP about an issue?"
+  },
+  {
+   "item_id": "de64",
+   "question": "How do I report graffiti to the council?"
+  },
+  {
+   "item_id": "de65",
+   "question": "How do I book a carpet cleaning service?"
+  },
+  {
+   "item_id": "de66",
+   "question": "How do I cancel an online order that has not been sent yet?"
+  },
+  {
+   "item_id": "de67",
+   "question": "How do I get an engineer to fix my broadband?"
+  },
+  {
+   "item_id": "de68",
+   "question": "How do I query a mistake on my council tax bill?"
+  },
+  {
+   "item_id": "de69",
+   "question": "How do I change the date of a ferry booking?"
+  },
+  {
+   "item_id": "de70",
+   "question": "How do I ask my university for an extension on an assignment?"
+  },
+  {
+   "item_id": "de71",
+   "question": "How do I report mice in my rented flat to my landlord?"
+  },
+  {
+   "item_id": "de72",
+   "question": "How do I get my energy supplier to refund the credit on my account?"
+  },
+  {
+   "item_id": "de73",
+   "question": "How do I report a faulty traffic light?"
+  },
+  {
+   "item_id": "de74",
+   "question": "How do I order a new recycling box from the council?"
+  },
+  {
+   "item_id": "de75",
+   "question": "How do I complain to a hospital about my care?"
+  },
+  {
+   "item_id": "de76",
+   "question": "How do I get a copy of my car insurance documents?"
+  },
+  {
+   "item_id": "de77",
+   "question": "How do I get legal advice about a dispute with my builder?"
+  },
+  {
+   "item_id": "de78",
+   "question": "How do I chase a prescription delivery that has not arrived?"
+  },
+  {
+   "item_id": "de79",
+   "question": "How do I book an appointment at the passport office?"
+  },
+  {
+   "item_id": "de80",
+   "question": "How do I stop a direct debit to a charity?"
+  },
+  {
+   "item_id": "de81",
+   "question": "How do I complain to my train company about overcrowding?"
+  },
+  {
+   "item_id": "de82",
+   "question": "How do I get a refund for a gym class that was cancelled?"
+  },
+  {
+   "item_id": "de83",
+   "question": "How do I claim for appliances damaged by a power surge?"
+  },
+  {
+   "item_id": "de84",
+   "question": "How do I sort out being charged twice by a shop?"
+  },
+  {
+   "item_id": "de85",
+   "question": "How do I upgrade my internet speed with my provider?"
+  },
+  {
+   "item_id": "de86",
+   "question": "How do I ask a hotel for a late checkout?"
+  },
+  {
+   "item_id": "de87",
+   "question": "How do I report anti-social behaviour on my street?"
+  },
+  {
+   "item_id": "de88",
+   "question": "How do I book an electrician for an emergency repair?"
+  },
+  {
+   "item_id": "de89",
+   "question": "How do I tell my insurer I have changed my car?"
+  },
+  {
+   "item_id": "de90",
+   "question": "How do I find out why my pension payment is late?"
+  }
+ ],
+ "cells": [
+  "need:deaf",
+  "neutral_long:bread",
+  "neutral_long:coast",
+  "neutral_long:brothers"
+ ],
+ "wrappers": [
+  "opener",
+  "after"
+ ],
+ "lead_ins": {
+  "need:deaf": "I cannot hear, so any step that needs sound or speaking will not work for me.",
+  "neutral_long:bread": "I bake bread most Saturday mornings, and I have been doing that for about ten years.",
+  "neutral_long:coast": "I live in a small flat near the coast, and I moved here with my sister.",
+  "neutral_long:brothers": "I have two older brothers, and we meet for dinner at my parents' house every Sunday."
+ }
+}

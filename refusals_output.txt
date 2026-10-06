@@ -1,0 +1,69 @@
+==============================================================================
+REFUSALS, e0 to e2 (exploratory, not preregistered)
+==============================================================================
+
+e0 qwen: 120 questions; refusal with no lead-in 0.000, neutral long 0.000, neutral short 0.000
+  refusals as not delivered, deaf            need benefit +0.197 [+0.114,+0.283]  need minus label +0.017 [-0.092,+0.125]
+  refusals as not delivered, plain_language  need benefit +0.325 [+0.261,+0.392]  need minus label +0.467 [+0.383,+0.558]
+  refusals as not delivered, wheelchair      need benefit +0.092 [+0.042,+0.150]  need minus label +0.042 [-0.017,+0.100]
+
+e0 llama: 120 questions; refusal with no lead-in 0.000, neutral long 0.022, neutral short 0.025
+  label screen_reader   refusal 0.108  vs neutral +0.083 [+0.033,+0.139]  adj 0.0090  CLAIMED
+  need  screen_reader   refusal 0.000  vs neutral -0.022 [-0.044,-0.006]  adj 0.0391  CLAIMED
+  label no_vision       refusal 0.025  vs neutral +0.000 [-0.028,+0.033]  adj 1.0000  -
+  need  no_vision       refusal 0.000  vs neutral -0.022 [-0.044,-0.006]  adj 0.0391  CLAIMED
+  label deaf            refusal 0.000  vs neutral -0.025 [-0.044,-0.008]  adj 0.0138  CLAIMED
+  need  deaf            refusal 0.000  vs neutral -0.022 [-0.044,-0.006]  adj 0.0391  CLAIMED
+  label plain_language  refusal 0.333  vs neutral +0.308 [+0.233,+0.389]  adj 0.0005  CLAIMED
+  need  plain_language  refusal 0.000  vs neutral -0.022 [-0.044,-0.006]  adj 0.0391  CLAIMED
+  label wheelchair      refusal 0.033  vs neutral +0.008 [-0.011,+0.031]  adj 0.7909  -
+  need  wheelchair      refusal 0.042  vs neutral +0.019 [-0.017,+0.061]  adj 0.4285  -
+  refusals as not delivered, deaf            need benefit +0.236 [+0.150,+0.328]  need minus label +0.158 [+0.058,+0.258]
+  refusals as not delivered, plain_language  need benefit +0.275 [+0.219,+0.333]  need minus label +0.525 [+0.433,+0.617]
+  refusals as not delivered, wheelchair      need benefit +0.050 [+0.017,+0.092]  need minus label -0.092 [-0.158,-0.033]
+
+e0 mistral: 120 questions; refusal with no lead-in 0.000, neutral long 0.000, neutral short 0.003
+  label plain_language  refusal 0.008  vs neutral +0.006 [-0.008,+0.025]  adj 1.0000  -
+  refusals as not delivered, deaf            need benefit +0.153 [+0.081,+0.228]  need minus label +0.033 [-0.067,+0.133]
+  refusals as not delivered, plain_language  need benefit +0.183 [+0.100,+0.267]  need minus label +0.258 [+0.150,+0.358]
+  refusals as not delivered, wheelchair      need benefit +0.025 [+0.000,+0.058]  need minus label -0.033 [-0.067,-0.008]
+
+e1 qwen: 120 questions; refusal with no lead-in 0.000, neutral long 0.000, neutral short 0.000
+  refusals as not delivered, deaf            need benefit +0.014 [-0.006,+0.042]  need minus label -0.025 [-0.058,+0.008]
+  refusals as not delivered, plain_language  need benefit +0.100 [+0.058,+0.142]  need minus label +0.167 [+0.092,+0.242]
+  refusals as not delivered, wheelchair      need benefit +0.656 [+0.528,+0.767]  need minus label +0.000 [-0.150,+0.150]
+
+e1 llama: 120 questions; refusal with no lead-in 0.000, neutral long 0.017, neutral short 0.008
+  label plain_language  refusal 0.017  vs neutral +0.008 [-0.011,+0.033]  adj 0.7512  -
+  refusals as not delivered, deaf            need benefit +0.017 [+0.000,+0.042]  need minus label -0.025 [-0.067,+0.017]
+  refusals as not delivered, plain_language  need benefit +0.103 [+0.064,+0.144]  need minus label +0.333 [+0.250,+0.417]
+  refusals as not delivered, wheelchair      need benefit +0.606 [+0.483,+0.728]  need minus label -0.150 [-0.283,-0.017]
+
+e1 mistral: 120 questions; refusal with no lead-in 0.000, neutral long 0.000, neutral short 0.000
+  label screen_reader   refusal 0.017  vs neutral +0.017 [+0.000,+0.042]  adj 1.0000  -
+  label no_vision       refusal 0.017  vs neutral +0.017 [+0.000,+0.042]  adj 1.0000  -
+  label deaf            refusal 0.008  vs neutral +0.008 [+0.000,+0.025]  adj 1.0000  -
+  need  deaf            refusal 0.025  vs neutral +0.025 [+0.000,+0.058]  adj 1.0000  -
+  refusals as not delivered, deaf            need benefit +0.014 [-0.006,+0.042]  need minus label -0.033 [-0.075,+0.000]
+  refusals as not delivered, plain_language  need benefit +0.089 [+0.025,+0.147]  need minus label +0.267 [+0.183,+0.350]
+  refusals as not delivered, wheelchair      need benefit +0.428 [+0.300,+0.561]  need minus label -0.133 [-0.300,+0.017]
+
+e2 qwen: 90 questions; refusal with no lead-in 0.000, neutral long 0.000, neutral short 0.000
+  refusals as not delivered, deaf            need benefit +0.389 [+0.285,+0.496]  need minus label +0.089 [-0.056,+0.233]
+  refusals as not delivered, plain_language  need benefit +0.315 [+0.233,+0.396]  need minus label +0.411 [+0.311,+0.511]
+  refusals as not delivered, wheelchair      need benefit +0.093 [+0.033,+0.159]  need minus label -0.056 [-0.133,+0.022]
+
+e2 llama: 90 questions; refusal with no lead-in 0.000, neutral long 0.026, neutral short 0.004
+  label screen_reader   refusal 0.078  vs neutral +0.074 [+0.026,+0.133]  adj 0.0435  CLAIMED
+  label no_vision       refusal 0.011  vs neutral +0.007 [-0.011,+0.033]  adj 1.0000  -
+  label plain_language  refusal 0.189  vs neutral +0.185 [+0.107,+0.274]  adj 0.0005  CLAIMED
+  label wheelchair      refusal 0.011  vs neutral +0.007 [-0.011,+0.033]  adj 1.0000  -
+  refusals as not delivered, deaf            need benefit +0.430 [+0.322,+0.533]  need minus label +0.256 [+0.133,+0.367]
+  refusals as not delivered, plain_language  need benefit +0.389 [+0.315,+0.463]  need minus label +0.478 [+0.378,+0.578]
+  refusals as not delivered, wheelchair      need benefit +0.019 [-0.007,+0.056]  need minus label -0.067 [-0.133,-0.011]
+
+e2 mistral: 90 questions; refusal with no lead-in 0.000, neutral long 0.000, neutral short 0.000
+  label plain_language  refusal 0.011  vs neutral +0.011 [+0.000,+0.033]  adj 1.0000  -
+  refusals as not delivered, deaf            need benefit +0.259 [+0.156,+0.370]  need minus label +0.033 [-0.089,+0.156]
+  refusals as not delivered, plain_language  need benefit +0.263 [+0.144,+0.374]  need minus label +0.222 [+0.089,+0.356]
+  refusals as not delivered, wheelchair      need benefit +0.037 [+0.004,+0.078]  need minus label +0.033 [+0.000,+0.078]
