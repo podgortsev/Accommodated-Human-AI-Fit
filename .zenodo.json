@@ -1,0 +1,39 @@
+{
+  "title": "Accommodated Human-AI Fit: What a Language Model Changes When a Person Says What They Need",
+  "description": "<p>People who use language models often tell them what they need: that they cannot hear, cannot walk, or find reading hard. Disabled users report doing this because they expect better answers. Published work shows that models adapt to what users tell them, but measures the adaptation against saying nothing, so it cannot separate a response to the need from a response to any personal detail, and it scores adherence to the disclosed thing, which is undefined when nothing was disclosed. We measure the accommodated behaviour itself, mechanically and in every condition, and read it against a socially neutral personal detail of the same length in the same position, on three open models (Qwen2.5-7B, Llama-3.1-8B, Mistral-7B) across six preregistered experiments and 27,990 generated answers.</p><p>Stating a need buys accommodation that a neutral detail does not, for deafness, wheelchair use and reading difficulty, on all three models; a neutral detail moves delivery in 5 of 198 floor tests. The accommodation for deafness is an addition: told that the person cannot hear, all three models add a text route while 56 to 82 percent of their instructions to phone remain, and the pattern holds under three wrappers. Saying it again helps on two models; only naming the barrier, that phone calls will not work, removes it on all three.</p><p>The label matters by need. \"I am a wheelchair user\" works better than the stated need; \"I have a learning disability\" makes answers less plain than a neutral sentence, and on banking and administrative questions Llama refuses to help in 19 to 33 percent of answers after that label and almost never after the stated need (exploratory). Stating a need does not consistently cost accuracy on a keyed task attached to the same answer. Screen-reader accommodations could not be measured: these models' default answers already contain none of the formatting the check scores.</p><p>All stimuli, preregistrations, raw model outputs, analysis scripts and offline validators are in the repository. Every analysis runs from the committed outputs without a GPU.</p>",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "language": "eng",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Podgortsev, Michael",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0007-5561-1916"
+    }
+  ],
+  "keywords": [
+    "large language models",
+    "accessibility",
+    "disability",
+    "reasonable accommodation",
+    "personalisation",
+    "counterfactual audit",
+    "preregistration",
+    "evaluation methodology",
+    "negative results"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/podgortsev/Accommodated-Human-AI-Fit",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.22364497",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}
