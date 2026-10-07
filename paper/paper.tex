@@ -75,7 +75,7 @@ paper supplies both. First, every benefit result we found compares disclosure wi
 its absence: no system prompt~\cite{gupta2026nd}, a context-free
 query~\cite{penguin2025}, the disability removed~\cite{accesseval2025}. Adding text
 about a person moves model outputs by itself, as our own work and others' has
-shown~\cite{p2,p3,akpinar2025}, so a benefit read against nothing contains a
+shown~\cite{p2,akpinar2025}, so a benefit read against nothing contains a
 response to there being a person at all. Second, the benefit is scored as
 adherence to the disclosed thing: did the answer follow preference
 $P$~\cite{prefeval2025,perg2025}, did it account for the
@@ -191,7 +191,9 @@ tokens, on free Colab T4 GPUs.
 Wilcoxon signed-rank test and a sign-flip permutation test on the mean both reject
 after Benjamini--Hochberg correction, and lean the same way; one family per
 contrast type per model. Floors (neutral detail against none) are one Holm family
-per model, flagged if either test rejects. The rule is Paper 3's~\cite{p3}.
+per model, flagged if either test rejects. Requiring both tests guards against a
+mean carried by a few questions that the signed-rank test ignores, and against
+the reverse.
 
 \paragraph{Preregistration and sequence.} Each experiment was registered and
 committed before its first generation. e0 tested the instrument on 120 practical
@@ -387,7 +389,8 @@ need form over the learning-disability label widens.
 \section{What the accommodation costs}
 \label{sec:cost}
 
-e4 attached one of Paper 3's verified calculations to 330 questions and asked for
+e4 attached one arithmetic task with a verified answer (included in the
+repository) to each of 330 questions and asked for
 the result on a first line, ``Answer: <number>'', so that accuracy and
 accommodation are measured on the same answer. A missing Answer line is counted
 separately, not as a wrong answer.
