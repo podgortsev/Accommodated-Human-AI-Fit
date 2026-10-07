@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: >-
+  Accommodated Human-AI Fit: What a Language Model Changes When a Person Says
+  What They Need
+message: If you use this work, please cite it as below.
+type: software
+authors:
+  - family-names: Podgortsev
+    given-names: Michael
+    email: podgortsev@gmail.com
+    orcid: 'https://orcid.org/0009-0007-5561-1916'
+repository-code: https://github.com/podgortsev/Accommodated-Human-AI-Fit
+license: MIT
+keywords:
+  - large language models
+  - accessibility
+  - disability
+  - accommodation
+  - personalisation
+  - counterfactual audit
+  - preregistration
+  - evaluation methodology
