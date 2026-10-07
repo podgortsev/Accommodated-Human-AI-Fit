@@ -53,6 +53,5 @@ stubbed model and checks that the analysis recovers them:
 ## Related papers
 
 - Paper 2, Single Human-AI Fit, concept DOI 10.5281/zenodo.22364497.
-- Paper 3, Stacked Human-AI Fit.
 
 Code under MIT. The paper and its Zenodo record under CC BY 4.0.
