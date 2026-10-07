@@ -1,0 +1,49 @@
+==============================================================================
+e5 | llama
+==============================================================================
+  original  n= 90  text route +0.50  phone removed +0.14
+      need_benefit        +0.430 [+0.322,+0.533]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.356 [+0.204,+0.489]  adj 0.0001  CLAIMED
+  opener    n= 90  text route +0.50  phone removed +0.19
+      need_benefit        +0.485 [+0.378,+0.589]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.311 [+0.170,+0.444]  adj 0.0002  CLAIMED
+  after     n= 90  text route +0.66  phone removed +0.30
+      need_benefit        +0.681 [+0.578,+0.778]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.352 [+0.226,+0.474]  adj 0.0001  CLAIMED
+  spread across wrappers, need_benefit         +0.430 to +0.681
+  spread across wrappers, H2_add_not_remove    +0.311 to +0.356
+==============================================================================
+e5 | mistral
+==============================================================================
+  original  n= 90  text route +0.30  phone removed +0.07
+      need_benefit        +0.259 [+0.156,+0.370]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.233 [+0.096,+0.378]  adj 0.0074  CLAIMED
+  opener    n= 90  text route +0.26  phone removed -0.03
+      need_benefit        +0.144 [+0.044,+0.244]  adj 0.0054  CLAIMED
+      H2_add_not_remove   +0.296 [+0.141,+0.456]  adj 0.0014  CLAIMED
+  after     n= 90  text route +0.28  phone removed -0.05
+      need_benefit        +0.163 [+0.063,+0.267]  adj 0.0024  CLAIMED
+      H2_add_not_remove   +0.330 [+0.163,+0.493]  adj 0.0007  CLAIMED
+  spread across wrappers, need_benefit         +0.144 to +0.259
+  spread across wrappers, H2_add_not_remove    +0.233 to +0.330
+==============================================================================
+e5 | qwen
+==============================================================================
+  original  n= 90  text route +0.53  phone removed +0.06
+      need_benefit        +0.389 [+0.285,+0.496]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.463 [+0.330,+0.593]  adj 0.0001  CLAIMED
+  opener    n= 90  text route +0.34  phone removed +0.02
+      need_benefit        +0.230 [+0.130,+0.337]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.322 [+0.167,+0.489]  adj 0.0010  CLAIMED
+  after     n= 90  text route +0.38  phone removed -0.01
+      need_benefit        +0.230 [+0.122,+0.337]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.396 [+0.241,+0.552]  adj 0.0001  CLAIMED
+  spread across wrappers, need_benefit         +0.230 to +0.389
+  spread across wrappers, H2_add_not_remove    +0.322 to +0.463
+
+==============================================================================
+REGISTERED READ, e5
+==============================================================================
+  original  headline holds on 3 of 3 models: HOLDS
+  opener    headline holds on 3 of 3 models: HOLDS
+  after     headline holds on 3 of 3 models: HOLDS

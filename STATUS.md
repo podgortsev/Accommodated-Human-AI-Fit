@@ -9,6 +9,8 @@ States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
 
 ## Where this is
 
+Methodology checklist passed 2026-10-07 (`CHECKLIST.md`). October release, author decision 2026-10-06.
+
 e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone. e3: H4 (restating the need removes the phone instruction more than asking again) confirmed 2 of 3, H5 (naming the barrier removes more than restating) confirmed 3 of 3. e4: H6 (disclosure penalty) not confirmed; the cost on Mistral is dropped format. e2 tested deaf where it arises (`experiments/e2-deaf-contact/results/RESULT_e2.md`): FINDING on 3 of 3, H2 CONFIRMED on 3 of 3. Added-not-removed is a deaf result (56-82 percent of phone instructions remain); for wheelchair H2 is claimed but the rare walking barrier is mostly removed (corrected 2026-10-02).
 
 | step | state | note |
@@ -41,6 +43,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 | e4 | cost | qwen | done | done | no penalty > 5 points; neutral detail itself costs ~6 points |
 | e4 | cost | llama | done | done | REVERSED +0.06: neutral details cost accuracy, needs level with none |
 | e4 | cost | mistral | done | done | PENALTY -0.06 on 117 complete questions; format misses +0.09 |
+| e5 | wrappers | qwen | done | done | headline holds under 3 wrappers; need benefit +0.23 to +0.39 |
+| e5 | wrappers | llama | done | done | holds under 3; +0.43 to +0.68 |
+| e5 | wrappers | mistral | done | done | holds under 3; +0.14 to +0.26 |
 
 ## Blocked
 
@@ -48,9 +53,9 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Next
 
-1. Author reads the draft `paper/paper.tex` (8 pages): subtitle, emphasis, anything missing.
-2. Methodology checklist from the paper 2 CLAUDE.md, item by item, against the draft.
-3. Freeze 30 November; Zenodo, ORCID, SSRN in the 1 to 7 December window.
+1. Release files (README, CITATION.cff, LICENSE) and the private GitHub repository, on the author's go.
+2. Author reads the draft: subtitle, rank.
+3. Zenodo (two releases), ORCID, SSRN, per docs/how-to/zenodo.md.
 
 ## The decision that can end this paper
 

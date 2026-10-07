@@ -1,0 +1,42 @@
+==========================================================================
+SMOKE: four prompts, single and batched, 120 new tokens
+==========================================================================
+[none] 120 tokens, batch identical: False
+   To replace a lost passport, you'll typically need to follow these steps: /  / 1. Report the loss: Contact your country's passport office or embassy and report your passport as lost. This is important for security reasons, as it helps prevent so
+[need:screen_reader] 120 tokens, batch identical: False
+   To replace a lost passport before your upcoming trip, follow these steps: /  / 1. Contact the issuing authority: In the United States, this is the U.S. Department of State. In other countries, it may be a different government agency. /  / 2. File a
+[label:deaf] 120 tokens, batch identical: False
+   To replace a lost passport, regardless of hearing status, you can follow these general steps. However, since you are Deaf, I recommend reaching out to the passport agency or embassy using communication methods that suit you best, such as TT
+[neutral_long:bread] 120 tokens, batch identical: False
+   To replace a lost passport before a trip abroad, follow these steps: /  / 1. Report your lost passport to the issuing authority: /    - If you have a U.S. passport, contact the National Passport Information Center (NPIC) at 1-877-487-2778 or visi
+batch equals single on 0 of 4 (drift from left padding is shared by both sides of each contrast; recorded, not fatal)
+SMOKE OK
+mistral: 720 jobs to generate, 0 already in /content/drive/MyDrive/afl/p4_e5/e5_mistral.csv
+  80/720  13.0/min  49 min left
+  160/720  13.0/min  43 min left
+  240/720  12.9/min  37 min left
+  320/720  12.9/min  31 min left
+  400/720  12.9/min  25 min left
+  480/720  12.9/min  19 min left
+  560/720  12.9/min  12 min left
+  640/720  12.9/min  6 min left
+  720/720  12.8/min  0 min left
+==============================================================================
+e5 | mistral
+==============================================================================
+  original  not available
+  opener    n= 90  text route +0.26  phone removed -0.03
+      need_benefit        +0.144 [+0.044,+0.244]  adj 0.0054  CLAIMED
+      H2_add_not_remove   +0.296 [+0.141,+0.456]  adj 0.0014  CLAIMED
+  after     n= 90  text route +0.28  phone removed -0.05
+      need_benefit        +0.163 [+0.063,+0.267]  adj 0.0024  CLAIMED
+      H2_add_not_remove   +0.330 [+0.163,+0.493]  adj 0.0007  CLAIMED
+  spread across wrappers, need_benefit         +0.144 to +0.163
+  spread across wrappers, H2_add_not_remove    +0.296 to +0.330
+
+==============================================================================
+REGISTERED READ, e5
+==============================================================================
+  original  headline holds on 0 of 0 models: does not hold
+  opener    headline holds on 1 of 1 models: does not hold
+  after     headline holds on 1 of 1 models: does not hold

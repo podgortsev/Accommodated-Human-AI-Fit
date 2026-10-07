@@ -26,7 +26,7 @@ and it scores adherence to the disclosed thing, which is undefined when nothing
 was disclosed. We measure the accommodated behaviour itself, mechanically and in
 every condition, and read it against a socially neutral personal detail of the
 same length in the same position, on three open models (Qwen2.5-7B,
-Llama-3.1-8B, Mistral-7B) across five preregistered experiments and 25,830
+Llama-3.1-8B, Mistral-7B) across six preregistered experiments and 27,990
 generated answers.
 
 Stating a need buys accommodation that a neutral detail does not, for deafness,
@@ -34,7 +34,8 @@ wheelchair use and reading difficulty, on all three models; a neutral detail
 moves delivery in 5 of 198 floor tests. The accommodation for deafness is an
 addition: told ``I cannot hear, so any step that needs sound or speaking will not
 work for me'', all three models add a text route (from 10--18 to 48--62 percent
-of answers) while 56 to 82 percent of their instructions to phone remain. Asked
+of answers) while 56 to 82 percent of their instructions to phone remain, under
+each of three wrappers. Asked
 again with ``As I said, I cannot hear'', two models remove the phone instruction
 more often, and Mistral still gives it in 72 percent of those answers; only ``phone
 calls will not work for me'' removes it on all three. The label matters by need:
@@ -197,7 +198,8 @@ committed before its first generation. e0 tested the instrument on 120 practical
 how-to questions. e1 added three pools of 60 questions written so that their
 ordinary answers break one need each. e2 tested deafness on 90 questions about
 contacting an organisation. e3 replayed answers to the deafness need with a
-follow-up. e4 attached a keyed calculation to 330 questions.
+follow-up. e4 attached a keyed calculation to 330 questions. e5 re-tested the
+deafness result under two further wrappers.
 
 \section{Can the need be measured at all?}
 \label{sec:measurable}
@@ -292,6 +294,15 @@ the customer service number provided on your policy''), not mentions that the
 person cannot call. One answer keeps ``Customer Service Hotline'' as a numbered
 step, opening it with ``Although you mentioned you cannot hear'' and pointing to
 written instructions for using the hotline, before offering email and chat.
+
+The result holds under two further wrappers (e5, preregistered): a neutral
+opening sentence before the lead-in, and the lead-in placed after the question.
+Under all three wrappers both the need benefit and the hypothesis are claimed on
+all three models. The size moves with the wrapper: the need benefit spans $+0.23$
+to $+0.39$ on Qwen, $+0.43$ to $+0.68$ on Llama and $+0.14$ to $+0.26$ on Mistral,
+so single-wrapper figures in this paper are best read with that range. On Qwen
+and Mistral, under the two new wrappers, stating the need removes no phone
+instructions at all.
 
 This is not a general rule. For wheelchair use the same hypothesis is claimed
 (e1), but it misleads: the walking assumption is rare at baseline (11 to 13
@@ -424,8 +435,9 @@ build.
 \section{Limitations}
 \label{sec:limits}
 
-Three open 7--8B models at 4-bit on one wrapper; frontier models format
-differently, and the screen-reader null would likely not hold for them. The checks
+Three open 7--8B models at 4-bit; one wrapper for every result except the
+deafness headline, which was re-tested under three (e5) and moved by up to a
+quarter of the scale; frontier models format differently, and the screen-reader null would likely not hold for them. The checks
 are lexical and conservative: the text-route lexicon misses ``send them an email'',
 which undercounts additions in every cell. Pool questions were written to break
 their need, so base rates are not estimates of general use. Two errors of ours
@@ -442,7 +454,7 @@ Every script, stimulus, preregistration, raw answer and analysis output is in th
 repository. Each experiment's analysis runs from its CSVs alone, without a GPU,
 and each has an offline validator that injects known effects into a stubbed model
 and checks that the analysis recovers them (46 checks for e0, 26 for e1, 15 for e2,
-28 for e3 and e4 together, 36 for the instrument).
+28 for e3 and e4 together, 9 for e5, 36 for the instrument).
 
 \begin{thebibliography}{99}
 

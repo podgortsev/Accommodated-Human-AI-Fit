@@ -1,0 +1,42 @@
+==========================================================================
+SMOKE: four prompts, single and batched, 120 new tokens
+==========================================================================
+[none] 120 tokens, batch identical: False
+   Replacing a lost passport before your trip is important to ensure you can travel safely and legally. Here’s a step-by-step guide on how to replace a lost passport: /  / ### 1. **Report the Loss** / - **Locate the Nearest Passport Agency:** Visit 
+[need:screen_reader] 120 tokens, batch identical: True
+   Sure, to replace a lost passport before your trip abroad next month, you'll need to follow these steps: /  / 1. **Report the Loss**: First, report the loss of your passport to the local police department as soon as possible. This is important f
+[label:deaf] 120 tokens, batch identical: True
+   Replacing a lost passport can be a bit of a process, but it's important to ensure you have all the necessary documentation before traveling abroad. Here’s a step-by-step guide on how to replace your lost passport: /  / ### Step 1: Report the Lo
+[neutral_long:bread] 120 tokens, batch identical: False
+   Replacing a lost passport can be a bit of a process, but it's important to ensure you're prepared for your upcoming trip. Here’s a step-by-step guide to help you get a new passport in time for your trip: /  / ### Step 1: Determine Your Passport
+batch equals single on 2 of 4 (drift from left padding is shared by both sides of each contrast; recorded, not fatal)
+SMOKE OK
+qwen: 720 jobs to generate, 0 already in /content/drive/MyDrive/afl/p4_e5/e5_qwen.csv
+  80/720  12.6/min  51 min left
+  160/720  12.5/min  45 min left
+  240/720  12.5/min  38 min left
+  320/720  12.5/min  32 min left
+  400/720  12.5/min  26 min left
+  480/720  12.5/min  19 min left
+  560/720  12.5/min  13 min left
+  640/720  12.5/min  6 min left
+  720/720  12.5/min  0 min left
+==============================================================================
+e5 | qwen
+==============================================================================
+  original  not available
+  opener    n= 90  text route +0.34  phone removed +0.02
+      need_benefit        +0.230 [+0.130,+0.337]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.322 [+0.167,+0.489]  adj 0.0010  CLAIMED
+  after     n= 90  text route +0.38  phone removed -0.01
+      need_benefit        +0.230 [+0.122,+0.337]  adj 0.0001  CLAIMED
+      H2_add_not_remove   +0.396 [+0.241,+0.552]  adj 0.0001  CLAIMED
+  spread across wrappers, need_benefit         +0.230 to +0.230
+  spread across wrappers, H2_add_not_remove    +0.322 to +0.396
+
+==============================================================================
+REGISTERED READ, e5
+==============================================================================
+  original  headline holds on 0 of 0 models: does not hold
+  opener    headline holds on 1 of 1 models: does not hold
+  after     headline holds on 1 of 1 models: does not hold
