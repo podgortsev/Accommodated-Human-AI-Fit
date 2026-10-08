@@ -9,7 +9,7 @@ States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
 
 ## Where this is
 
-**Released 2026-10-08.** Concept DOI 10.5281/zenodo.23241797 (v1.0.0 10.5281/zenodo.23241798, v1.0.1 10.5281/zenodo.23241864, which carries the DOI in the PDF). Methodology checklist passed 2026-10-07 (`CHECKLIST.md`).
+**Released 2026-10-08.** Concept DOI 10.5281/zenodo.23241797 (v1.0.0 10.5281/zenodo.23241798, v1.0.1 10.5281/zenodo.23241864, which carries the DOI in the PDF; v1.0.2 10.5281/zenodo.23245549, which corrects which label one refusal quote follows). Methodology checklist passed 2026-10-07 (`CHECKLIST.md`).
 
 e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone. e3: H4 (restating the need removes the phone instruction more than asking again) confirmed 2 of 3, H5 (naming the barrier removes more than restating) confirmed 3 of 3. e4: H6 (disclosure penalty) not confirmed; the cost on Mistral is dropped format. e2 tested deaf where it arises (`experiments/e2-deaf-contact/results/RESULT_e2.md`): FINDING on 3 of 3, H2 CONFIRMED on 3 of 3. Added-not-removed is a deaf result (56-82 percent of phone instructions remain); for wheelchair H2 is claimed but the rare walking barrier is mostly removed (corrected 2026-10-02).
 
