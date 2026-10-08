@@ -48,7 +48,7 @@ import sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "..", "scripts")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "shared", "scripts")))
 sys.path.insert(0, HERE)
 
 from p4_checks import NEEDS, check_all          # noqa: E402

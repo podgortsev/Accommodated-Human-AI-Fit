@@ -27,7 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 EXP = os.path.abspath(os.path.join(HERE, "..", ".."))
 for p in (HERE, os.path.join(EXP, "e1-measurable-needs", "scripts"),
           os.path.join(EXP, "e0-instrument-floor", "scripts"),
-          os.path.join(EXP, "..", "scripts")):
+          os.path.join(EXP, "shared", "scripts")):
     if p not in sys.path:
         sys.path.insert(0, p)
 

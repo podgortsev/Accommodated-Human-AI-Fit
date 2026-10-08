@@ -13,7 +13,7 @@ same response: every prompt carries a keyed calculation, then a how-to question.
             (60 + 60) and e2 (90); e1's screen_reader pool is left out, it was
             unmeasurable
     tasks   the first 330 numeric tasks of Paper 3's verified set
-            (shared/tasks/tasks_p3.json, copied from Paper 3 commit bd37f7f),
+            (experiments/shared/tasks/tasks.json, copied from Paper 3 commit bd37f7f),
             one per question, the same task in every cell of that question
     cells   none; the need form of deaf, wheelchair, plain_language; the three
             16-word neutral details. Lead-ins are e0's, unchanged.
@@ -42,7 +42,7 @@ import build_e1_stimuli as E1B    # noqa: E402
 import build_e2_stimuli as E2B    # noqa: E402
 
 OUT = os.path.join(HERE, "e4_stimuli.json")
-TASKS = os.path.join(REPO, "shared", "tasks", "tasks_p3.json")
+TASKS = os.path.join(REPO, "experiments", "shared", "tasks", "tasks.json")
 NEEDS = ("deaf", "wheelchair", "plain_language")
 CELLS = ["none"] + [f"need:{n}" for n in NEEDS] + \
         [f"neutral_long:{k}" for k in E0B.NEUTRAL_LONG]

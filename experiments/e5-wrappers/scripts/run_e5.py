@@ -17,8 +17,8 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.abspath(os.path.join(HERE, ".."))
-for p in (HERE, os.path.join(REPO, "experiments", "e0-instrument-floor", "scripts"),
+REPO = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+for p in (HERE, os.path.join(REPO, "experiments", "shared", "scripts"), os.path.join(REPO, "experiments", "e0-instrument-floor", "scripts"),
           os.path.join(REPO, "experiments", "e1-measurable-needs", "scripts"),
           os.path.join(REPO, "experiments", "e2-deaf-contact", "scripts"),
           os.path.join(REPO, "experiments", "e5-wrappers", "scripts")):

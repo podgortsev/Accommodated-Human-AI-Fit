@@ -29,7 +29,7 @@ import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "..", "scripts")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "shared", "scripts")))
 sys.path.insert(0, HERE)
 
 import p4_checks as C          # noqa: E402

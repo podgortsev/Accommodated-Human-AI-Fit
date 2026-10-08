@@ -35,7 +35,7 @@ import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "..", "scripts")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "shared", "scripts")))
 
 import build_e0_stimuli as B      # noqa: E402
 import run_e0 as R                # noqa: E402

@@ -5,7 +5,9 @@ against a socially neutral personal detail of the same length, on three open
 models (Qwen2.5-7B, Llama-3.1-8B, Mistral-7B), in six preregistered experiments
 and 27,990 generated answers.
 
-The paper: `paper/paper.pdf` (source `paper/paper.tex`).
+The paper: `accommodated-human-ai-fit.pdf` (source `accommodated-human-ai-fit.tex`).
+In plain language: `explainer.md`. Across experiments: `RESULTS.md`. What it
+cannot claim: `limitations.md`.
 
 ## Findings in brief
 
@@ -26,33 +28,51 @@ The paper: `paper/paper.pdf` (source `paper/paper.tex`).
 
 ## Layout
 
-    paper/                  the paper
-    scripts/                p4_checks.py (the delivery instrument), p4_stats.py,
-                            p4_gen.py, runners, validators, analyse_refusals.py
-    experiments/e0 to e5/   one folder each: PREREGISTRATION.md, scripts/,
-                            outputs/<model>/ (raw answers), results/RESULT_*.md
-    experiments/exploratory-refusals/   refusals counted after the fact, not
-                            preregistered; script in scripts/analyse_refusals.py
-    shared/tasks/           the verified calculation tasks used by e4
-    CHECKLIST.md            the methodology checklist, item by item
-    DESIGN.md, STATUS.md    the design and the state of the work
+    accommodated-human-ai-fit.tex, .pdf   the paper
+    RESULTS.md, explainer.md, limitations.md
+    verify_paper_numbers.py               checks every table value and abstract
+                                          figure against the committed data
+    experiments/
+        shared/                           the instrument, statistics, generation
+                                          code and the e4 tasks (README inside)
+        e0-instrument-floor/              each experiment: README.md,
+        e1-measurable-needs/              PREREGISTRATION.md, scripts/,
+        e2-deaf-contact/                  outputs/<model>/ (raw answers and
+        e3-pushback/                      consoles), results/RESULT_*.md
+        e4-cost/
+        e5-wrappers/
+        exploratory-refusals/             refusals counted after the fact
+    CHECKLIST.md                          the methodology checklist, item by item
+    DESIGN.md, STATUS.md                  the design and the state of the work
+
+The repository was reorganised on 2026-10-08 to match Paper 2's layout; the old
+paths, which the preregistrations name, are listed in `experiments/shared/README.md`.
 
 ## Reproduce
 
-Every analysis runs from its CSVs without a GPU, for example
+No GPU is needed to reproduce any number. With `pip install -r requirements.txt`:
+
+    python verify_paper_numbers.py
+
+re-runs every analysis from the committed answers and checks the paper against
+it. Each experiment's analysis also runs on its own, for example
 
     python experiments/e2-deaf-contact/scripts/analyse_e2.py \
         experiments/e2-deaf-contact/outputs/*/e2_*.csv
 
 Every experiment has an offline validator that injects known effects into a
-stubbed model and checks that the analysis recovers them:
-`scripts/validate_p4_checks.py`, `experiments/e0-instrument-floor/scripts/validate_e0.py`,
+stubbed model and checks that the analysis recovers them (160 checks in all):
+`experiments/shared/scripts/validate_p4_checks.py`,
+`experiments/e0-instrument-floor/scripts/validate_e0.py`,
 `experiments/e1-measurable-needs/scripts/validate_e1.py`,
-`experiments/e2-deaf-contact/scripts/validate_e2.py`, `scripts/validate_e3_e4.py`,
-`scripts/validate_e5.py`. Collection needs a GPU; the runners take a model key
-(`qwen`, `llama`, `mistral`) and resume from their CSVs.
+`experiments/e2-deaf-contact/scripts/validate_e2.py`,
+`experiments/e3-pushback/scripts/validate_e3_e4.py`,
+`experiments/e5-wrappers/scripts/validate_e5.py`.
 
-## Related papers
+Collecting the answers needs a GPU; each `run_*.py` takes a model key (`qwen`,
+`llama`, `mistral`) and resumes from its CSV.
+
+## Related
 
 - Paper 2, Single Human-AI Fit, concept DOI 10.5281/zenodo.22364497.
 

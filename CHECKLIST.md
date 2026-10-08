@@ -19,7 +19,7 @@ not go out. Worked 2026-10-06.
 | Check the format the model was meant to answer in | pass | e4 counts missing Answer lines separately; no probability reads in this paper |
 | A control must vary the thing under test | pass | the neutral arm varies the presence of a personal detail, which is what a benefit read against nothing confounds |
 | A degenerate control does not measure the instrument | pass | no residual computed from identical comparisons |
-| Refusal is not a low number | **pass after 2026-10-06** | not counted in e0 to e2 at first; `scripts/analyse_refusals.py` now counts them: Llama refuses after the learning-disability and screen-reader labels; scoring refusals as not delivered leaves every registered finding standing. Exploratory, reported as such |
+| Refusal is not a low number | **pass after 2026-10-06** | not counted in e0 to e2 at first; `experiments/exploratory-refusals/scripts/analyse_refusals.py` now counts them: Llama refuses after the learning-disability and screen-reader labels; scoring refusals as not delivered leaves every registered finding standing. Exploratory, reported as such |
 | Watch for anchoring | not applicable | no numeric estimates about the person |
 | Do not put the answer in the question | pass | need forms never name a checked property (validated offline) |
 | Parse in the right order | pass | e4 looks for the Answer number first; refusal is never inferred from a missing number |

@@ -1,0 +1,12 @@
+# Analysis (no GPU): every analyse_*.py, validate_*.py and verify_paper_numbers.py.
+# Required to reproduce the committed outputs exactly: without scipy the
+# statistics fall back to a sign test in place of the signed-rank test, and the
+# p-values change.
+numpy>=1.26
+scipy>=1.11
+
+# Generation (Colab, GPU): every run_*.py
+# torch>=2.2
+# transformers>=4.44
+# accelerate>=0.30
+# bitsandbytes>=0.46.1

@@ -17,8 +17,8 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 |---|---|---|
 | prior art | done | `docs/related-work-paper-4.md` in the research repo, three rounds, 55 quotes verified |
 | Paper 5 merged in | done | recorded in `docs/research-program.md` |
-| delivery instrument | done | `scripts/p4_checks.py`, five needs |
-| instrument validated offline | done | `scripts/validate_p4_checks.py`, 29 checks, 0 failures |
+| delivery instrument | done | `experiments/shared/scripts/p4_checks.py`, five needs |
+| instrument validated offline | done | `experiments/shared/scripts/validate_p4_checks.py`, 36 checks with version 2, 0 failures |
 | design | drafted | `DESIGN.md` |
 | e0 preregistration | done | `experiments/e0-instrument-floor/PREREGISTRATION.md`, committed before any run |
 | e0 stimuli | done | 120 questions x 17 cells, word counts checked mechanically |

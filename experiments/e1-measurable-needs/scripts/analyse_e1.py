@@ -40,7 +40,7 @@ from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 for p in (HERE, os.path.join(REPO, "experiments", "e0-instrument-floor", "scripts"),
-          os.path.join(REPO, "scripts")):
+          os.path.join(REPO, "experiments", "shared", "scripts")):
     if p not in sys.path:
         sys.path.insert(0, p)
 

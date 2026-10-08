@@ -15,7 +15,7 @@ is the benefit side or it is nothing.
 
 ## 1. The instrument
 
-`scripts/p4_checks.py`. Five needs, each a small set of properties an answer
+`experiments/shared/scripts/p4_checks.py`. Five needs, each a small set of properties an answer
 either has or has not, decided mechanically with no model in the loop:
 
 | need | parts | shape |
@@ -34,7 +34,7 @@ the effect size moved fivefold with the judge; Mistral could not judge at all.
 Paper 3 dropped the channel. A delivery check has a right answer, so it does not
 inherit that problem.
 
-**Offline validation.** `scripts/validate_p4_checks.py`, 29 checks, 0 failures.
+**Offline validation.** `experiments/shared/scripts/validate_p4_checks.py`, 29 checks, 0 failures.
 It covers each injected violation in isolation, the null (ordinary prose must
 trip nothing), word-boundary traps ("blackout" is not a colour, "ramp up" is not
 step-free access, "called" is not a phone instruction), readability ordering, and

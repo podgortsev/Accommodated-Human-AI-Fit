@@ -14,7 +14,7 @@ Registered expectations and the decision rule: `PREREGISTRATION.md`.
                                   validate_e0_output.txt
     outputs/<model>/              e0_<model>.csv and the console text
 
-Instrument and statistics: `../../scripts/p4_checks.py`, `../../scripts/p4_stats.py`.
+Instrument and statistics: `../shared/scripts/p4_checks.py`, `../shared/scripts/p4_stats.py`.
 
 ## Cost
 

@@ -22,7 +22,7 @@ EXP = os.path.abspath(os.path.join(HERE, "..", ".."))
 REPO = os.path.abspath(os.path.join(EXP, ".."))
 for p in (HERE, os.path.join(EXP, "e1-measurable-needs", "scripts"),
           os.path.join(EXP, "e0-instrument-floor", "scripts"),
-          os.path.join(REPO, "scripts")):
+          os.path.join(REPO, "experiments", "shared", "scripts")):
     if p not in sys.path:
         sys.path.insert(0, p)
 
