@@ -32,6 +32,8 @@ cannot claim: `limitations.md`.
     RESULTS.md, explainer.md, limitations.md
     verify_paper_numbers.py               checks every table value and abstract
                                           figure against the committed data
+    figures/                              the two figures and make_figures.py,
+                                          which computes them from the CSVs
     experiments/
         shared/                           the instrument, statistics, generation
                                           code and the e4 tasks (README inside)

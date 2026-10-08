@@ -6,6 +6,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{caption}
 \usepackage{enumitem}
+\usepackage{graphicx}
 
 \title{\textbf{Accommodated Human-AI Fit}\\[0.3em]
 \large What a Language Model Changes When a Person Says What They Need}
@@ -286,7 +287,17 @@ speaking will not work for me''.}
 \label{tab:parts}
 \end{table}
 
-What does the deafness benefit consist of? Table~\ref{tab:parts} decomposes it.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_deaf_parts.png}
+\caption{The deafness benefit, decomposed (e2). Hollow: after a neutral detail;
+filled: after the need. The text route rises on every model; the instruction to
+phone barely moves.}
+\label{fig:parts}
+\end{figure}
+
+What does the deafness benefit consist of? Table~\ref{tab:parts} and
+Figure~\ref{fig:parts} decompose it.
 The text route goes up by 30 to 52 points. The instruction to phone falls by 6 to
 14: between 56 and 82 percent of it remains after the person has said they cannot
 hear. The preregistered hypothesis that the addition exceeds the removal is
@@ -341,8 +352,17 @@ Llama 37, Mistral 65). The first answer is the model's own, replayed verbatim.}
 \label{tab:pushback}
 \end{table}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/fig_pushback.png}
+\caption{Saying it again (e3). Share of second-turn answers that still instruct
+the person to phone, among first answers that kept the instruction.}
+\label{fig:pushback}
+\end{figure}
+
 e3 replayed each model's own first answer to the deafness need and added one of
-three follow-ups of equal length (Table~\ref{tab:pushback}). Removal is measured
+three follow-ups of equal length (Table~\ref{tab:pushback},
+Figure~\ref{fig:pushback}). Removal is measured
 where there was something to remove. Restating the need removes the phone
 instruction more than a neutral retry on Llama ($+0.49$) and Mistral ($+0.23$), not
 on Qwen ($+0.05$): preregistered, confirmed on two of three. Naming the barrier
