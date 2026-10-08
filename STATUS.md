@@ -9,7 +9,7 @@ States: `-` not started, `SCRIPT READY`, `RUNNING`, `done`, `FAILED: reason`
 
 ## Where this is
 
-Methodology checklist passed 2026-10-07 (`CHECKLIST.md`). October release, author decision 2026-10-06.
+**Released 2026-10-08.** Concept DOI 10.5281/zenodo.23241797 (v1.0.0 10.5281/zenodo.23241798, v1.0.1 10.5281/zenodo.23241864, which carries the DOI in the PDF). Methodology checklist passed 2026-10-07 (`CHECKLIST.md`).
 
 e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-instrument-floor/results/RESULT_e0.md`). e1 is collected and analysed (`experiments/e1-measurable-needs/results/RESULT_e1.md`): wheelchair and plain language are findings on all three models, H2 (added, not removed) confirmed for wheelchair, H3 (need over label) confirmed. The deaf replication was mis-specified: e1's questions rarely involve contacting anyone. e3: H4 (restating the need removes the phone instruction more than asking again) confirmed 2 of 3, H5 (naming the barrier removes more than restating) confirmed 3 of 3. e4: H6 (disclosure penalty) not confirmed; the cost on Mistral is dropped format. e2 tested deaf where it arises (`experiments/e2-deaf-contact/results/RESULT_e2.md`): FINDING on 3 of 3, H2 CONFIRMED on 3 of 3. Added-not-removed is a deaf result (56-82 percent of phone instructions remain); for wheelchair H2 is claimed but the rare walking barrier is mostly removed (corrected 2026-10-02).
 
@@ -49,13 +49,12 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Blocked
 
-- nothing. October 2026 release (author decision 2026-10-06), recorded in PLAN.csv row 4. Repository github.com/podgortsev/Accommodated-Human-AI-Fit, private until release day.
+- nothing. Repository public since 2026-10-08.
 
 ## Next
 
-1. Release files (README, CITATION.cff, LICENSE) and the private GitHub repository, on the author's go.
-2. Author reads the draft: subtitle, rank.
-3. Zenodo (two releases), ORCID, SSRN, per docs/how-to/zenodo.md.
+1. ORCID: claim the concept DOI, never a version DOI.
+2. SSRN, podgortsev.com, LinkedIn, per docs/how-to in the research repository.
 
 ## The decision that can end this paper
 
