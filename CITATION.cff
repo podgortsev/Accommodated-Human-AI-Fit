@@ -9,8 +9,17 @@ authors:
     given-names: Michael
     email: podgortsev@gmail.com
     orcid: 'https://orcid.org/0009-0007-5561-1916'
+identifiers:
+  - type: doi
+    value: '10.5281/zenodo.23241797'
+    description: >-
+      Concept DOI. Always resolves to the newest version. Cite this one.
+  - type: doi
+    value: '10.5281/zenodo.23241798'
+    description: Version DOI for v1.0.0.
 repository-code: https://github.com/podgortsev/Accommodated-Human-AI-Fit
 license: MIT
+date-released: '2026-10-08'
 keywords:
   - large language models
   - accessibility

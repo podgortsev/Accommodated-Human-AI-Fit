@@ -10,8 +10,10 @@
 
 \title{\textbf{Accommodated Human-AI Fit}\\[0.3em]
 \large What a Language Model Changes When a Person Says What They Need}
-\author{Michael Podgortsev\\ \small podgortsev@gmail.com}
-\date{October 2026}
+\author{Michael Podgortsev\\ Independent Researcher\\
+\texttt{podgortsev@gmail.com}}
+\date{October 2026\\[6pt]
+\normalsize DOI: \href{https://doi.org/10.5281/zenodo.23241797}{10.5281/zenodo.23241797}}
 
 \begin{document}
 \maketitle
@@ -473,8 +475,14 @@ to say'' level, or how humans judge the answers.
 \section{Reproduction}
 \label{sec:repro}
 
-Every script, stimulus, preregistration, raw answer and analysis output is in the
-repository. Each experiment's analysis runs from its CSVs alone, without a GPU,
+Every script, stimulus, preregistration, raw answer and analysis output is
+available at \url{https://github.com/podgortsev/Accommodated-Human-AI-Fit},
+archived on Zenodo at
+\href{https://doi.org/10.5281/zenodo.23241797}{10.5281/zenodo.23241797}. That is
+the concept DOI and always resolves to the newest version; each version also
+carries its own. \texttt{verify\_paper\_numbers.py} re-runs every analysis and
+checks each table value and abstract figure in this paper against the committed
+data. Each experiment's analysis runs from its CSVs alone, without a GPU,
 and each has an offline validator that injects known effects into a stubbed model
 and checks that the analysis recovers them (46 checks for e0, 26 for e1, 15 for e2,
 28 for e3 and e4 together, 9 for e5, 36 for the instrument).

@@ -1,5 +1,7 @@
 # Accommodated Human-AI Fit
 
+DOI: [10.5281/zenodo.23241797](https://doi.org/10.5281/zenodo.23241797) · archived on Zenodo
+
 What a language model changes when a person says what they need, measured
 against a socially neutral personal detail of the same length, on three open
 models (Qwen2.5-7B, Llama-3.1-8B, Mistral-7B), in six preregistered experiments
@@ -73,6 +75,26 @@ stubbed model and checks that the analysis recovers them (160 checks in all):
 
 Collecting the answers needs a GPU; each `run_*.py` takes a model key (`qwen`,
 `llama`, `mistral`) and resumes from its CSV.
+
+## Citation
+
+Cite the **concept DOI**, `10.5281/zenodo.23241797`. It always resolves to the
+newest version. The version DOI for v1.0.0 is `10.5281/zenodo.23241798` and
+points at that release only.
+
+```
+@misc{podgortsev2026ahaif,
+  author    = {Podgortsev, Michael},
+  title     = {Accommodated Human-AI Fit: What a Language Model Changes When
+               a Person Says What They Need},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23241797},
+  url       = {https://doi.org/10.5281/zenodo.23241797}
+}
+```
+
+Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
 ## Related
 
