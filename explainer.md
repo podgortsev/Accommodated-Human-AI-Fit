@@ -45,10 +45,11 @@ Only "phone calls will not work for me", spelling out the barrier, removed it on
 all three models.
 
 **How you say it matters, and not in a predictable way.** "I am a wheelchair
-user" worked better than describing the need. "I am Deaf" worked about as well.
-"I have a learning disability" made the answers harder to read than the sentence
-about bread, and one model refused to explain ordinary things, such as how to
-pay in a cheque, in up to a third of cases.
+user" worked better than describing the need. "I am Deaf" worked about as well on
+two models and less on the third. "I have a learning disability" made the
+answers harder to read than the sentence about bread, and after it one model
+refused to explain ordinary things, such as how to cancel a broadband contract,
+in up to a third of cases.
 
 **Stating a need does not make the model worse at the rest of your task**, on
 the whole. One model became more likely to ignore the format it had been asked to
