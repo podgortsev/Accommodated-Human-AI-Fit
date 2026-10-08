@@ -49,7 +49,7 @@ e0 is collected and analysed: registered decision CONTINUE (`experiments/e0-inst
 
 ## Blocked
 
-- nothing. Release window 1 to 7 December 2026 (freeze 30 November), recorded in PLAN.csv row 4.
+- nothing. October 2026 release (author decision 2026-10-06), recorded in PLAN.csv row 4. Repository github.com/podgortsev/Accommodated-Human-AI-Fit, private until release day.
 
 ## Next
 

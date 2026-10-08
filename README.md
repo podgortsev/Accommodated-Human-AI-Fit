@@ -31,6 +31,8 @@ The paper: `paper/paper.pdf` (source `paper/paper.tex`).
                             p4_gen.py, runners, validators, analyse_refusals.py
     experiments/e0 to e5/   one folder each: PREREGISTRATION.md, scripts/,
                             outputs/<model>/ (raw answers), results/RESULT_*.md
+    experiments/exploratory-refusals/   refusals counted after the fact, not
+                            preregistered; script in scripts/analyse_refusals.py
     shared/tasks/           the verified calculation tasks used by e4
     CHECKLIST.md            the methodology checklist, item by item
     DESIGN.md, STATUS.md    the design and the state of the work

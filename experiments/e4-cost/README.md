@@ -8,4 +8,4 @@ Registered: `PREREGISTRATION.md`.
     scripts/analyse_e4.py         the read to trust, no GPU
     run and validate              ../../scripts/run_e3_e4.py, validate_e3_e4.py
 
-2,310 generations per model. SCRIPT READY.
+2,310 generations per model. Done: `results/RESULT_e4.md`. Consoles are with e3, `../e3-pushback/outputs/<model>/e34_*`.

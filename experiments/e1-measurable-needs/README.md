@@ -21,4 +21,4 @@ Up to 3,060 generations per model, about four hours on a T4, resumable.
 
 ## Status
 
-SCRIPT READY. Nothing collected.
+Done. Result: `results/RESULT_e1.md`.

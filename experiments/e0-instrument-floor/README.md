@@ -23,4 +23,4 @@ two to three hours per model, Mistral longer; resumable across sessions.
 
 ## Status
 
-SCRIPT READY. Nothing collected.
+Done. Registered decision CONTINUE. Result: `results/RESULT_e0.md`.

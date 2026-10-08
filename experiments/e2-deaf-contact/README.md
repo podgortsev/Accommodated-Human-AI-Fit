@@ -9,4 +9,4 @@ the instruction to phone. Registered: `PREREGISTRATION.md`.
     scripts/analyse_e2.py         e1's analysis plus the relevance check
     scripts/validate_e2.py        offline, 15 passes, validate_e2_output.txt
 
-1,530 generations per model, about two hours on a T4. SCRIPT READY.
+1,530 generations per model. Done: deaf a finding and H2 confirmed on all three models, `results/RESULT_e2.md`.
